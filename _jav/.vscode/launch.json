@@ -1,0 +1,511 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch MyThread",
+            "request": "launch",
+            "mainClass": "Lab_jav.lab4.MyThread",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch lab4",
+            "request": "launch",
+            "mainClass": "Lab_jav.lab4.lab4",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch task3_2",
+            "request": "launch",
+            "mainClass": "Lab_jav.lab3.task3_2",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch task6",
+            "request": "launch",
+            "mainClass": "Lab_jav.lab3.task6",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch task5",
+            "request": "launch",
+            "mainClass": "Lab_jav.lab3.task5",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch task4",
+            "request": "launch",
+            "mainClass": "Lab_jav.lab3.task4",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "Lab_jav.lab3.test",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch task3",
+            "request": "launch",
+            "mainClass": "Lab_jav.lab3.task3",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch tast1_2",
+            "request": "launch",
+            "mainClass": "Lab_jav.lab3.tast1_2",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch task1",
+            "request": "launch",
+            "mainClass": "Lab_jav.lab3.task1",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch task2",
+            "request": "launch",
+            "mainClass": "Lab_jav.lab3.task2",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch math___",
+            "request": "launch",
+            "mainClass": "base.math___",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch lab3",
+            "request": "launch",
+            "mainClass": "Lab_jav.lab3.lab3",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch probal",
+            "request": "launch",
+            "mainClass": "Lab_jav.lab2.probal",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch lab2",
+            "request": "launch",
+            "mainClass": "Lab_jav.lab2.lab2",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch lab1",
+            "request": "launch",
+            "mainClass": "Lab_jav.lab1.lab1",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch generics_main",
+            "request": "launch",
+            "mainClass": "someting.generiscs_class.generics_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch generics_main",
+            "request": "launch",
+            "mainClass": "someting.generics.generics_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch LaryedPen_main",
+            "request": "launch",
+            "mainClass": "GUI.LaryedPen.LaryedPen_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Textfield_main",
+            "request": "launch",
+            "mainClass": "GUI.JTextfield.Textfield_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Slider_main",
+            "request": "launch",
+            "mainClass": "GUI.JSlider.Slider_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch OptoinPane_main",
+            "request": "launch",
+            "mainClass": "GUI.JOptionPane.OptoinPane_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch BorderLayout_main",
+            "request": "launch",
+            "mainClass": "GUI.BorderLayout.BorderLayout_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch GridLayout_main",
+            "request": "launch",
+            "mainClass": "GUI.Gridlayout.GridLayout_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch ComboBox_main",
+            "request": "launch",
+            "mainClass": "GUI.JComboBox.ComboBox_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch _2D_Animation_main",
+            "request": "launch",
+            "mainClass": "GUI.l2D_Animation._2D_Animation_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch _2D_Graphics_main",
+            "request": "launch",
+            "mainClass": "GUI.l2D_Graphics._2D_Graphics_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Game_main",
+            "request": "launch",
+            "mainClass": "GUI.KeyBinds.Game_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Drag_and_Drop_main",
+            "request": "launch",
+            "mainClass": "GUI.Drag_and_Drop.Drag_and_Drop_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch CheckBox_main",
+            "request": "launch",
+            "mainClass": "GUI.JCheckBox.CheckBox_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch MouseListener_main",
+            "request": "launch",
+            "mainClass": "GUI.MouseListener.MouseListener_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch KeyListener_main",
+            "request": "launch",
+            "mainClass": "GUI.KeyListener.KeyListener_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch ColorChooser_main",
+            "request": "launch",
+            "mainClass": "GUI.JColorChooser.ColorChooser_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch FileChooser_main",
+            "request": "launch",
+            "mainClass": "GUI.JFileChooser.FileChooser_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch MenuBar_main",
+            "request": "launch",
+            "mainClass": "GUI.JMenuBar.MenuBar_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch RadioBox_main",
+            "request": "launch",
+            "mainClass": "GUI.JRadioBox.RadioBox_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProgressBar_main",
+            "request": "launch",
+            "mainClass": "GUI.JProgressBar.ProgressBar_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "GUI.JSlider.main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "GUI.JComboBox.main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "GUI.JRadioBox.main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "GUI.JCheckBox.main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "GUI.JTextfild.main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "GUI.JOptionPane.main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "GUI.open_new_GUI_window.main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "GUI.LaryedPen.main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "GUI.Gridlayout.main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "GUI.FlowLayout.main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "GUI.BorderLayout.main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch jframe__",
+            "request": "launch",
+            "mainClass": "GUI.JFrame.jframe__",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Jpanel_",
+            "request": "launch",
+            "mainClass": "GUI.JPanel.Jpanel_",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Jbutton",
+            "request": "launch",
+            "mainClass": "GUI.Jbutton.Jbutton",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Jlabels",
+            "request": "launch",
+            "mainClass": "GUI.Jlabels.Jlabels",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "oop.oop1.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(1)",
+            "request": "launch",
+            "mainClass": "oop.oop10.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(2)",
+            "request": "launch",
+            "mainClass": "oop.oop11.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(3)",
+            "request": "launch",
+            "mainClass": "oop.oop12.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(4)",
+            "request": "launch",
+            "mainClass": "oop.oop13.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(5)",
+            "request": "launch",
+            "mainClass": "oop.oop14.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(6)",
+            "request": "launch",
+            "mainClass": "oop.oop15.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(7)",
+            "request": "launch",
+            "mainClass": "oop.oop16.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch polymorphism_",
+            "request": "launch",
+            "mainClass": "oop.oop17.polymorphism_",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch dynamic_polymorphism_",
+            "request": "launch",
+            "mainClass": "oop.oop18.dynamic_polymorphism_",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(8)",
+            "request": "launch",
+            "mainClass": "oop.oop3.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(9)",
+            "request": "launch",
+            "mainClass": "oop.oop6.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(10)",
+            "request": "launch",
+            "mainClass": "oop.oop7.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(11)",
+            "request": "launch",
+            "mainClass": "oop.oop8.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(12)",
+            "request": "launch",
+            "mainClass": "oop.oop9.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch file__",
+            "request": "launch",
+            "mainClass": "work_with_file.file1.file__",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch file_writer_",
+            "request": "launch",
+            "mainClass": "work_with_file.file2.file_writer_",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch file_writer",
+            "request": "launch",
+            "mainClass": "work_with_file.file3.file_writer",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Launch audio_",
+            "request": "launch",
+            "mainClass": "work_with_file.file4.audio_",
+            "projectName": "projects_46f35c64"
+        }
+    ]
+}
