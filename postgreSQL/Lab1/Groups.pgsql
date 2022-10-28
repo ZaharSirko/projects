@@ -7,4 +7,4 @@
 -- (4,'ІП-20-2'),
 -- (5,'КІ-20-1');
 
--- SELECT * FROM groups
+SELECT * FROM groups

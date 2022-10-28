@@ -4,27 +4,31 @@ import java.util.Arrays;
 
 public class lab5 {
     public static void main(String[] args) {
-        set <String> set = new set<>();
+        Set <String> set = new Set<>();
         String[] arr = {"2d","asdsa","asd"};
         set.setSet(arr);
         System.out.println(Arrays.toString(set.getSet()));
 
-        set <Integer> set2 = new set<>();
+        Set <Integer> set2 = new Set<>();
         Integer[] arr2 = {1,2,3,4,5};
         set2.setSet(arr2);
         System.out.println(Arrays.toString(set2.getSet()));
 
-        operation <String> operation = new operation<>();
-        String[] arr3 = {"2d","asdsa","asd3"};
-        operation.diferenceSets(arr, arr3);
-        System.out.println(" ");
+        Operation <String> operation = new Operation<>();
+        String[] arr3 = {"2sad","asd","asd3"};
+        System.out.println("differenceSets");
+        operation.differenceSets(arr, arr3);
+        System.out.println("unionSet");
         System.out.println(Arrays.toString(operation.unionSet(arr, arr3)));
-        
-        operation<Integer> operation2 = new operation<>();
+       
+        Operation<Integer> operation2 = new Operation<>();
         Integer[] arr4 = {3,4,5,6,7};
+        System.out.println("intersectionSets");
         operation2.intersectionSets(arr2, arr4);
-        operation2.diferenceSets(arr2, arr4);
-        System.out.println(" ");
+        System.out.println("differenceSets");
+        operation2.differenceSets(arr2, arr4);
+        System.out.println("symmetricDiffSets");
+        operation2.symmetricDiffSets(arr2, arr4);
         System.out.println("end");
 
        

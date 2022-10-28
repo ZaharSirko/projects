@@ -15,7 +15,7 @@
 --     (4,12,'Семенченко','Степан','гуртожиток № 4');
 
 
--- SELECT * FROM students
+SELECT * FROM students
 
 
 

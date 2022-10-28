@@ -1,14 +1,13 @@
 package Lab_jav.lab5;
 
-
-
-public class set <T> {
-  private  T[] a;
-  public void  setSet(T[] a){
-    this.a = a;
+public class Set <T> {
+    private  T[] array;
+    public void  setSet(T[] array){
+      this.array = array;
+    }
+  
+     public T[] getSet(){
+      return array;
+     }
   }
-
-   public T[] getSet(){
-    return a;
-   }
-}
+  
