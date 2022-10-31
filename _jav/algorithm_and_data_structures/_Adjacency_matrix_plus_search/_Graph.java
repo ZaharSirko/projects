@@ -1,4 +1,4 @@
-package _jav.algorithm_and_data_structures._Adjacency_matrix;
+package _jav.algorithm_and_data_structures._Adjacency_matrix_plus_search;
 
 import java.util.ArrayList;
 
@@ -38,6 +38,30 @@ public class _Graph {
             }
             System.out.println();
         }
+
+    }
+    // depthFirstSearch
+    public void depthFirstSearch(int scr){
+    boolean[] visited = new boolean[matrix.length];
+    dFSHelper(scr,visited);
+    }
+    private void dFSHelper(int scr, boolean[] visited) {
+        if(visited[scr]){
+            return;
+        }
+        else{
+            visited[scr]  = true;
+            System.out.println(nodes.get(scr).data+" = visited");
+        }
+        for(int i = 0; i <matrix[scr].length;i++){
+            if(matrix[scr][i]== 1){
+                dFSHelper(i, visited);
+            }
+        }
+        return;
+    }
+    // breathFirstSearch
+    public void breathFirstSearch(int scr){
 
     }
 }

@@ -1,4 +1,4 @@
-package _jav.algorithm_and_data_structures._Adjacency_matrix;
+package _jav.algorithm_and_data_structures._Adjacency_matrix_plus_search;
 
 public class _Adjacency_matrix {
     public static void main(String[] args) {
@@ -21,8 +21,9 @@ public class _Adjacency_matrix {
         graph.addEdge(5, 5);
         
         graph.print();
-        System.out.println(graph.checkEdge(0, 0));
-        System.out.println(graph.checkEdge(5, 5));
+
+        graph.depthFirstSearch(3);
+
 
     }
 }

@@ -1,5 +1,5 @@
 
--- INSERT INTO students_skips(fk_student_id,skips_time,skip_reason,date) VALUES
+-- INSERT INTO students_skips(student_id,skips_houre,skip_reason,date) VALUES
 -- ( 1,  3,   null, '2021-10-12'),
 --  (1,3,null,'2021-10-12'),
 --  (2,null,null,'2021-10-12'),

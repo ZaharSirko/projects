@@ -1,6 +1,6 @@
 
 -- INSERT INTO students(
---     fk_group_id,  student_id, surename, std_name, adres) VALUES
+--     group_id,  student_id, surename, std_name, adres) VALUES
 --     (  1,  1,  'Петренко',  'Петро',  'гуртожиток № 3'),
 --     (  1,  2, 'Семенченко',  'Семен',  'гуртожиток № 3'),
 --     (  1,  3,  'Федоренко', 'Федір', 'гуртожиток № 3'),
