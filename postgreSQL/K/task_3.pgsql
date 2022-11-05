@@ -8,7 +8,7 @@ OR
 (extract (month FROM students_skips.date) BETWEEN 2 AND 6)
 )
 AND
-extract (month FROM students_skips.date)<=extract (month FROM current_date)
+extract (month FROM students_skips.date)>=extract (month FROM current_date)
 AND 
  skip_reason = 'неповажна'
 GROUP BY groups.group_id,"month"
