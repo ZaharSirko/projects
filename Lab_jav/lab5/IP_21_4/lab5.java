@@ -1,6 +1,9 @@
-package Lab_jav.lab5;
+package Lab_jav.lab5.IP_21_4;
 
 import java.util.Arrays;
+
+import Lab_jav.lab5.IP_21_4.Sriko.Operation;
+import Lab_jav.lab5.IP_21_4.Sriko.Zahar.Set;
 
 public class lab5 {
     public static void main(String[] args) {

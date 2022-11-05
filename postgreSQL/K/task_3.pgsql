@@ -1,5 +1,5 @@
 SELECT groups.group_name, COUNT(*) AS Skip_times,extract (month FROM students_skips.date) AS "month" FROM students_skips
-INNER JOIN students ON students_skips.student_id = students.student_id
+INNER JOIN students ON  students.student_id = students_skips.student_id
 INNER JOIN groups ON students.group_id = groups.group_id
 WHERE 
 (

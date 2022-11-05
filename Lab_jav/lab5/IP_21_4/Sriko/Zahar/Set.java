@@ -1,6 +1,7 @@
-package Lab_jav.lab5;
+package Lab_jav.lab5.IP_21_4.Sriko.Zahar;
 
 public class Set <T> {
+    public static final int length = 0;
     private  T[] array;
     public void  setSet(T[] array){
       this.array = array;

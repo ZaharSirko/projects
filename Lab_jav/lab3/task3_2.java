@@ -8,7 +8,7 @@ public class task3_2 {
         System.out.println("Enter palindrome word");
         String word = scanner.nextLine();
         if(word.length()==5){
-            int i=word.length()-5,j=word.length()-1;
+            int i=word.length()-word.length(),j=word.length()-1;
             while( i!=j){
                 if((word.toLowerCase().charAt(i) == word.toLowerCase().charAt(j)) && (word.toLowerCase().charAt(j) == word.toLowerCase().charAt(i))){
                     j--;
