@@ -1,4 +1,4 @@
-package _jav.algo_lab;
+package algo_lab;
 
 import java.util.ArrayList;
 
