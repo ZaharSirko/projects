@@ -43,6 +43,11 @@ public class lab3 {
         System.out.println("ArrayList 3");
         System.out.println(arraylist3);
 
+        arraylist3.remove(3);
+        arraylist3.remove(6);
+        arraylist3.remove(9);
+        System.out.println("ArrayList 3 - minus some elements");
+        System.out.println(arraylist3);
 
 
 
