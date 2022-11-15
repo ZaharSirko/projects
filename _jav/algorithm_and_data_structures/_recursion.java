@@ -15,11 +15,8 @@ public class _recursion {
     }
 
     private static int factorial(int num) {
-
         if(num < 1)return 1; // base case
         return num * factorial(num - 1); // recursive case
-
-
     }
 
     private static void walk(int steps) {

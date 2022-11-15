@@ -14,7 +14,7 @@ public class Jlabels {
 
     public static void main(String[] args) {
       
-        ImageIcon image = new ImageIcon("D:\\Microsoft VS Code\\projects\\GUI\\Jlabels\\BOGDAT.jpg");
+        ImageIcon image = new ImageIcon("D:\\Microsoft VS Code\\projects\\_jav\\GUI\\Jlabels\\BOGDAT.jpg");
 
         Border border = BorderFactory.createLineBorder(Color.GREEN); // create border
       JLabel label = new JLabel();

@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 public class Jpanel_ {
     public static void main(String[] args) {
         
-        ImageIcon image = new ImageIcon("D:\\Microsoft VS Code\\projects\\GUI\\JPanel\\104.jpg");
+        ImageIcon image = new ImageIcon("D:\\Microsoft VS Code\\projects\\_jav\\GUI\\JPanel\\104.jpg");
 
 
         JLabel label = new JLabel();

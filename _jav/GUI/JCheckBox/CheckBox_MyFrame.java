@@ -22,8 +22,8 @@ public class CheckBox_MyFrame extends JFrame implements ActionListener {
         this.setLayout(new FlowLayout());
 
 
-        image =new ImageIcon("D:\\Microsoft VS Code\\projects\\GUI\\JCheckBox\\asd (1).png");
-        image2 =new ImageIcon("D:\\Microsoft VS Code\\projects\\GUI\\JCheckBox\\asd (2).png");
+        image =new ImageIcon("D:\\Microsoft VS Code\\projects\\GUI\\_jav\\JCheckBox\\asd (1).png");
+        image2 =new ImageIcon("D:\\Microsoft VS Code\\projects\\GUI\\_jav\\JCheckBox\\asd (2).png");
 
 
         button = new JButton();

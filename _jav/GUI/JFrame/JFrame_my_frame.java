@@ -12,8 +12,8 @@ public class JFrame_my_frame extends JFrame {
         this.setResizable(false); // can`t change sire
         this.setVisible(true); // set visible
     
-        ImageIcon image = new ImageIcon("D:\\Microsoft VS Code\\projects\\GUI\\JFrame\\280.png");  // create   ImageIcon
-    
+        ImageIcon image = new ImageIcon("D:\\Microsoft VS Code\\projects\\_jav\\GUI\\JFrame\\280.png");  // create   ImageIcon
+
         this.setIconImage(image.getImage());  // change icon of this
     
        // this.getContentPane().setBackground(Color.pink);  // change bg color

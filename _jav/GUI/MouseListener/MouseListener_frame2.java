@@ -20,8 +20,8 @@ public class MouseListener_frame2 extends JFrame implements MouseListener {
         label = new JLabel();
         label.addMouseListener(this);
 
-        image1 =new ImageIcon("D:\\Microsoft VS Code\\projects\\GUI\\JCheckBox\\asd (1).png");
-        image2 =new ImageIcon("D:\\Microsoft VS Code\\projects\\GUI\\JCheckBox\\asd (2).png");
+        image1 =new ImageIcon("D:\\Microsoft VS Code\\projects\\_jav\\GUI\\JCheckBox\\asd (1).png");
+        image2 =new ImageIcon("D:\\Microsoft VS Code\\projects\\_jav\\GUI\\JCheckBox\\asd (2).png");
         image3 = new ImageIcon("vova.png");
         label.setIcon(image3);
 

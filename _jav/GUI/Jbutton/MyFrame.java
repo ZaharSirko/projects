@@ -38,7 +38,7 @@ public class MyFrame  extends JFrame implements ActionListener  {
             clip.open(audioStream);
 
             
-        ImageIcon image = new ImageIcon("D:\\Microsoft VS Code\\projects\\GUI\\Jbutton\\asd.png");
+        ImageIcon image = new ImageIcon("D:\\Microsoft VS Code\\projects\\_jav\\GUI\\Jbutton\\asd.png");
 
         label = new JLabel();
         label.setIcon(image);

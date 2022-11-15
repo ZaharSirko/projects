@@ -15,7 +15,7 @@ public class KeyListener_frame extends JFrame implements KeyListener{
         this.setSize(500,500);  
         this.setLayout(null);
 
-        image = new ImageIcon("D:\\Microsoft VS Code\\projects\\GUI\\KeyListener\\asd.png");
+        image = new ImageIcon("D:\\Microsoft VS Code\\projects\\_jav\\GUI\\KeyListener\\asd.png");
 
         this.addKeyListener(this);
 
