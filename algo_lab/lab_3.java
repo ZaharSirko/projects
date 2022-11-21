@@ -1,8 +1,7 @@
-package algo_lab;
 
 import java.util.ArrayList;
 
-public class lab3 {
+public class lab_3 {
     public static void main(String[] args) {
         ArrayList<Integer> arraylist1 = new ArrayList<Integer>();
         System.out.println("Default ArrayList 1");
