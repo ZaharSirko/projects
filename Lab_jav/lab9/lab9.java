@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class lab9  {
     public static void main(String[] args) {
-        String s = null;
+       String s = null;
        MyException(s);
        ex ex = new ex();
        ex.solutions();
