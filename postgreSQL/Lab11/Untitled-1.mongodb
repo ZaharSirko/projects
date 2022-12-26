@@ -1,0 +1,47 @@
+
+use('VidVid');
+
+db.groups.drop();
+
+db.groups.insertOne({'_id':1, 'group_name':'ІП-21-1'});
+
+db.groups.insertOne({'_id':2, 'group_name':'ІП-21-2'});
+
+db.groups.insertMany(
+[{'_id':3, 'group_name':'ІП-20-1'},
+ {'_id':4, 'group_name':'ІП-20-2'},
+ {'_id':5, 'group_name':'КІ-20-1'}]);
+
+// db.groups.find();
+
+// db.groups.find({'group_name':'ІП-20-1'});
+
+// db.groups.find({'_id':1});
+
+// db.groups.find({'_id':{$gt:2}});
+
+// db.groups.find({'_id':{$gte:4}});
+
+// db.groups.find({$or:[{'_id':{$lt:2}},{'group_name':'ІП-20-1'}]});   
+
+// db.groups.find({'_id':{$gt:2, $lt:4}});
+
+// db.groups.find({_id:{$in:[2,4]}});   
+
+db.groups.updateOne({'_id':3},{$set:{group_name:'ІП-21-4'}});
+db.groups.find({'_id':3});
+
+db.groups.deleteOne({'_id':5});
+db.groups.find();
+
+db.groups.updateOne({'_id':3},{$set:{group_name:'ІП-21-3'}});
+db.groups.find({'_id':3});
+
+db.groups.updateOne({'_id':4},{$set:{group_name:'ІП-21-4'}});
+db.groups.find();
+
+db.groups.deleteMany({'_id':{$gt:1}});
+db.groups.find();
+
+
+

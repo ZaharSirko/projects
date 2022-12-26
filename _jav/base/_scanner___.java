@@ -3,16 +3,10 @@ import java.util.Scanner;
 
 public class _scanner___{
     public static void main(String[] args ) {
-        Scanner  scanner = new Scanner(System.in);
-        System.out.println("1+1=?");
-        int ans = scanner.nextInt();
-        scanner.nextLine();
-        System.out.println("Who are you?");
-        String q1 = scanner.nextLine();
+        String str1 = "Hello world!";
+
+        String str2 = str1;
         
-        System.out.println("1+1 = "+ans);
-        System.out.println("I'm "+q1);
-        
-        scanner.close();
+        System.out.println((str1 == str2) + " " + str1.equals(str2));
     }
 }

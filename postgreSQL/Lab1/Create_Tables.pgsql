@@ -23,4 +23,4 @@
 -- KEY(group_id) REFERENCES groups(group_id)
 
 -- ALTER TABLE students_skips ADD CONSTRAINT fk_students_skips FOREIGN
--- KEY(student_id) REFERENCES students(student_id
+-- KEY(student_id) REFERENCES students(student_id)

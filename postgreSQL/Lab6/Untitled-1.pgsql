@@ -14,7 +14,7 @@
 
 
 -- SELECT student_id, skips_houre , date From students_skips
--- WHERE EXTRACT(DAY FROM date)=date_part('day',now())
+-- WHERE EXTRACT(DAY FROM date)=date_part('day',now())-15
 -- AND EXTRACT(DAY FROM date) NOT IN (10,11) 
 -- ORDER BY date DESC OFFSET 2 
 
@@ -59,23 +59,14 @@
 -- WHERE group_id > 2
 -- and surename LIKE 'С%о'
 
--- CREATE TEMP TABLE t_students AS
--- (SELECT * FROM students_skips);
--- INSERT INTO t_students(student_id,date)
--- VALUES(10,'2022-11-12');
--- SELECT t_students.date, students_skips.skip_reason FROM students_skips
--- RIGHT JOIN t_students ON t_students.student_id=students_skips.student_id
+-- SELECT * FROM students_skips
 -- ORDER BY students_skips.skip_reason NULLS FIRST
 
--- CREATE TEMP TABLE t_students AS
--- (SELECT * FROM students_skips);
--- INSERT INTO t_students(student_id,date)
--- VALUES(10,'2022-11-12');
--- SELECT t_students.date, students_skips.skip_reason FROM students_skips
--- RIGHT JOIN t_students ON t_students.student_id=students_skips.student_id
+-- SELECT * FROM students_skips
 -- ORDER BY students_skips.skip_reason NULLS LAST
 
--- SELECT student_id,skips_houre,date_part('year',students_skips.date) FROM students_skips
+-- SELECT student_id,skips_houre,date_part('year',students_skips.date) 
+-- FROM students_skips
 
 -- SELECT std_name,surename FROM students
 -- WHERE surename LIKE '____енко'

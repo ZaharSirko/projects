@@ -1,4 +1,4 @@
--- SELECT sum(CASE WHEN skips_houre>5 THEN skips_houre ELSE 0 END) AS "Сума пропущених годин більші за за 5",
+-- SELECT sum(CASE WHEN skips_houre>5 THEN skips_houre ELSE 0 END) AS "Сума пропущених годин більші за 5",
 -- sum(CASE WHEN skips_houre>5 THEN 1 ELSE 0 END) AS "Кількість",
 -- sum(CASE WHEN skips_houre<5 THEN skips_houre ELSE 0 END) AS "Сума пропущених годин менші за 5",
 -- sum(CASE WHEN skips_houre<5 THEN 1 ELSE 0 END) AS "Кількість",

@@ -28,6 +28,6 @@
 --  (11,1,null,'2021-10-19'),
 --  (8,4,'неповажна','2021-10-25'),
 --  (8,6,'неповажна','2021-10-27');
- 
- SELECT * FROM students_skips
+
+--  SELECT * FROM students_skips
 

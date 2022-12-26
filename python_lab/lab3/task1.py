@@ -1,0 +1,12 @@
+from collections import deque, namedtuple
+Elements = namedtuple('Елементи', 'Газ Молярна_маса Критичний_тиск Критична_температура Нижча_теплота_згорання') 
+queue = deque([ Elements("Метан",16.04, 4.640, 190.66, 35760)])
+queue.append(Elements("Етан",30.07, 4.884, 305.46, 63650))
+queue.append(Elements("Пропан",44.10, 4.255, 369.00, 91140))
+queue.append(Elements("Н-бутан",58.12, 3.799, 425.20, 118530))
+queue.append(Elements("Н-пентан",72.15, 3.373, 469.50 , 146180))
+print(queue.popleft())
+print(queue.popleft())
+print(queue.popleft())
+print(queue.popleft())
+print(queue.popleft())

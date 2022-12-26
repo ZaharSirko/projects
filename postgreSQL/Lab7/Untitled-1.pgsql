@@ -22,10 +22,11 @@
 -- GROUP by date
 -- ORDER by date
 
--- SELECT date_part('day',date),skips_houre
+-- SELECT date_part('day',date),sum(skips_houre) as "Total_skip_hour"
 -- FROM students_skips
 -- WHERE EXTRACT(DAY from date) BETWEEN 
 -- EXTRACT(DAY from (SELECT  min (date) from students_skips)) and 20
+-- GROUP BY date
 
 -- SELECT student_id, date_part('day',date),skips_houre
 -- FROM students_skips
