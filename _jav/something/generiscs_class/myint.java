@@ -1,4 +1,4 @@
-package _jav.someting.generiscs_class;
+package _jav.something.generiscs_class;
 
 public class myint {
     

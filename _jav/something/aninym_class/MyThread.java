@@ -1,4 +1,4 @@
-package _jav.someting.aninym_class;
+package _jav.something.aninym_class;
 
 class MyThread {
    

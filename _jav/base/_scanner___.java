@@ -1,5 +1,5 @@
 package _jav.base;
-import java.util.Scanner;
+
 
 public class _scanner___{
     public static void main(String[] args ) {

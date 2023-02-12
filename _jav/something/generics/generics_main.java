@@ -1,4 +1,4 @@
-package _jav.someting.generics;
+package _jav.something.generics;
 
 public class generics_main {
     public static void main(String[] args) {
