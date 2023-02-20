@@ -7,7 +7,7 @@ import java.io.ObjectOutputStream;
 
 public class ___seril {
     public static void main(String[] args) throws IOException  {
-        user user = new user();
+        User user = new User();
         user.name= "Zahar";
         user.password = "asd123";
        
