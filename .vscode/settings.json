@@ -19,5 +19,9 @@
         "Sequenz",
         "stirng",
         "Sull"
-    ]
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+      ]
+    
 }
