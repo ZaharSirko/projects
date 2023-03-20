@@ -1,23 +1,40 @@
 package __k2.__sem2.diskr.lab1;
-
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Scanner;
 import java.util.Set;
-
-
 public class _lab1 {
    public static void main(String[] args) {
     int[] a = {6, 7, 1, 9, 4, 2};
-    int[] b = {6, 7, 1, 9, 4, 2};
-    System.out.println("union");
-    union(a, b);
-    System.out.println("intersection");   
+    int[] b = {5, 1, 7, 2, 4, 3};
+    System.out.println("1. Union\n2. intersection\n3. Difference\n4. Symmetrical_difference\n5. a include b");
+    Scanner scanner =new Scanner(System.in);
+    int choice = scanner.nextInt();
+    switch(choice){
+      case 1:
+      System.out.println("union");
+      union(a, b);
+      break;
+      case 2:
+      System.out.println("intersection");      
     intersection(a, b);
-    System.out.println("difference");
+      break;
+      case 3:
+      System.out.println("difference");
     System.out.println(difference(a, b));
-    System.out.println("symmetrical_difference");
+      break;
+      case 4:
+      System.out.println("symmetrical_difference");
     System.out.println(symmetrical_difference(a, b));
-    System.out.println(include(a, b));
+      break;
+      case 5:
+      System.out.println("a include b");
+      System.out.println(include(a, b));
+      break;
+      default: 
+      System.out.println("Input number 1-5");
+      scanner.close();
+    }
    }
    public static void union( int[] a, int[] b){
      int[] c = new int[a.length+b.length];
@@ -50,7 +67,6 @@ public class _lab1 {
       }
       s1.removeAll(common);
       return s1;
-      
    }
    public static Set<Integer> symmetrical_difference(int[] a, int[] b){
       Set<Integer> s1 = new HashSet<>();
