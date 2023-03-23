@@ -37,7 +37,7 @@ public class _lab1 {
          System.out.println("Exit");
          break;
          default: 
-         System.out.println("Input number 1-5");
+         System.out.println("Input number 0-5");
          scanner.close();
        }
    } while ( choice!=0);
