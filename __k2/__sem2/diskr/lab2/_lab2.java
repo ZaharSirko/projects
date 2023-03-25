@@ -77,7 +77,6 @@ public class _lab2 {
             }
         }
         return bits;
-        
     }
 
     public static String or(String bits1,String bits2){

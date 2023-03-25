@@ -1,6 +1,4 @@
 package __k2.__sem2.diskr.lab2;
-
-import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
@@ -11,7 +9,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-
 
 
 public class MyFrame  extends JFrame implements ActionListener  {
@@ -59,7 +56,6 @@ public class MyFrame  extends JFrame implements ActionListener  {
         b_decard.setText("Decard");
         b_decard.setFocusable(false);
         b_decard.setHorizontalTextPosition(JButton.CENTER);
-        // b_decard.setFont(new Font("",Font.BOLD,8));
 
         b_setArray = new JButton();
         b_setArray.setBounds(0,200,125,50);
