@@ -1,0 +1,756 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "ArraySort",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.Lab_jav.add_task.ArraySort",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab1",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.Lab_jav.lab1.lab1",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab2",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.Lab_jav.lab2.lab2",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "probal",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.Lab_jav.lab2.probal",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "task1",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.Lab_jav.lab3.task1",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "task1_2",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.Lab_jav.lab3.task1_2",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "task2",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.Lab_jav.lab3.task2",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "task3",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.Lab_jav.lab3.task3",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "task3_2",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.Lab_jav.lab3.task3_2",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "task4",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.Lab_jav.lab3.task4",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "task5",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.Lab_jav.lab3.task5",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "task6",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.Lab_jav.lab3.task6",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab4",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.Lab_jav.lab4.lab4",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab5",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.Lab_jav.lab5.IP_21_4.lab5",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab6_7",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.Lab_jav.lab6_7.lab6_7",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "task1(1)",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.Lab_jav.lab8.task1",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "task2(1)",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.Lab_jav.lab8.task2",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab9",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.Lab_jav.lab9.lab9",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab_3",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.algo_lab.lab_3",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab_4",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.algo_lab.lab_4",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab_5",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.algo_lab.lab_5",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab_6",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.algo_lab.lab_6",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab_7",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.algo_lab.lab_7",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab_8",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.algo_lab.lab_8",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab_9",
+            "request": "launch",
+            "mainClass": "__k2.__sem1.algo_lab.lab_9",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_lab1",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.diskr.lab1._lab1",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_lab1_gui",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.diskr.lab1._lab1_gui",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_lab2",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.diskr.lab2._lab2",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_lab2_gui",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.diskr.lab2._lab2_gui",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_lab3",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.diskr.lab3._lab3",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_lab3_gui",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.diskr.lab3._lab3_gui",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_lab4",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.diskr.lab4._lab4",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "BorderLayout_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.BorderLayout.BorderLayout_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Drag_and_Drop_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.Drag_and_Drop.Drag_and_Drop_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "FlowLayout_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.FlowLayout.FlowLayout_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "GridLayout_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.Gridlayout.GridLayout_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "CheckBox_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.JCheckBox.CheckBox_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "ColorChooser_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.JColorChooser.ColorChooser_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "ComboBox_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.JComboBox.ComboBox_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "FileChooser_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.JFileChooser.FileChooser_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "jframe__",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.JFrame.jframe__",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "MenuBar_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.JMenuBar.MenuBar_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "OptoinPane_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.JOptionPane.OptoinPane_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Jpanel_",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.JPanel.Jpanel_",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "ProgressBar_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.JProgressBar.ProgressBar_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "RadioBox_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.JRadioBox.RadioBox_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Slider_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.JSlider.Slider_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Textfield_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.JTextfield.Textfield_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Jbutton",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.Jbutton.Jbutton",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Jlabels",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.Jlabels.Jlabels",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Game_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.KeyBinds.Game_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "KeyListener_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.KeyListener.KeyListener_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "LaryedPen_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.LaryedPen.LaryedPen_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "MouseListener_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.MouseListener.MouseListener_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_2D_Animation_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.l2D_Animation._2D_Animation_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_2D_Graphics_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.l2D_Graphics._2D_Graphics_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "new_widnow_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.open_new_GUI_window.new_widnow_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "widnow_main",
+            "request": "launch",
+            "mainClass": "__own._jav.GUI.open_new_GUI_window.widnow_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_binary_Search",
+            "request": "launch",
+            "mainClass": "__own._jav.algorithm_and_data_structures.O_notations.O_log_n._binary_Search",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_liner_search",
+            "request": "launch",
+            "mainClass": "__own._jav.algorithm_and_data_structures.O_notations.O_n._liner_search",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_bubble_sort",
+            "request": "launch",
+            "mainClass": "__own._jav.algorithm_and_data_structures.O_notations.O_n2._bubble_sort",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_insertion_sort",
+            "request": "launch",
+            "mainClass": "__own._jav.algorithm_and_data_structures.O_notations.O_n2._insertion_sort",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_selection_sort",
+            "request": "launch",
+            "mainClass": "__own._jav.algorithm_and_data_structures.O_notations.O_n2._selection_sort",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_Interpolation_search",
+            "request": "launch",
+            "mainClass": "__own._jav.algorithm_and_data_structures.O_notations.O_n_log_n._Interpolation_search",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_merge_sort",
+            "request": "launch",
+            "mainClass": "__own._jav.algorithm_and_data_structures.O_notations.O_n_log_n._merge_sort",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_quick_sort",
+            "request": "launch",
+            "mainClass": "__own._jav.algorithm_and_data_structures.O_notations.O_n_log_n._quick_sort",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_Adjacency_list",
+            "request": "launch",
+            "mainClass": "__own._jav.algorithm_and_data_structures._Adjacency_list._Adjacency_list",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_Adjacency_matrix",
+            "request": "launch",
+            "mainClass": "__own._jav.algorithm_and_data_structures._Adjacency_matrix_plus_search._Adjacency_matrix",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_HashTable",
+            "request": "launch",
+            "mainClass": "__own._jav.algorithm_and_data_structures._HashTable",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_dynamic_arr",
+            "request": "launch",
+            "mainClass": "__own._jav.algorithm_and_data_structures._dynamic_arr._dynamic_arr",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_linked_list",
+            "request": "launch",
+            "mainClass": "__own._jav.algorithm_and_data_structures._linked_list",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_queue",
+            "request": "launch",
+            "mainClass": "__own._jav.algorithm_and_data_structures._queue",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_recursion",
+            "request": "launch",
+            "mainClass": "__own._jav.algorithm_and_data_structures._recursion",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_stack",
+            "request": "launch",
+            "mainClass": "__own._jav.algorithm_and_data_structures._stack",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_scanner___",
+            "request": "launch",
+            "mainClass": "__own._jav.base._scanner___",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "gui___",
+            "request": "launch",
+            "mainClass": "__own._jav.base.gui___",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "math___",
+            "request": "launch",
+            "mainClass": "__own._jav.base.math___",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "matrix__",
+            "request": "launch",
+            "mainClass": "__own._jav.base.matrix__",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "methood___",
+            "request": "launch",
+            "mainClass": "__own._jav.base.methood___",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "swtich___",
+            "request": "launch",
+            "mainClass": "__own._jav.base.swtich___",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "__own._jav.oop.oop1.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Main(1)",
+            "request": "launch",
+            "mainClass": "__own._jav.oop.oop10.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Main(2)",
+            "request": "launch",
+            "mainClass": "__own._jav.oop.oop11.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Main(3)",
+            "request": "launch",
+            "mainClass": "__own._jav.oop.oop12.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Main(4)",
+            "request": "launch",
+            "mainClass": "__own._jav.oop.oop13.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Main(5)",
+            "request": "launch",
+            "mainClass": "__own._jav.oop.oop14.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Main(6)",
+            "request": "launch",
+            "mainClass": "__own._jav.oop.oop15.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Main(7)",
+            "request": "launch",
+            "mainClass": "__own._jav.oop.oop16.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "polymorphism_",
+            "request": "launch",
+            "mainClass": "__own._jav.oop.oop17.polymorphism_",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "dynamic_polymorphism_",
+            "request": "launch",
+            "mainClass": "__own._jav.oop.oop18.dynamic_polymorphism_",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Main(8)",
+            "request": "launch",
+            "mainClass": "__own._jav.oop.oop3.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Main(9)",
+            "request": "launch",
+            "mainClass": "__own._jav.oop.oop6.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Main(10)",
+            "request": "launch",
+            "mainClass": "__own._jav.oop.oop7.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Main(11)",
+            "request": "launch",
+            "mainClass": "__own._jav.oop.oop8.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "Main(12)",
+            "request": "launch",
+            "mainClass": "__own._jav.oop.oop9.Main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "AnonymousDemo",
+            "request": "launch",
+            "mainClass": "__own._jav.something.aninym_class.AnonymousDemo",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "MyThread",
+            "request": "launch",
+            "mainClass": "__own._jav.something.aninym_class.MyThread",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "__desrial",
+            "request": "launch",
+            "mainClass": "__own._jav.something.deserializer.__desrial",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "generics_main",
+            "request": "launch",
+            "mainClass": "__own._jav.something.generics.generics_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "generics_main(1)",
+            "request": "launch",
+            "mainClass": "__own._jav.something.generiscs_class.generics_main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "___seril",
+            "request": "launch",
+            "mainClass": "__own._jav.something.serialization.___seril",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "file__",
+            "request": "launch",
+            "mainClass": "__own._jav.work_with_file.file1.file__",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "file_writer_",
+            "request": "launch",
+            "mainClass": "__own._jav.work_with_file.file2.file_writer_",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "file_writer",
+            "request": "launch",
+            "mainClass": "__own._jav.work_with_file.file3.file_writer",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "audio_",
+            "request": "launch",
+            "mainClass": "__own._jav.work_with_file.file4.audio_",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "asd",
+            "request": "launch",
+            "mainClass": "asd",
+            "projectName": "projects_46f35c64"
+        }
+    ]
+}
