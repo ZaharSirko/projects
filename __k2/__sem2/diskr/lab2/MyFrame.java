@@ -57,6 +57,7 @@ public class MyFrame  extends JFrame implements ActionListener  {
         b_decard.setFocusable(false);
         b_decard.setHorizontalTextPosition(JButton.CENTER);
 
+
         b_setArray = new JButton();
         b_setArray.setBounds(0,200,125,50);
         b_setArray.addActionListener(this);
