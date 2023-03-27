@@ -8,11 +8,6 @@ public class _lab2 {
       int[]  U = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
       int[] A = {2, 7, 8, 5, 1, 9};
       int[] B = {1, 2, 4, 5, 9, 6};
-    //   System.out.println(and(tobits(U, A), tobits(U, B)));
-    //   System.out.println(or(tobits(U, A), tobits(U, B)));
-    //   System.out.println(xor(tobits(U, A), tobits(U, B))); // Integer.pasreInt("",2);
-    //  System.out.println(decard(tobits(U, A), tobits(U, B)));
-    //  decard(tobits(U, A), tobits(U, B));
     System.out.println("1. And\n2. Or\n3. Xor\n4. Decard\n0. Exit");
      Scanner scanner = new Scanner(System.in);
      int choice;
@@ -26,7 +21,7 @@ public class _lab2 {
                 System.out.println(or(tobits(U, A), tobits(U, B)));
                    break;
                 case 3:
-                System.out.println(xor(tobits(U, A), tobits(U, B))); // Integer.pasreInt("",2);
+                System.out.println(xor(tobits(U, A), tobits(U, B))); //Integer.parseInt(xor(tobits(U, A), tobits(U, B)),2);
                      break;
                 case 4:
                 decard(tobits(U, A), tobits(U, B));

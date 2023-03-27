@@ -17,7 +17,7 @@ public class _lab3 {
                 }
                 System.out.println();
             }
-            System.out.println("\n1. isReflexive\n2. isAntiReflexive\n3. isSymmetrical\n4. isAntiSymmetrical\n0. Exit");
+     System.out.println("\n1. isReflexive\n2. isAntiReflexive\n3. isSymmetrical\n4. isAntiSymmetrical\n0. Exit");
      Scanner scanner = new Scanner(System.in);
      int choice;
      do {
@@ -76,9 +76,7 @@ public class _lab3 {
              for (int j = 0; j < booleanMatrix.length; j++) {
                 if((booleanMatrix[i][j] != booleanMatrix[j][i]) ) return true;  
             }
-            
            }
-        return false;
-            
+        return false; 
 }
 }
