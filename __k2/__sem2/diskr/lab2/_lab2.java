@@ -122,7 +122,6 @@ public class _lab2 {
             }
             System.out.println();
          }
-      
      }
 
 
