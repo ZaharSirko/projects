@@ -137,7 +137,7 @@ public class MyFrame  extends JFrame implements ActionListener  {
 
     }
      
-    public void setArray(JTextArea textAreaA, JTextArea textAreaB){
+    public void setValues(JTextArea textAreaA, JTextArea textAreaB){
         String textA = textAreaA.getText();
         a = Integer.parseInt(textA);
         String textB = textAreaB.getText();
@@ -146,8 +146,10 @@ public class MyFrame  extends JFrame implements ActionListener  {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
+        if(e.getSource() != null){
+            setValues(textAreaA,textAreaB);
+        }
         if(e.getSource()==b_findGcd){
-           
              textAreaResult.setText(_lab4.findGcd(a, b).toString());
         }
         if(e.getSource()==b_findLcm){
