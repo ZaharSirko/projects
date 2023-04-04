@@ -74,9 +74,9 @@ public class _lab3 {
         public static boolean isAntiSymmetrical(int[][] booleanMatrix){
           for (int i = 0; i < booleanMatrix.length; i++) {
              for (int j = 0; j < booleanMatrix.length; j++) {
-                if((booleanMatrix[i][j] != booleanMatrix[j][i]) ) return true;  
+                if((booleanMatrix[i][j] == booleanMatrix[j][i])  &&(i!=j)) return false;  
             }
            }
-        return false; 
+        return true; 
 }
 }

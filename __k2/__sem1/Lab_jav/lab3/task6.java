@@ -8,12 +8,10 @@ public class task6 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number");
         int count = scanner.nextInt();
-        boolean isPrime = true;
         scanner.close();
         System.out.println("Prime numbers");
         for (i = 1; i <= count; i++) {
-            isPrime = PrimeNumbers(i);
-            if (isPrime) {
+            if (PrimeNumbers(i)) {
                 System.out.print(i+" ");
             }
         }
