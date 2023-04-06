@@ -1,4 +1,5 @@
 package __k2.__sem2.diskr.lab4;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
@@ -72,6 +73,7 @@ public class MyFrame  extends JFrame implements ActionListener  {
         b_findCongruentMod.setText("findCongruentMod");
         b_findCongruentMod.setFocusable(false);
         b_findCongruentMod.setHorizontalTextPosition(JButton.CENTER);
+        b_findCongruentMod.setFont(new Font("",Font.BOLD,10));
 
         
         b_exit = new JButton();

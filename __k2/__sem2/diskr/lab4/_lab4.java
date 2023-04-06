@@ -1,19 +1,50 @@
 package __k2.__sem2.diskr.lab4;
 
+import java.util.Scanner;
+
 public class _lab4 {
     public static void main(String[] args) {
         int a = 611;
         int b = 636;
-        System.out.println(findGcd(a, b));
-        System.out.println(findLcm(a, b));
-        System.out.println(primeFactors(a));
-        System.out.println( primeFactors(b));
-        System.out.println(findDivisors(a));
-        System.out.println(findDivisors(b));
-        System.out.println( primeNumbers(a));
-        System.out.println(primeNumbers(b));
-        System.out.println(findCongruentMod(a,b));
-        
+        Scanner scanner = new Scanner(System.in);
+        int choice;
+        do {
+            System.out.println("\n1. findGcd\n2. findLcm\n3. primeFactors\n4. findDivisors \n5. primeNumbers \n6. findCongruentMod \n0. Exit");
+           choice  =scanner.nextInt();
+           switch (choice) {
+               case 1:
+               System.out.println("Gcd\n"+findGcd(a, b));
+                   break;
+                   case 2:
+                   System.out.println("Lcm b\n"+findLcm(a, b));
+                      break;
+                   case 3:
+                   System.out.println("primeFactors a\n"+primeFactors(a));
+
+                   System.out.println("primeFactors b\n"+primeFactors(b));
+                        break;
+                   case 4:
+                   System.out.println("Divisors a\n"+findDivisors(a));
+
+                   System.out.println("Divisors b\n"+findDivisors(b));
+                       break;
+                    case 5:
+                       System.out.println("primeNumbers a\n"+primeNumbers(a));
+    
+                       System.out.println("primeNumbers b\n"+primeNumbers(b));
+                        break;
+                     case 6:
+                           System.out.println("CongruentMod\n"+findCongruentMod(a,b));
+                         break;
+                   case 0:
+                       System.out.println("Exit");
+                          break;
+           
+               default:
+               System.out.println("Input number 0-6");
+               scanner.close();
+           }
+        } while (choice!=0 && choice<6);
     }
     public static Integer findGcd(int a, int b){
         while (b != 0) {
