@@ -16,7 +16,7 @@ public class _lab4 {
                System.out.println("Gcd\n"+findGcd(a, b));
                    break;
                    case 2:
-                   System.out.println("Lcm b\n"+findLcm(a, b));
+                   System.out.println("Lcm\n"+findLcm(a, b));
                       break;
                    case 3:
                    System.out.println("primeFactors a\n"+primeFactors(a));
@@ -64,14 +64,12 @@ public class _lab4 {
             primeFactors += 2 + " ";
             a /= 2;
         }
-
         for (int i = 3; i <= Math.sqrt(a); i += 2) {
             while (a % i == 0) {
                 primeFactors += i + " ";
                 a /= i;
             }
         }
-
         if (a > 2) {
             primeFactors +=  a;
         }
