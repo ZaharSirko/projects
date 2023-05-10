@@ -46,27 +46,30 @@ public class asd {
 
     private static boolean evaluate(String expression, Map<String, Boolean> variableValues) {
         Stack<Boolean> stack = new Stack<>();
+        Stack<Boolean> stack2 = new Stack<>();
+        Stack<Boolean> stack3 = new Stack<>();
         for (int i = 0; i < expression.length(); i++) {
             char c = expression.charAt(i);
             if (Character.isLetter(c)) {
                 stack.push(variableValues.get(String.valueOf(c)));
+                stack2.push(variableValues.get(String.valueOf(c)));
             } else if (c == '!') {
-                stack.push(!stack.pop());
+                stack3.push(!stack.pop());
             } else if (c == '+') {
                 boolean b = stack.pop();
-                boolean a = stack.pop();
-                stack.push(a && b);
-            } else if (c == '-') {
+                boolean a = stack2.pop();
+                stack3.push(a && b);
+            } else if (c == '|') {
                 boolean b = stack.pop();
-                boolean a = stack.pop();
-                stack.push(a || b);
-            } else if (c == '⊕') {
+                boolean a = stack2.pop();
+                stack3.push(a || b);
+            } else if (c == '^') {
                 boolean b = stack.pop();
-                boolean a = stack.pop();
-                stack.push(a ^ b);
+                boolean a = stack2.pop();
+                stack3.push(a ^ b);
             }
         }
-        return stack.pop();
+        return stack3.pop();
     }
 
 }

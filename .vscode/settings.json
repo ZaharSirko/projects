@@ -22,6 +22,7 @@
     ],
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
-      ]
+    ],
+    "cSpell.language": "en,ua,uk"
     
 }
