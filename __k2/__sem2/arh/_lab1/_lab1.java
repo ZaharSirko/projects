@@ -2,14 +2,14 @@ package __k2.__sem2.arh._lab1;
 
 public class _lab1 {
     public static void main(String[] args) {
-        _compositionFactory myMusicFactory = new _music_compos_factory();
-        _compositionFactory myArtFactory  = new _art_compos_factory();
+        _bookingFactory myHotelRoomFactory = new _build_booking_factory();
+        _bookingFactory myBuildFactory  = new _hotel_room_booking_factory();
 
-        _composition myMusicCompos = myMusicFactory.createCar();
-        _composition myArtCompos = myArtFactory.createCar();
+        booking myHotelRoomBooking = myHotelRoomFactory.createCar();
+        booking myBuildBooking = myBuildFactory.createCar();
 
-        System.out.println(myMusicCompos);
-        System.out.println(myArtCompos);
+        System.out.println(myHotelRoomBooking);
+        System.out.println(myBuildBooking);
         
     }
 }

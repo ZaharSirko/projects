@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "_lab3",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.arh._lab3._lab3",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_lab2",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.arh._lab2._lab2",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_lab1",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.arh._lab1._lab1",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "asd6",
+            "request": "launch",
+            "mainClass": "asd3.asd6",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "asd2",
+            "request": "launch",
+            "mainClass": "asd2",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
             "name": "_lab1",
             "request": "launch",
             "mainClass": "__k2.__sem2.arh._lab1",

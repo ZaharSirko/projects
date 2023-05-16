@@ -3,12 +3,12 @@ package __k2.__sem2.arh._lab1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class _composition {
+public class booking {
     String name;
-    List<String> compos = new ArrayList();
+    List<String> booking = new ArrayList();
     
     @Override
     public String toString() {
-        return name +"\n"+compos;
+        return name +"\n"+booking;
     }
 }
