@@ -5,11 +5,8 @@ public class _lab3 {
       _context context = new _context(new _build());
       context.name("a1");
       context.type("a2");
-
       _context context2 = new _context(new _hotel_room());
        context2.name("s1");
-       context2.type("s2");
-
-    
+       context2.type("s2");    
     }
 }

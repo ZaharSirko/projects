@@ -1,8 +1,5 @@
 package __k2.__sem2.arh._lab3;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class _context {
   Strategy strategy;
  public  _context(Strategy strategy){
@@ -14,5 +11,4 @@ public class _context {
       public void type(String type){
          this.strategy.type(type);
       }
-    
 }
