@@ -1,32 +1,23 @@
 package __k2.__sem2.arh.kurs;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class main {
     public static void main(String[] args) {
-        String url = "jdbc:postgresql://localhost:5432/kursova"; // Замініть на своє підключення до бази даних
-        String username = "username"; // Замініть на своє ім'я користувача
-        String password = "boomlog123321"; // Замініть на свій пароль
- 
         try {
-            // Встановлення з'єднання з базою даних
-            Connection connection = DriverManager.getConnection(url, username, password);
-
-            // Виконання запиту
-            String sql = "SELECT * FROM users";
+            Class.forName("org.postgresql.Driver");
+            Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/"+"kursova","postgres","boomlog123321");
+            // Ваш код для виконання запитів до бази даних
+            String sql = "SELECT * FROM routes";
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
 
             // Обробка результатів
             while (resultSet.next()) {
-                int id = resultSet.getInt("id");
-                String name = resultSet.getString("name");
-                String email = resultSet.getString("email");
-                System.out.println("ID: " + id + ", Name: " + name + ", Email: " + email);
+                int id = resultSet.getInt("routes_id");
+                String routes_from = resultSet.getString("routes_from");
+                String routes_direction = resultSet.getString("routes_direction");
+                String routes_to = resultSet.getString("routes_to");
+                System.out.println("ID: " + id + ", Name: " + routes_from + ", routes_direction: " + routes_direction+ ", routes_to: " + routes_to);
             }
 
             // Закриття ресурсів
@@ -35,6 +26,10 @@ public class main {
             connection.close();
         } catch (SQLException e) {
             e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
     }
 }
+

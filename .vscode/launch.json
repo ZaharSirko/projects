@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "asd",
+            "request": "launch",
+            "mainClass": "asd",
+            "projectName": "kurs"
+        },
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "main",
+            "projectName": "kurs"
+        },
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.arh.kurs.main",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
             "name": "_lab3",
             "request": "launch",
             "mainClass": "__k2.__sem2.arh._lab3._lab3",

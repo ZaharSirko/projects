@@ -19,10 +19,13 @@
         "Sequenz",
         "stirng",
         "Sull"
+        
     ],
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar"
-    ],
-    "cSpell.language": "en,ua,uk"
+    "java.jdt.ls.java.home": "",
+    "java.jdt.ls.vmargs": "",
+    "java.configuration.runtimes": [
+
+    ]
+    
     
 }
