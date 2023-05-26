@@ -360,4 +360,4 @@
 
 -- DELETE FROM sold_ticket;
 
--- SELECT * From routes
+SELECT count(*) as "Number of worker" From worker
