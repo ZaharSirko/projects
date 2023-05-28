@@ -7,6 +7,11 @@ public class human {
     protected int age = 0;
     protected String gender;
     public human(){}
+    public human(int id, String name, int age) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }
     public human(int id, String name, String surename, int age) {
         this.id = id;
         this.name = name;

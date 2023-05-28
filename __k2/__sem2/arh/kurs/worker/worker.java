@@ -6,6 +6,10 @@ protected int department = 0;
 protected int workExperience = 0;
 protected int children = 0;
 protected int salary = 0;
+public worker(int id, String name, int age, int department) {
+    super(id, name, age);
+    this.department = department;
+}
 public worker(){
     super();
 }

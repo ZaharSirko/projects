@@ -66,8 +66,7 @@ public class locomative_drivers_DAO extends _connection implements locomative_dr
         try {
             PreparedStatement statement = connection.prepareStatement(" UPDATE locomotive_driver SET locomotive_driver_id =?,locomotive_driver_surename=?,locomotive_driver_name=?"
             + ",locomotive_driver_gender=?,locomotive_driver_work_age=?,locomotive_driver_work_experience=?,locomotive_driver_salary=?,"
-            +  "locomotive_driver_medical_examination_2022=?,locomotive_driver_medical_examination_2023=?"
-            + "(?,?, ?, ?,?, ?, ?,?,?)");
+            +  "locomotive_driver_medical_examination_2022=?,locomotive_driver_medical_examination_2023=?");
             statement.setInt(1, locomative_drivers.getId());
             statement.setString(2, locomative_drivers.getSurename());
             statement.setString(3, locomative_drivers.getName());
@@ -86,7 +85,14 @@ public class locomative_drivers_DAO extends _connection implements locomative_dr
     }
     @Override
     public void deleteLocomativeDrivers(int id) {
-      
+        try {
+            PreparedStatement statement = connection.prepareStatement("DELETE FROM locomotive_driver WHERE locomotive_driver_id = ?");
+            statement.setInt(1, id);
+            statement.executeUpdate();
+            statement.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         
     }
 

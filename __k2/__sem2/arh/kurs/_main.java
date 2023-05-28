@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 
 import __k2.__sem2.arh.kurs.brigade_worker.brigade_worker_request;
+import __k2.__sem2.arh.kurs.locomative.locomative;
+import __k2.__sem2.arh.kurs.locomative.locomative_request;
 import __k2.__sem2.arh.kurs.locomative_drivers.locomative_drivers_request;
 import __k2.__sem2.arh.kurs.railway_station_worker.railway_station_worker_request;
 
@@ -22,6 +24,9 @@ public class _main {
                 break;
                 case 3:
                 new locomative_drivers_request().req3();;
+                break;
+                case 4:
+                new locomative_request().req4_5();
                 break;
         
             default:
