@@ -67,7 +67,7 @@ public class railway_station_worker_DAO extends _connection implements railway_s
         statement.setInt(6, worker.getChildren());
         statement.setString(7, worker.getChief());
         statement.setInt(8, worker.getDepartment());
-        statement.setInt(9, worker.getWorkExp());
+        statement.setInt(9, worker.getWorkExperience());
         statement.setInt(10, worker.getSalary());
         statement.executeUpdate();
         statement.close();
@@ -79,7 +79,7 @@ public class railway_station_worker_DAO extends _connection implements railway_s
     @Override
     public void updateRailwayStationWorker(railway_station_worker worker) {
         try {
-            PreparedStatement statement = connection.prepareStatement("UPDATE worker SET worker_id=?,worker_surename =?,worker_name,worker_age=?,worker_gender=?,"
+            PreparedStatement statement = connection.prepareStatement("UPDATE worker SET worker_id=?,worker_surename =?,worker_name=?,worker_age=?,worker_gender=?,"
             +"worker_children=?,worker_chief=?,worker_department=?,worker_exp=?,worker_salary=?"
             + "(?,?,?,?,?,?,?,?,?,?)");
             statement.setInt(1, worker.getId());
@@ -90,7 +90,7 @@ public class railway_station_worker_DAO extends _connection implements railway_s
             statement.setInt(6, worker.getChildren());
             statement.setString(7, worker.getChief());
             statement.setInt(8, worker.getDepartment());
-            statement.setInt(9, worker.getWorkExp());
+            statement.setInt(9, worker.getWorkExperience());
             statement.setInt(10, worker.getSalary());
             statement.executeUpdate();
             statement.close();

@@ -29,6 +29,7 @@
 --     locomotive_driver_surename text NOT NULL,
 --     locomotive_driver_gender text NOT NULL,
 --     locomotive_driver_salary INTEGER NOT NULL,
+--     locomotive_driver_work_age INTEGER NOT NULL,
 --     locomotive_driver_work_experience INTEGER NOT NULL,
 --     locomotive_driver_medical_examination_2022 text NOT NULL,
 --     locomotive_driver_medical_examination_2023 text NOT NULL

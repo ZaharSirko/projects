@@ -14,7 +14,7 @@ public class railway_station_worker_request extends _connection {
         for (railway_station_worker railway_station_worker : railwayStationWorkers) {
             System.out.println(railway_station_worker.getSurename()+" "+railway_station_worker.getName()
             +" "+railway_station_worker.getAge()+" "+railway_station_worker.getGender()+" "+railway_station_worker.getChildren()
-            +" "+railway_station_worker.getChief()+" "+railway_station_worker.getDepartment()+" "+railway_station_worker.getWorkExp()
+            +" "+railway_station_worker.getChief()+" "+railway_station_worker.getDepartment()+" "+railway_station_worker.getWorkExperience()
             +" "+railway_station_worker.getSalary());
         }
 
@@ -26,7 +26,7 @@ public class railway_station_worker_request extends _connection {
     //     rStation_worker_DAO.addRailwayStationWorker(newRailwayStationWorker);
     // System.out.println("Новий працівник доданий");
 
-    // // Оновлення інформації про працівника
+    // Оновлення інформації про працівника
     // Scanner sc = new Scanner(System.in);
     // System.out.print("Введіть ID працівника для оновлення: ");
     // int updateId = sc.nextInt();
@@ -43,7 +43,7 @@ public class railway_station_worker_request extends _connection {
     //     System.out.println("Працівник з ID " + updateId + " не знайдений");
     // }
 
-    // // Видалення працівника
+    // Видалення працівника
     
     // System.out.print("Введіть ID працівника для видалення: ");
     // int deleteId = sc.nextInt();

@@ -32,14 +32,14 @@
 -- 	(10,'Ситенко', 'Шарлота',70,2,12549);
 
     -- INSERT INTO locomotive_driver(locomotive_driver_id,locomotive_driver_surename,locomotive_driver_name
-    -- ,locomotive_driver_gender,locomotive_driver_work_experience,locomotive_driver_salary,
+    -- ,locomotive_driver_gender,locomotive_driver_work_age,locomotive_driver_work_experience,locomotive_driver_salary,
     -- locomotive_driver_medical_examination_2022,locomotive_driver_medical_examination_2023) VALUEs
-	-- (1,'Устимович', 'Корнило', 'Чоловіча', 35, 12128,'+','+'),
-	-- (2,'Куземський', 'Толигнів', 'Чоловіча', 30, 11812,'+','-'),
-	-- (3,'Лукащук', 'Аркадій', 'Чоловіча', 59, 11037,'+','-'),
-	-- (4,'Лисецька', 'Христя', 'Жіноча  ', 43, 10301,'+','-'),
-	-- (5,'Жигалко', 'Щазина', 'Жіноча  ', 58, 11206,'+','+'),
-	-- (6,'Компанець', 'Юліанія', 'Жіноча  ', 33, 11174,'+','-');
+	-- (1,'Устимович', 'Корнило', 'Чоловіча',53, 33, 12128,'+','+'),
+	-- (2,'Куземський', 'Толигнів', 'Чоловіча',49, 30, 11812,'+','-'),
+	-- (3,'Лукащук', 'Аркадій', 'Чоловіча', 44,20, 11037,'+','-'),
+	-- (4,'Лисецька', 'Христя', 'Жіноча  ', 37,15, 10301,'+','-'),
+	-- (5,'Жигалко', 'Щазина', 'Жіноча  ', 40,19, 11206,'+','+'),
+	-- (6,'Компанець', 'Юліанія', 'Жіноча  ',43, 28, 11174,'+','-');
 
     -- INSERT INTO	locomotive(locomotiveid,locomotive_name,locomotive_age,locomotive_department,
     -- locomotive_completed_routes,locomotive_completed_routes_before_repair) VALUEs
@@ -360,4 +360,6 @@
 
 -- DELETE FROM sold_ticket;
 
-SELECT count(*) as "Number of worker" From worker
+-- SELECT count(*) as "Number of worker" From worker
+
+-- SELECT * from locomotive_driver
