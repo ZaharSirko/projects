@@ -7,6 +7,7 @@ import __k2.__sem2.arh.kurs.brigade_worker.brigade_worker_request;
 import __k2.__sem2.arh.kurs.locomative.locomative;
 import __k2.__sem2.arh.kurs.locomative.locomative_request;
 import __k2.__sem2.arh.kurs.locomative_drivers.locomative_drivers_request;
+import __k2.__sem2.arh.kurs.passengers.passengers_request;
 import __k2.__sem2.arh.kurs.railway_station_worker.railway_station_worker_request;
 import __k2.__sem2.arh.kurs.route.canceled_routes.canceled_routes;
 import __k2.__sem2.arh.kurs.route.canceled_routes.canceled_routes_request;
@@ -21,7 +22,7 @@ public class _main {
     public static void main(String[] args) throws SQLException {
     //     Scanner sc = new Scanner(System.in);
     //    int req =  sc.nextInt();
-        switch (8) {
+        switch (10) {
             case 1:
            new railway_station_worker_request().req1();
                 break;
@@ -42,6 +43,12 @@ public class _main {
                 break;
                 case 8:
                 new delayed_routes_request().getAlldelayed_routess();
+                break;
+                case 9:
+              
+                break;
+                case 10:
+                new passengers_request().getAllPassengers();
                 break;
         
             default:
