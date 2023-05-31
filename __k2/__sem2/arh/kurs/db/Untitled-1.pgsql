@@ -133,6 +133,7 @@
 -- 	(8,20,'Погодні умови'),
 -- 	(9,10,'Погодні умови');
 
+
 -- INSERT INTO canceled_routes(canceled_routes_id,canceled_routes_type,routes_id) VALUES
 -- 	(1,'Рейс',11),
 -- 	(2,'Рейс',12),
@@ -161,6 +162,7 @@
 -- 	(25,'Маршрут',36),
 -- 	(26,'Маршрут',37),
 -- 	(27,'Маршрут',38);
+
 
 -- INSERT into sold_ticket(sold_ticket,routes_id,sold_ticket_hour,sold_ticket_week,
 -- sold_ticket_mounth) values

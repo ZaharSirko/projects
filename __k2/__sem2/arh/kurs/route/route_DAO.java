@@ -7,7 +7,7 @@ import java.util.List;
 import __k2.__sem2.arh.kurs._connection;
 
 public class route_DAO extends _connection implements route_interface {
-    route_DAO(){
+    public route_DAO(){
      conn();
     }
 
@@ -100,5 +100,6 @@ public class route_DAO extends _connection implements route_interface {
     }
         return routes;
     }
+
 }
 

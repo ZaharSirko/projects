@@ -61,19 +61,19 @@
 -- temp_group.group_id= new_tb.group_id;
 
 
-CREATE TEMP TABLE temp_group AS
-(SELECT *
-FROM groups);
-INSERT INTO temp_group(group_id,group_name)
-VALUES(6,
-'ІП-21-4');
-CREATE TEMP TABLE temp_student AS
-(SELECT *
-FROM students);
-INSERT INTO temp_student(student_id,group_id,std_name)
-VALUES(20,
-4,
-'Анжрій');
-SELECT *
-FROM temp_group CROSS
-JOIN temp_student ;
+-- CREATE TEMP TABLE temp_group AS
+-- (SELECT *
+-- FROM groups);
+-- INSERT INTO temp_group(group_id,group_name)
+-- VALUES(6,
+-- 'ІП-21-4');
+-- CREATE TEMP TABLE temp_student AS
+-- (SELECT *
+-- FROM students);
+-- INSERT INTO temp_student(student_id,group_id,std_name)
+-- VALUES(20,
+-- 4,
+-- 'Анжрій');
+-- SELECT *
+-- FROM temp_group CROSS
+-- JOIN temp_student ;

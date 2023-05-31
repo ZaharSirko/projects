@@ -5,6 +5,9 @@ public class route {
     private String from;
     private String direction;
     private String to;
+    public route(int id) {
+        this.id = id;
+    }
     public route(){}
     public route(int id, String from, String direction, String to) {
         this.id = id;
