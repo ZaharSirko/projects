@@ -8,11 +8,20 @@ public class _lab6 {
         boolean[] x = {false, false, false, false, true, true, true, true};
         boolean[] y = {false, false, true, true, false, false, true, true};
         boolean[] z = {false, true, false, true, false, true, false, true};
-        boolean[] f = {false, false, false, false, false, false, false, false};
+
+        // boolean[] x = {false, false, false, true, true, true, true, false};
+        // boolean[] y = {false, false, true, false, false, false, false, false};
+        // boolean[] z = {true, true, false, false, false, false, false, true};
+
+        boolean[] f = {false, true, false, false, false, false, false, true};
 
         String functionType = getFunctionType(f);
         System.out.println("Тип булевої функції: " + functionType);
-
+         
+        System.out.println(isLinier(x, y, z));
+         System.out.println("saveZero " +saveZero(f));
+         System.out.println("saveOne "  + saveOne(f));
+        
 
         String ddnf = getDDNF(x, y, z, f);
         System.out.println("ДДНФ: " + ddnf);
@@ -20,6 +29,28 @@ public class _lab6 {
         String dknf = getDKNF(x, y, z, f);
         System.out.println("ДКНФ: " + dknf);
     }
+
+ private static boolean isLinier(boolean[] x,boolean[]y,boolean[]z){
+   for (int i = 0; i < z.length; i++) {
+    if(((x[i]&&y[i]==true)||((x[i]&&z[i])==true))){
+        return false;
+    }
+   }
+    return true;
+ }
+ private static boolean saveZero(boolean[] f){
+    if(f[0]==true){
+        return false;
+    }
+     return true;
+  }
+  private static boolean saveOne(boolean[] f){
+    if(f[f.length-1]==false){
+        return false;
+    }
+     return true;
+  }
+
 
     private static String getFunctionType(boolean[] f) {
         boolean hasTrue = false;

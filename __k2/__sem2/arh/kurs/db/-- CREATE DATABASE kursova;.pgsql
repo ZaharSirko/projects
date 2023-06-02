@@ -89,12 +89,14 @@
 -- );
 
 -- CREATE TABLE  not_redeemed_tickets(
+--     tickets_id INTEGER not null,
 --     routes_id INTEGER not null,
 --     not_redeemed_tickets_type text,
 --     not_redeemed_tickets_count INTEGER NOT NULL
 -- );
 
 -- CREATE TABLE  redeemed_tickets(
+--     tickets_id INTEGER not null,
 --     routes_id INTEGER not null,
 --     redeemed_tickets_type text,
 --     redeemed_tickets_count INTEGER NOT NULL
