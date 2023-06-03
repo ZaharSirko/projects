@@ -18,13 +18,20 @@ import __k2.__sem2.arh.kurs.ticket.redeemed_tickets.redeemed_tickets_request;
 import __k2.__sem2.arh.kurs.ticket.sold_ticket.sold_ticket_request;
 import __k2.__sem2.arh.kurs.train.train;
 import __k2.__sem2.arh.kurs.train.train_request;
+import javafx.application.Application;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 
 
-public class _main {
+public class _main extends Application {
     public static void main(String[] args) throws SQLException {
     //     Scanner sc = new Scanner(System.in);
     //    int req =  sc.nextInt();
+    launch(args);
         switch (12) {
             case 1:
            new railway_station_worker_request().req1();
@@ -63,6 +70,14 @@ public class _main {
             default:
                 break;
         } 
+    }
+
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("railway_station_worker.fxml"));
+        stage.setScene(new Scene(root));
+        stage.show();
     }
 }
 

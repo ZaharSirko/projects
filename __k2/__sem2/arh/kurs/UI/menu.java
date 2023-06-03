@@ -1,4 +1,4 @@
-package __k2.__sem2.arh.UI;
+package __k2.__sem2.arh.kurs.UI;
 
 import java.io.IOException;
 import java.net.URL;

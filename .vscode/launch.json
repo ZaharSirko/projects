@@ -6,6 +6,14 @@
     "configurations": [
         {
             "type": "java",
+            "name": "_main",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.arh.kurs._main",
+            "projectName": "projects_46f35c64",
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-20.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
             "name": "_lab6",
             "request": "launch",
             "mainClass": "__k2.__sem2.diskr.lab6._lab6",
@@ -16,13 +24,6 @@
             "name": "_lab7",
             "request": "launch",
             "mainClass": "__k2.__sem2.diskr.lab7._lab7",
-            "projectName": "projects_46f35c64"
-        },
-        {
-            "type": "java",
-            "name": "_main",
-            "request": "launch",
-            "mainClass": "__k2.__sem2.arh.kurs._main",
             "projectName": "projects_46f35c64"
         },
         {
