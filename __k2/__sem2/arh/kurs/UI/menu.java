@@ -66,7 +66,17 @@ public class menu extends scene_{
     @FXML
     void initialize() {
         switchToScen(railway_station_worker_button,"/__k2/__sem2/arh/kurs/UI/humans/railway_station_worker.fxml");
-
+        switchToScen(brigade_worker_button,"/__k2/__sem2/arh/kurs/UI/humans/brigade_worker.fxml");
+        switchToScen(locomative_drivers_button,"/__k2/__sem2/arh/kurs/UI/humans/locomative_drivers.fxml");
+        switchToScen(locomative_button,"/__k2/__sem2/arh/kurs/UI/train_locmomative/locomative.fxml");
+        switchToScen(train_button,"/__k2/__sem2/arh/kurs/UI/train_locmomative/train.fxml");
+        switchToScen(canceled_routes_button,"/__k2/__sem2/arh/kurs/UI/route/canceled_routes.fxml");
+        switchToScen(delayed_routes_button,"/__k2/__sem2/arh/kurs/UI/route/delayed_routes.fxml");
+        switchToScen(sold_ticket_button,"/__k2/__sem2/arh/kurs/UI/ticket/sold_ticket.fxml");
+        switchToScen(passengers_button,"/__k2/__sem2/arh/kurs/UI/humans/passengers.fxml");
+        switchToScen(not_redeemed_tickets_button,"/__k2/__sem2/arh/kurs/UI/ticket/not_redeemed_tickets.fxml");
+        switchToScen(redeemed_tickets_button,"/__k2/__sem2/arh/kurs/UI/ticket/redeemed_tickets.fxml");
+        switchToScen(routes_button,"/__k2/__sem2/arh/kurs/UI/route/route.fxml");
     }
   
 }

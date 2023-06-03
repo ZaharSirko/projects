@@ -2,13 +2,15 @@ package __k2.__sem2.arh.kurs.UI.train_locmomative;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import __k2.__sem2.arh.kurs.UI.scene_;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
-public class locomative_ui {
+public class locomative_ui extends scene_ {
 
     @FXML
     private ResourceBundle resources;
@@ -72,7 +74,7 @@ public class locomative_ui {
 
     @FXML
     void initialize() {
-       
+        switchBack(back_button);
 
     }
 }
