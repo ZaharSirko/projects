@@ -25,8 +25,8 @@
     "java.jdt.ls.vmargs": "",
     "java.configuration.runtimes": [
         {
-          "name": "JavaSE-1.8",
-          "path": "C:/Program Files/Java/jdk-18.0.2",
+          "name": "JavaSE-20",
+          "path": "C:/Program Files/Java/jdk-20",
         }],
     "java.completion.filteredTypes":[
 

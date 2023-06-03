@@ -1,12 +1,14 @@
 package __k2.__sem2.arh.kurs.UI;
 
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import javafx.application.Application;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -14,10 +16,7 @@ import javafx.stage.Stage;
 
 
 
-public class menu{
-    private Stage stage;
-    private Scene scene;
-    private Parent root;
+public class menu extends scene_{
 
     @FXML
     private ResourceBundle resources;
@@ -66,16 +65,9 @@ public class menu{
 
     @FXML
     void initialize() {
-        // railway_station_worker_button.setOnAction(event ->{
-        //     root = FXMLLoader.load(getClass().getResource("Scene1.fxml"));
-        //     stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        //     scene = new Scene(root);
-        //     stage.setScene(scene);
-        //     stage.show();
-        // });
+        switchToScen(railway_station_worker_button,"/__k2/__sem2/arh/kurs/UI/humans/railway_station_worker.fxml");
 
     }
-
   
 }
 

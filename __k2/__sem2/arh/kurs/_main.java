@@ -27,11 +27,11 @@ import javafx.stage.Stage;
 
 
 
-public class _main extends Application {
+public class _main extends  Application  {
     public static void main(String[] args) throws SQLException {
     //     Scanner sc = new Scanner(System.in);
     //    int req =  sc.nextInt();
-    launch(args);
+     launch();
         switch (12) {
             case 1:
            new railway_station_worker_request().req1();
@@ -73,11 +73,11 @@ public class _main extends Application {
     }
 
 
-    @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("railway_station_worker.fxml"));
-        stage.setScene(new Scene(root));
-        stage.show();
-    }
+     @Override
+     public void start(Stage stage) throws Exception {
+         Parent root = FXMLLoader.load(getClass().getResource("menu.fxml"));
+         stage.setScene(new Scene(root));
+         stage.show();
+     }
 }
 
