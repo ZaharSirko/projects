@@ -4,6 +4,9 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import __k2.__sem2.arh.kurs.UI.scene_;
+import __k2.__sem2.arh.kurs.locomative.locomative;
+import __k2.__sem2.arh.kurs.locomative_drivers.locomative_drivers;
+import __k2.__sem2.arh.kurs.locomative_drivers.locomative_drivers_model;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -22,34 +25,34 @@ public class locomative_drivers_ui extends scene_ {
     private Button back_button;
 
     @FXML
-    private TableView<?> table;
+    private TableView<locomative_drivers_model> table;
 
     @FXML
-    private TableColumn<?, ?> id_column;
+    private TableColumn<locomative_drivers_model, Integer> id_column;
 
     @FXML
-    private TableColumn<?, ?> surename_column;
+    private TableColumn<locomative_drivers_model, String> surename_column;
 
     @FXML
-    private TableColumn<?, ?> name_column;
+    private TableColumn<locomative_drivers_model, String> name_column;
 
     @FXML
-    private TableColumn<?, ?> gender_column;
+    private TableColumn<locomative_drivers_model, String> gender_column;
 
     @FXML
-    private TableColumn<?, ?> age_column;
+    private TableColumn<locomative_drivers_model, Integer> age_column;
 
     @FXML
-    private TableColumn<?, ?> work_exp_column;
+    private TableColumn<locomative_drivers_model, Integer> work_exp_column;
 
     @FXML
-    private TableColumn<?, ?> sallary_column;
+    private TableColumn<locomative_drivers_model, Integer> sallary_column;
 
     @FXML
-    private TableColumn<?, ?> medical_examination_2022_column;
+    private TableColumn<locomative_drivers_model, String> medical_examination_2022_column;
 
     @FXML
-    private TableColumn<?, ?> medical_examination_2023_column;
+    private TableColumn<locomative_drivers_model, String> medical_examination_2023_column;
 
     @FXML
     private Button uptade_button;

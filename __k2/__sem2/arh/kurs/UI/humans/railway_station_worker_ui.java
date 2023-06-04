@@ -2,14 +2,20 @@ package __k2.__sem2.arh.kurs.UI.humans;
 
 
 import __k2.__sem2.arh.kurs.UI.scene_;
+import __k2.__sem2.arh.kurs.railway_station_worker.railway_station_worker;
+import __k2.__sem2.arh.kurs.railway_station_worker.railway_station_worker_model;
 
 import java.net.URL;
+
 import java.util.ResourceBundle;
+
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+
 
 public class railway_station_worker_ui extends scene_ {
 
@@ -23,34 +29,34 @@ public class railway_station_worker_ui extends scene_ {
     private Button back_button;
 
     @FXML
-    private TableView<?> table;
+    private TableView<railway_station_worker_model> table;
 
     @FXML
-    private TableColumn<?, ?> id_column;
+    private TableColumn<railway_station_worker_model, Integer> id_column;
 
     @FXML
-    private TableColumn<?, ?> surename_column;
+    private TableColumn<railway_station_worker_model, String> surename_column;
 
     @FXML
-    private TableColumn<?, ?> name_column;
+    private TableColumn<railway_station_worker_model, String> name_column;
 
     @FXML
-    private TableColumn<?, ?> gender_column;
+    private TableColumn<railway_station_worker_model, String> gender_column;
 
     @FXML
-    private TableColumn<?, ?> children_column;
+    private TableColumn<railway_station_worker_model, Integer> children_column;
 
     @FXML
-    private TableColumn<?, ?> chief_column;
+    private TableColumn<railway_station_worker_model, String> chief_column;
 
     @FXML
-    private TableColumn<?, ?> department_column;
+    private TableColumn<railway_station_worker_model, Integer> department_column;
 
     @FXML
-    private TableColumn<?, ?> work_exp_column;
+    private TableColumn<railway_station_worker_model, Integer> work_exp_column;
 
     @FXML
-    private TableColumn<?, ?> sallary_column;
+    private TableColumn<railway_station_worker_model, Integer> sallary_column;
 
     @FXML
     private Button select_department_button;
@@ -97,9 +103,13 @@ public class railway_station_worker_ui extends scene_ {
     @FXML
     private TextField sallaey_field;
 
+
+
+
     @FXML
     void initialize() {
-        switchBack(back_button);
+ 
+      switchBack(back_button);
 
     }
 }

@@ -4,6 +4,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import __k2.__sem2.arh.kurs.UI.scene_;
+import __k2.__sem2.arh.kurs.passengers.passengers;
+import __k2.__sem2.arh.kurs.passengers.passengers_model;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -22,25 +24,25 @@ public class passengers_ui extends scene_ {
     private Button back_button;
 
     @FXML
-    private TableView<?> table;
+    private TableView<passengers_model> table;
 
     @FXML
-    private TableColumn<?, ?> id_column;
+    private TableColumn<passengers_model, Integer> id_column;
 
     @FXML
-    private TableColumn<?, ?> surename_column;
+    private TableColumn<passengers_model, String> surename_column;
 
     @FXML
-    private TableColumn<?, ?> name_column;
+    private TableColumn<passengers_model, String> name_column;
 
     @FXML
-    private TableColumn<?, ?> gender_column;
+    private TableColumn<passengers_model, String> gender_column;
 
     @FXML
-    private TableColumn<?, ?> age_column;
+    private TableColumn<passengers_model, Integer> age_column;
 
     @FXML
-    private TableColumn<?, ?> routes_to_column;
+    private TableColumn<passengers_model, Integer> routes_to_column;
 
     @FXML
     private Button uptade_button;

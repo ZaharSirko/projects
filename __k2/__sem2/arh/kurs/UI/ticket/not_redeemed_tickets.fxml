@@ -47,11 +47,11 @@
                <columns>
                   <TableColumn fx:id="id_column" editable="false" prefWidth="106.0" text="ID" />
                   <TableColumn fx:id="type_column" editable="false" prefWidth="96.0" text="Type" />
-                  <TableColumn fx:id="from_column" editable="false" prefWidth="89.0" text="From" />
+                  <TableColumn fx:id="routes_from_column" editable="false" prefWidth="89.0" text="From" />
                   <TableColumn fx:id="direction_column" editable="false" prefWidth="78.0" text="Direction" />
-                  <TableColumn fx:id="to_column" editable="false" prefWidth="119.0" text="To" />
+                  <TableColumn fx:id="routes_to_column" editable="false" prefWidth="119.0" text="To" />
                   <TableColumn fx:id="not_redeemed_tickets_column" editable="false" prefWidth="192.0" text="Not redeemed tickets" />
-                  <TableColumn fx:id="route_id_column" editable="false" prefWidth="106.0" text="Route ID" />
+                  <TableColumn fx:id="routes_id_column" editable="false" prefWidth="106.0" text="Route ID" />
                </columns>
             </TableView>
          </children>
@@ -69,7 +69,7 @@
       <TextField fx:id="from_field" layoutX="433.0" layoutY="551.0" prefHeight="25.0" prefWidth="102.0" promptText="from" />
       <TextField fx:id="name_field" layoutX="311.0" layoutY="551.0" prefHeight="25.0" prefWidth="102.0" promptText="type" />
       <TextField fx:id="direction_field" layoutX="546.0" layoutY="551.0" prefHeight="25.0" prefWidth="102.0" promptText="direction" />
-      <TextField fx:id="id_ield" layoutX="191.0" layoutY="551.0" prefHeight="25.0" prefWidth="102.0" promptText="id" />
+      <TextField fx:id="id_field" layoutX="191.0" layoutY="551.0" prefHeight="25.0" prefWidth="102.0" promptText="id" />
       <TextField fx:id="not_redeemed_tickets_field" layoutX="792.0" layoutY="551.0" prefHeight="25.0" prefWidth="187.0" promptText="Not redeemed tickets" />
       <Button fx:id="delete_button" layoutX="18.0" layoutY="116.0" mnemonicParsing="false" style="-fx-background-color: #000;" text="Видалити" textFill="#979797">
          <font>

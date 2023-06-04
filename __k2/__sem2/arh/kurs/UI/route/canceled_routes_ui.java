@@ -1,14 +1,20 @@
 package __k2.__sem2.arh.kurs.UI.route;
 
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 import __k2.__sem2.arh.kurs.UI.scene_;
+import __k2.__sem2.arh.kurs.route.canceled_routes.canceled_routes_model;
+import __k2.__sem2.arh.kurs.route.canceled_routes.canceled_routes_request;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+
 
 public class canceled_routes_ui extends scene_ {
 
@@ -22,25 +28,25 @@ public class canceled_routes_ui extends scene_ {
     private Button back_button;
 
     @FXML
-    private TableView<?> table;
+    private TableView<canceled_routes_model> table;
 
     @FXML
-    private TableColumn<?, ?> routes_id_column;
+    private TableColumn<canceled_routes_model, Integer> routes_id_column;
 
     @FXML
-    private TableColumn<?, ?> routes_from_column;
+    private TableColumn<canceled_routes_model, String> routes_from_column;
 
     @FXML
-    private TableColumn<?, ?> direction_column;
+    private TableColumn<canceled_routes_model, String> direction_column;
 
     @FXML
-    private TableColumn<?, ?> routes_to_column;
+    private TableColumn<canceled_routes_model, String> routes_to_column;
 
     @FXML
-    private TableColumn<?, ?> id_column;
+    private TableColumn<canceled_routes_model, Integer> id_column;
 
     @FXML
-    private TableColumn<?, ?> type_column;
+    private TableColumn<canceled_routes_model, String> type_column;
 
     @FXML
     private Button uptade_button;
@@ -72,9 +78,34 @@ public class canceled_routes_ui extends scene_ {
     @FXML
     private TextField type_field;
 
-    @FXML
-    void initialize() {
-        switchBack(back_button);
+    private canceled_routes_request canceledRoutes;
 
+    private ObservableList<canceled_routes_model> canceledRouteModels;
+
+    @FXML
+    void initialize() throws SQLException {
+        switchBack(back_button);
+        canceledRoutes = new canceled_routes_request();
+        canceledRouteModels = FXCollections.observableArrayList();
+
+    
+        routes_id_column.setCellValueFactory(cellData->cellData.getValue().getRouteId().asObject());
+        id_column.setCellValueFactory(cellData->cellData.getValue().getCanceledRoutesId().asObject());
+        routes_from_column.setCellValueFactory(cellData->cellData.getValue().getRoutesFrom());
+        direction_column.setCellValueFactory(cellData->cellData.getValue().getRoutesDirection());
+        routes_to_column.setCellValueFactory(cellData->cellData.getValue().getRoutesTo());
+        type_column.setCellValueFactory(cellData->cellData.getValue().getCanceledRoutesType());
+
+       
+        try {
+            canceledRouteModels.addAll(canceledRoutes.getAllCanceledRoutes());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+        table.setItems(canceledRouteModels);
+
+        connection.close();
     }
 }

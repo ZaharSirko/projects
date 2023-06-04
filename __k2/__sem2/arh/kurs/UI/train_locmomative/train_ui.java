@@ -4,6 +4,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import __k2.__sem2.arh.kurs.UI.scene_;
+import __k2.__sem2.arh.kurs.train.train;
+import __k2.__sem2.arh.kurs.train.train_model;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -22,31 +24,31 @@ public class train_ui extends scene_ {
     private Button back_button;
 
     @FXML
-    private TableView<?> table;
+    private TableView<train_model> table;
 
     @FXML
-    private TableColumn<?, ?> id_column;
+    private TableColumn<train_model, Integer> id_column;
 
     @FXML
-    private TableColumn<?, ?> routes_id_column;
+    private TableColumn<train_model, Integer> routes_id_column;
 
     @FXML
-    private TableColumn<?, ?> name_column1;
+    private TableColumn<train_model, String> name_column1;
 
     @FXML
-    private TableColumn<?, ?> ticket_price_column;
+    private TableColumn<train_model, Integer> ticket_price_column;
 
     @FXML
-    private TableColumn<?, ?> routes_duration_column;
+    private TableColumn<train_model, Integer> routes_duration_column;
 
     @FXML
-    private TableColumn<?, ?> routes_from_column;
+    private TableColumn<train_model,Integer> routes_from_column;
 
     @FXML
-    private TableColumn<?, ?> direction_column;
+    private TableColumn<train_model, Integer> direction_column;
 
     @FXML
-    private TableColumn<?, ?> routes_to_column;
+    private TableColumn<train_model, Integer> routes_to_column;
 
     @FXML
     private Button uptade_button;

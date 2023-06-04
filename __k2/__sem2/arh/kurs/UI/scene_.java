@@ -1,13 +1,14 @@
 package __k2.__sem2.arh.kurs.UI;
 import java.io.IOException;
 
+import __k2.__sem2.arh.kurs._connection;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-public class scene_ {
+public class scene_ extends _connection {
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -28,7 +29,7 @@ public class scene_ {
     public void switchBack(Button button){
         button.setOnAction(event ->{
                 try {
-                    root = FXMLLoader.load(getClass().getResource("/__k2/__sem2/arh/kurs/menu.fxml"));
+                    root = FXMLLoader.load(getClass().getResource("/__k2/__sem2/arh/kurs/UI/menu.fxml"));
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

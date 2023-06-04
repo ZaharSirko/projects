@@ -6,7 +6,7 @@ import java.util.List;
 import __k2.__sem2.arh.kurs._connection;
 
 public class railway_station_worker_DAO extends _connection implements railway_station_worker_interface {
-    railway_station_worker_DAO(){
+    public railway_station_worker_DAO(){
         conn();
     }
     @Override
@@ -37,6 +37,8 @@ public class railway_station_worker_DAO extends _connection implements railway_s
         }
         return railway_station_workers;
     }
+
+
 
     @Override
     public int NumberOfRailwayStationWorker() {
