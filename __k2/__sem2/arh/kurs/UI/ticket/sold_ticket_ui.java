@@ -1,11 +1,15 @@
 package __k2.__sem2.arh.kurs.UI.ticket;
 
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 import __k2.__sem2.arh.kurs.UI.scene_;
 
 import __k2.__sem2.arh.kurs.ticket.sold_ticket.sold_ticket_model;
+import __k2.__sem2.arh.kurs.ticket.sold_ticket.sold_ticket_request;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -92,9 +96,36 @@ public class sold_ticket_ui extends scene_ {
     @FXML
     private TextField sold_ticket_mounth_column_field;
 
-    @FXML
-    void initialize() {
-        switchBack(back_button);
+    private sold_ticket_request  sold_ticket;
 
+    private ObservableList<sold_ticket_model>  sold_ticket_model;
+    @FXML
+    void initialize() throws SQLException {
+        switchBack(back_button);
+        sold_ticket = new  sold_ticket_request();
+        sold_ticket_model = FXCollections.observableArrayList();
+
+       id_column.setCellValueFactory(cellData->cellData.getValue().getTicket_id().asObject());
+       type_column.setCellValueFactory(cellData->cellData.getValue().getType());
+       route_id_column.setCellValueFactory(cellData->cellData.getValue().getRouteId().asObject());
+       from_column.setCellValueFactory(cellData->cellData.getValue().getRoutesFrom());
+       direction_column.setCellValueFactory(cellData->cellData.getValue().getRoutesDirection());
+       to_column.setCellValueFactory(cellData->cellData.getValue().getRoutesTo());
+       sold_ticket_hour_column.setCellValueFactory(cellData->cellData.getValue().getSold_ticket_hour().asObject());
+       sold_ticket_week_column.setCellValueFactory(cellData->cellData.getValue().getSold_ticket_week().asObject());
+       sold_ticket_mounth_column.setCellValueFactory(cellData->cellData.getValue().getSold_ticket_mounth().asObject());
+    
+
+      
+       try {
+        sold_ticket_model.addAll( sold_ticket.getAllSoldTickets());
+       } catch (SQLException e) {
+           e.printStackTrace();
+       }
+
+
+       table.setItems( sold_ticket_model);
+
+       connection.close();
     }
 }

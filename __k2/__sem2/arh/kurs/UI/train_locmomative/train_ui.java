@@ -1,11 +1,15 @@
 package __k2.__sem2.arh.kurs.UI.train_locmomative;
 
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 import __k2.__sem2.arh.kurs.UI.scene_;
 import __k2.__sem2.arh.kurs.train.train;
 import __k2.__sem2.arh.kurs.train.train_model;
+import __k2.__sem2.arh.kurs.train.train_request;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -42,13 +46,13 @@ public class train_ui extends scene_ {
     private TableColumn<train_model, Integer> routes_duration_column;
 
     @FXML
-    private TableColumn<train_model,Integer> routes_from_column;
+    private TableColumn<train_model,String> routes_from_column;
 
     @FXML
-    private TableColumn<train_model, Integer> direction_column;
+    private TableColumn<train_model, String> direction_column;
 
     @FXML
-    private TableColumn<train_model, Integer> routes_to_column;
+    private TableColumn<train_model, String> routes_to_column;
 
     @FXML
     private Button uptade_button;
@@ -86,9 +90,44 @@ public class train_ui extends scene_ {
     @FXML
     private TextField route_to_field;
 
-    @FXML
-    void initialize() {
-        switchBack(back_button);
+    private train_request  train;
 
+    private ObservableList<train_model>  train_model;
+
+    @FXML
+    void initialize() throws SQLException {
+        switchBack(back_button);
+        train = new  train_request();
+        train_model = FXCollections.observableArrayList();
+
+        id_column.setCellValueFactory(cellData->cellData.getValue().getTrain_id().asObject());
+    
+        routes_id_column.setCellValueFactory(cellData->cellData.getValue().getRouteId().asObject());
+    
+        name_column1.setCellValueFactory(cellData->cellData.getValue().getTrain_name());
+    
+        ticket_price_column.setCellValueFactory(cellData->cellData.getValue().getRoutes_ticket_price().asObject());
+    
+        routes_duration_column.setCellValueFactory(cellData->cellData.getValue().getRoutes_duration().asObject());
+    
+        routes_from_column.setCellValueFactory(cellData->cellData.getValue().getRoutesFrom());
+    
+        direction_column.setCellValueFactory(cellData->cellData.getValue().getRoutesDirection());
+    
+        routes_to_column.setCellValueFactory(cellData->cellData.getValue().getRoutesTo());
+    
+    
+
+      
+       try {
+        train_model.addAll( train.getAllTrainRoute());
+       } catch (SQLException e) {
+           e.printStackTrace();
+       }
+
+
+       table.setItems( train_model);
+
+       connection.close();
     }
 }

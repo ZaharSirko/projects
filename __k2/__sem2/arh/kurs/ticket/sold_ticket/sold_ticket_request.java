@@ -18,7 +18,7 @@ public class sold_ticket_request extends _connection {
 
         connection.close();
     }
-    public List<sold_ticket_model> getAllDelayedRoutes() throws SQLException {
+    public List<sold_ticket_model> getAllSoldTickets() throws SQLException {
         List<sold_ticket_model> SoldTicket = new ArrayList<>();
  
         List<sold_ticket> SoldTicketList = new sold_ticket_DAO().getAllSoldTicket();

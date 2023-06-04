@@ -1,11 +1,15 @@
 package __k2.__sem2.arh.kurs.UI.train_locmomative;
 
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 import __k2.__sem2.arh.kurs.UI.scene_;
 
 import __k2.__sem2.arh.kurs.locomative.locomative_model;
+import __k2.__sem2.arh.kurs.locomative.locomative_request;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -74,9 +78,35 @@ public class locomative_ui extends scene_ {
     @FXML
     private TextField completed_routes_field;
 
-    @FXML
-    void initialize() {
-        switchBack(back_button);
+    private locomative_request  locomative;
 
+    private ObservableList<locomative_model>  locomative_model;
+
+    @FXML
+    void initialize() throws SQLException {
+        switchBack(back_button);
+        locomative = new  locomative_request();
+        locomative_model = FXCollections.observableArrayList();
+
+    id_column.setCellValueFactory(cellData->cellData.getValue().getHuman_id().asObject());
+    name_column.setCellValueFactory(cellData->cellData.getValue().getName());
+    age_column.setCellValueFactory(cellData->cellData.getValue().getAge().asObject());
+    department_column.setCellValueFactory(cellData->cellData.getValue().getDepartment().asObject());
+    completed_routes_column.setCellValueFactory(cellData->cellData.getValue().getCompleted_routes().asObject());
+    completed_routes_before_repair_column.setCellValueFactory(cellData->cellData.getValue().getCompleted_routes_before_repair().asObject());
+    
+
+      
+       try {
+        locomative_model.addAll( locomative.getAllLocamatives());
+       } catch (SQLException e) {
+           e.printStackTrace();
+       }
+
+
+       table.setItems( locomative_model);
+
+       connection.close();
+   }
     }
-}
+

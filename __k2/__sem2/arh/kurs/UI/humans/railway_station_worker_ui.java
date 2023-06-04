@@ -4,12 +4,14 @@ package __k2.__sem2.arh.kurs.UI.humans;
 import __k2.__sem2.arh.kurs.UI.scene_;
 import __k2.__sem2.arh.kurs.railway_station_worker.railway_station_worker;
 import __k2.__sem2.arh.kurs.railway_station_worker.railway_station_worker_model;
+import __k2.__sem2.arh.kurs.railway_station_worker.railway_station_worker_request;
 
 import java.net.URL;
-
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
-
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -104,12 +106,44 @@ public class railway_station_worker_ui extends scene_ {
     private TextField sallaey_field;
 
 
+    private railway_station_worker_request  railway_station_worker;
 
+    private ObservableList<railway_station_worker_model>  railway_station_worker_model;
 
     @FXML
-    void initialize() {
+    void initialize() throws SQLException {
  
       switchBack(back_button);
+      railway_station_worker = new  railway_station_worker_request();
+      railway_station_worker_model = FXCollections.observableArrayList();
 
+      id_column.setCellValueFactory(cellData->cellData.getValue().getHuman_id().asObject());
+
+     surename_column.setCellValueFactory(cellData->cellData.getValue().getSurename());
+  
+      name_column.setCellValueFactory(cellData->cellData.getValue().getName());
+  
+      gender_column.setCellValueFactory(cellData->cellData.getValue().getGender());
+  
+      children_column.setCellValueFactory(cellData->cellData.getValue().getChildren().asObject());
+  
+     chief_column.setCellValueFactory(cellData->cellData.getValue().getChief());
+  
+      department_column.setCellValueFactory(cellData->cellData.getValue().getDepartment().asObject());
+  
+      work_exp_column.setCellValueFactory(cellData->cellData.getValue().getWorkExperience().asObject());
+  
+       sallary_column.setCellValueFactory(cellData->cellData.getValue().getSalary().asObject());
+
+       try {
+        railway_station_worker_model.addAll(railway_station_worker.getAllRailwayStationWorker());
+       } catch (SQLException e) {
+           e.printStackTrace();
+       }
+
+
+       table.setItems( railway_station_worker_model);
+
+       connection.close();
     }
 }

@@ -1,7 +1,7 @@
 package __k2.__sem2.arh.kurs;
 import java.sql.SQLException;
 
-import __k2.__sem2.arh.kurs.ticket.not_redeemed_tickets.not_redeemed_tickets_request;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 public class _main extends  Application  {
     public static void main(String[] args) throws SQLException {
      launch();
-    // new not_redeemed_tickets_request().getAllNotRedeemedTickets();
+
     }
 
 

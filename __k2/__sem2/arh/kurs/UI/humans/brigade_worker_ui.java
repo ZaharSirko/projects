@@ -1,11 +1,15 @@
 package __k2.__sem2.arh.kurs.UI.humans;
 
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 import __k2.__sem2.arh.kurs.UI.scene_;
 import __k2.__sem2.arh.kurs.brigade_worker.brigade_worker;
 import __k2.__sem2.arh.kurs.brigade_worker.brigade_worker_model;
+import __k2.__sem2.arh.kurs.brigade_worker.brigade_worker_request;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -84,9 +88,37 @@ public class brigade_worker_ui extends scene_ {
     @FXML
     private TextArea avg_sallary_field;
 
+    private brigade_worker_request  brigade_worker;
+
+    private ObservableList<brigade_worker_model>  brigade_worker_model;
     @FXML
-    void initialize() {
+    void initialize() throws SQLException {
         switchBack(back_button);
 
+        brigade_worker = new  brigade_worker_request();
+        brigade_worker_model = FXCollections.observableArrayList();
+        
+       id_column.setCellValueFactory(cellData->cellData.getValue().getHuman_id().asObject());
+    
+     surename_column.setCellValueFactory(cellData->cellData.getValue().getSurename());
+    
+        name_column.setCellValueFactory(cellData->cellData.getValue().getName());
+    
+        department_column.setCellValueFactory(cellData->cellData.getValue().getDepartment().asObject());
+    
+       sallary_column.setCellValueFactory(cellData->cellData.getValue().getSalary().asObject());
+    
+        age_column.setCellValueFactory(cellData->cellData.getValue().getAge().asObject());
+
+        try {
+            brigade_worker_model.addAll( brigade_worker.getAllBrigadeWorker());
+           } catch (SQLException e) {
+               e.printStackTrace();
+           }
+    
+    
+           table.setItems( brigade_worker_model);
+    
+           connection.close();
     }
 }
