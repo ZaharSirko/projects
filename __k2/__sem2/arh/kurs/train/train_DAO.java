@@ -8,7 +8,7 @@ import __k2.__sem2.arh.kurs._connection;
 import __k2.__sem2.arh.kurs.route.route;
 
 public class train_DAO extends _connection implements train_interface{
-    train_DAO(){
+    public train_DAO(){
         conn();
     }
     @Override
@@ -92,6 +92,7 @@ public class train_DAO extends _connection implements train_interface{
             statement.setString(1, trains.getTrain_name());
             statement.setInt(2, trains.getRoutes_ticket_price());
             statement.setInt(3, trains.getRoutes_duration());
+            statement.setInt(4, trains.getTrain_id());
 
             statement.executeUpdate();
             statement.close();

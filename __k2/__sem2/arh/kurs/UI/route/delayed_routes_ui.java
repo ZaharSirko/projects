@@ -4,11 +4,13 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 import __k2.__sem2.arh.kurs.UI.scene_;
-
+import __k2.__sem2.arh.kurs.route.delayed_routes.delayed_routes;
+import __k2.__sem2.arh.kurs.route.delayed_routes.delayed_routes_DAO;
 import __k2.__sem2.arh.kurs.route.delayed_routes.delayed_routes_model;
 import __k2.__sem2.arh.kurs.route.delayed_routes.delayed_routes_request;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -57,9 +59,6 @@ public class delayed_routes_ui extends scene_ {
     private Button delete_button;
 
     @FXML
-    private TextField delete_id_field;
-
-    @FXML
     private TextField routes_id_field;
 
     @FXML
@@ -81,7 +80,63 @@ public class delayed_routes_ui extends scene_ {
     private delayed_routes_request delayed_routes;
 
     private ObservableList<delayed_routes_model> delayed_routesModels;
-  
+
+    private delayed_routes_DAO delayed_routes_DAO = new delayed_routes_DAO();
+
+
+    @FXML
+    private void AddButton(ActionEvent event) throws SQLException {
+    if (routes_id_field.getText().isEmpty() || id_field.getText().isEmpty() || reason_field.getText().isEmpty()) {
+      Alerts();
+    }
+   else{
+     int routesId = Integer.parseInt(routes_id_field.getText());
+     int id = Integer.parseInt(id_field.getText());
+     String reason = reason_field.getText();
+    delayed_routes delayed_route = new delayed_routes(id, routesId, reason);
+    new delayed_routes_DAO().addDelayed_routes(delayed_route);
+    clean(routes_id_field,id_field,reason_field);
+    updateTable();
+   }
+}
+@FXML
+private void DeleteButton(ActionEvent event) throws SQLException {
+    delayed_routes_model selected = table.getSelectionModel().getSelectedItem();
+	int id = selected.getDelayed_routes().get();
+    delayed_routes_DAO.deleteDelayed_routes(id);
+    clean(routes_id_field,id_field,reason_field);
+    updateTable();
+}
+
+@FXML
+private void SelectButton(){
+    delayed_routes_model selected = table.getSelectionModel().getSelectedItem();
+    routes_id_field.setText(String.valueOf(selected.getRouteId().get()));
+    id_field.setText(String.valueOf(selected.getDelayed_routes().get()));
+    reason_field.setText(selected.getDelayed_routes_reason().get());
+}
+
+
+@FXML
+private void UpdateButton(ActionEvent event) throws SQLException{
+    if (routes_id_field.getText().isEmpty() || id_field.getText().isEmpty() || reason_field.getText().isEmpty()) {
+        Alerts();
+      }
+     else{
+    int routesId = Integer.parseInt(routes_id_field.getText());
+    int id = Integer.parseInt(id_field.getText());
+    String reason = reason_field.getText();
+    delayed_routes delayed_routes = new delayed_routes(id, routesId, reason);
+    delayed_routes_DAO.updateDelayed_routes(delayed_routes);
+    clean(routes_id_field,id_field,reason_field);
+    updateTable();
+     }
+}
+private void updateTable() throws SQLException {
+    delayed_routesModels.clear();
+    delayed_routesModels.addAll(delayed_routes.getAllDelayedRoutes());
+    table.setItems(delayed_routesModels);
+}
     @FXML
     void initialize() throws SQLException {
         switchBack(back_button);

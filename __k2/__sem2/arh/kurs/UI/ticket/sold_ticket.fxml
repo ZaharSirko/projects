@@ -14,16 +14,16 @@
 
 <AnchorPane prefHeight="760.0" prefWidth="1164.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="__k2.__sem2.arh.kurs.UI.ticket.sold_ticket_ui">
    <children>
-      <AnchorPane id="panel1_id" prefHeight="53.0" prefWidth="1239.0" style="-fx-background-color: #000;">
+      <AnchorPane id="panel1_id" prefHeight="56.0" prefWidth="1195.0" style="-fx-background-color: #000;">
          <children>
-            <Label id="label1_id" alignment="CENTER" layoutX="282.0" layoutY="3.0" prefHeight="53.0" prefWidth="601.0" style="-fx-background-color: #000;" text="Sold tickets" textFill="#aeaeae">
+            <Label id="label1_id" alignment="CENTER" layoutX="297.0" layoutY="3.0" prefHeight="53.0" prefWidth="601.0" style="-fx-background-color: #000;" text="Sold tickets" textFill="#aeaeae">
                <font>
                   <Font size="30.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <Button id="exit_button_id" fx:id="back_button" alignment="CENTER" graphicTextGap="10.0" layoutX="8.0" layoutY="693.0" lineSpacing="2.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="111.0" style="-fx-background-color: #000;" text="Назад" textFill="#979797" wrapText="true">
+      <Button id="exit_button_id" fx:id="back_button" alignment="CENTER" graphicTextGap="10.0" layoutX="24.0" layoutY="665.0" lineSpacing="2.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="111.0" style="-fx-background-color: #000;" text="Назад" textFill="#979797" wrapText="true">
          <effect>
             <Blend>
                <topInput>
@@ -35,7 +35,7 @@
             <Font size="20.0" />
          </font>
       </Button>
-      <GridPane layoutX="177.0" layoutY="69.0" prefHeight="491.0" prefWidth="952.0">
+      <GridPane layoutX="156.0" layoutY="69.0" prefHeight="491.0" prefWidth="952.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
@@ -68,20 +68,21 @@
             <Font size="16.0" />
          </font>
       </Button>
-      <TextField fx:id="from_field" layoutX="540.0" layoutY="633.0" prefHeight="25.0" prefWidth="102.0" promptText="from" />
-      <TextField fx:id="name_field" layoutX="418.0" layoutY="633.0" prefHeight="25.0" prefWidth="102.0" promptText="type" />
-      <TextField fx:id="direction_field" layoutX="653.0" layoutY="633.0" prefHeight="25.0" prefWidth="102.0" promptText="direction" />
-      <TextField fx:id="id_ield" layoutX="170.0" layoutY="633.0" prefHeight="25.0" prefWidth="102.0" promptText="id" />
-      <TextField fx:id="sold_ticket_hour_column_field" layoutX="899.0" layoutY="633.0" prefHeight="25.0" prefWidth="187.0" promptText="sold ticket hour" />
+      <TextField fx:id="name_field" layoutX="378.0" layoutY="610.0" prefHeight="25.0" prefWidth="102.0" promptText="type" />
+      <TextField fx:id="id_ield" layoutX="130.0" layoutY="610.0" prefHeight="25.0" prefWidth="102.0" promptText="id" />
+      <TextField fx:id="sold_ticket_hour_column_field" layoutX="494.0" layoutY="610.0" prefHeight="25.0" prefWidth="187.0" promptText="sold ticket hour" />
       <Button fx:id="delete_button" layoutX="18.0" layoutY="116.0" mnemonicParsing="false" style="-fx-background-color: #000;" text="Видалити" textFill="#979797">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <TextField fx:id="delete_id_field" layoutX="28.0" layoutY="172.0" prefHeight="25.0" prefWidth="102.0" promptText="id to delete" />
-      <TextField fx:id="to_field" layoutX="776.0" layoutY="633.0" prefHeight="25.0" prefWidth="111.0" promptText="to" />
-      <TextField fx:id="route_id_field" layoutX="297.0" layoutY="633.0" prefHeight="25.0" prefWidth="102.0" promptText="route_id" />
-      <TextField fx:id="sold_ticket_week_column_field" layoutX="170.0" layoutY="681.0" prefHeight="25.0" prefWidth="187.0" promptText="sold ticket week" />
-      <TextField fx:id="sold_ticket_mounth_column_field" layoutX="376.0" layoutY="681.0" prefHeight="25.0" prefWidth="187.0" promptText="sold ticket mounth" />
+      <TextField fx:id="route_id_field" layoutX="257.0" layoutY="610.0" prefHeight="25.0" prefWidth="102.0" promptText="route_id" />
+      <TextField fx:id="sold_ticket_week_column_field" layoutX="907.0" layoutY="610.0" prefHeight="25.0" prefWidth="187.0" promptText="sold ticket week" />
+      <TextField fx:id="sold_ticket_mounth_column_field" layoutX="700.0" layoutY="610.0" prefHeight="25.0" prefWidth="187.0" promptText="sold ticket mounth" />
+      <Button fx:id="select_button" layoutX="22.0" layoutY="166.0" mnemonicParsing="false" style="-fx-background-color: #000;" text="Вибрати" textFill="#979797">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

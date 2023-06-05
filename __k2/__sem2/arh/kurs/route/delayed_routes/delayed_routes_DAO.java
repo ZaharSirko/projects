@@ -10,7 +10,7 @@ import java.util.List;
 import __k2.__sem2.arh.kurs._connection;
 
 public class delayed_routes_DAO extends _connection implements delayed_routes_interface {
-    delayed_routes_DAO(){
+    public delayed_routes_DAO(){
         conn();
     }
     @Override
@@ -46,8 +46,8 @@ public class delayed_routes_DAO extends _connection implements delayed_routes_in
             PreparedStatement statement = connection.prepareStatement("INSERT INTO delayed_routes(delayed_routes,routes_id,delayed_routes_reason) VALUES"
             + "(?,?,?)");
             statement.setInt(1, routes.getDelayed_routes());
-            statement.setString(2, routes.getDelayed_routes_reason());
-            statement.setInt(3, routes.getId());
+            statement.setString(3, routes.getDelayed_routes_reason());
+            statement.setInt(2, routes.getId());
             statement.executeUpdate();
             statement.close();
         } catch (SQLException e) {
@@ -59,11 +59,10 @@ public class delayed_routes_DAO extends _connection implements delayed_routes_in
     @Override
     public void updateDelayed_routes(delayed_routes routes) {
         try {
-            PreparedStatement statement = connection.prepareStatement(" UPDATE delayed_routes ON delayed_routes=?,routes_id=?,delayed_routes_reason=? VALUES"
-            + "(?,?,?)");
-            statement.setInt(1, routes.getDelayed_routes());
+            PreparedStatement statement = connection.prepareStatement(" UPDATE delayed_routes Set routes_id=?,delayed_routes_reason=? Where delayed_routes=?");
             statement.setString(2, routes.getDelayed_routes_reason());
-            statement.setInt(3, routes.getId());
+            statement.setInt(1, routes.getId());
+            statement.setInt(3, routes.getDelayed_routes());
             statement.executeUpdate();
             statement.close();
         } catch (SQLException e) {

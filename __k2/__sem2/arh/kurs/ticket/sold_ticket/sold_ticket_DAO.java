@@ -61,11 +61,11 @@ public class sold_ticket_DAO extends _connection implements sold_ticket_interfac
     @Override
     public void updateSoldTicket(sold_ticket sold_ticket) {
         try {
-            PreparedStatement statement = connection.prepareStatement("UPDATE sold_ticket ON sold_ticket,routes_id=?,sold_ticket_hour=?,sold_ticket_week=?,sold_ticket_mounth=?");
-            statement.setInt(1, sold_ticket.getTicket_id());
-            statement.setInt(2, sold_ticket.getId());
-            statement.setInt(3, sold_ticket.getSold_ticket_hour());
-            statement.setInt(4, sold_ticket.getSold_ticket_week());
+            PreparedStatement statement = connection.prepareStatement("UPDATE sold_ticket set routes_id=?,sold_ticket_hour=?,sold_ticket_week=?,sold_ticket_mounth=? where sold_ticket");
+            statement.setInt(5, sold_ticket.getTicket_id());
+            statement.setInt(1, sold_ticket.getId());
+            statement.setInt(2, sold_ticket.getSold_ticket_hour());
+            statement.setInt(3, sold_ticket.getSold_ticket_week());
             statement.setInt(4, sold_ticket.getSold_ticket_mounth());
             statement.executeUpdate();
             statement.close();

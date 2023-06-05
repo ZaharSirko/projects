@@ -81,19 +81,18 @@ public class railway_station_worker_DAO extends _connection implements railway_s
     @Override
     public void updateRailwayStationWorker(railway_station_worker worker) {
         try {
-            PreparedStatement statement = connection.prepareStatement("UPDATE worker SET worker_id=?,worker_surename =?,worker_name=?,worker_age=?,worker_gender=?,"
-            +"worker_children=?,worker_chief=?,worker_department=?,worker_exp=?,worker_salary=?"
-            + "(?,?,?,?,?,?,?,?,?,?)");
-            statement.setInt(1, worker.getId());
-            statement.setString(2, worker.getSurename());
-            statement.setString(3, worker.getName());
-            statement.setInt(4, worker.getAge());
-            statement.setString(5, worker.getGender());
-            statement.setInt(6, worker.getChildren());
-            statement.setString(7, worker.getChief());
-            statement.setInt(8, worker.getDepartment());
-            statement.setInt(9, worker.getWorkExperience());
-            statement.setInt(10, worker.getSalary());
+            PreparedStatement statement = connection.prepareStatement("UPDATE worker SET worker_surename =?,worker_name=?,worker_age=?,worker_gender=?,"
+            +"worker_children=?,worker_chief=?,worker_department=?,worker_exp=?,worker_salary=? where worker_id=?");
+            statement.setInt(10, worker.getId());
+            statement.setString(1, worker.getSurename());
+            statement.setString(2, worker.getName());
+            statement.setInt(3, worker.getAge());
+            statement.setString(4, worker.getGender());
+            statement.setInt(5, worker.getChildren());
+            statement.setString(6, worker.getChief());
+            statement.setInt(7, worker.getDepartment());
+            statement.setInt(8, worker.getWorkExperience());
+            statement.setInt(9, worker.getSalary());
             statement.executeUpdate();
             statement.close();
         } catch (SQLException e) {

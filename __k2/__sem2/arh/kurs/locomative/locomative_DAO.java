@@ -6,7 +6,7 @@ import java.sql.*;
 import __k2.__sem2.arh.kurs._connection;
 
 public class locomative_DAO extends _connection implements locomative_interface {
-    locomative_DAO(){
+    public locomative_DAO(){
         conn();
     }
     @Override
@@ -57,14 +57,14 @@ public class locomative_DAO extends _connection implements locomative_interface 
     @Override
     public void updateLocomative(locomative Locomative) {
         try {
-            PreparedStatement statement = connection.prepareStatement("UPDATE locomotive SET locomotiveid =?,locomotive_name =?,locomotive_age =?,locomotive_department =?,"
-            +"locomotive_completed_routes =?,locomotive_completed_routes_before_repair =?");
-            statement.setInt(1, Locomative.getId());
-            statement.setString(2, Locomative.getName());
-            statement.setInt(3, Locomative.getAge());
-            statement.setInt(4, Locomative.getDepartment());
-            statement.setInt(5, Locomative.getCompleted_routes());
-            statement.setInt(6, Locomative.getCompleted_routes_before_repair());
+            PreparedStatement statement = connection.prepareStatement("UPDATE locomotive SET locomotive_name =?,locomotive_age =?,locomotive_department =?,"
+            +"locomotive_completed_routes =?,locomotive_completed_routes_before_repair =? where locomotiveid =?");
+            statement.setInt(6, Locomative.getId());
+            statement.setString(1, Locomative.getName());
+            statement.setInt(2, Locomative.getAge());
+            statement.setInt(3, Locomative.getDepartment());
+            statement.setInt(4, Locomative.getCompleted_routes());
+            statement.setInt(5, Locomative.getCompleted_routes_before_repair());
             statement.executeUpdate();
             statement.close();
         } catch (SQLException e) {

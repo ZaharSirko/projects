@@ -10,7 +10,7 @@ import java.util.List;
 import __k2.__sem2.arh.kurs._connection;
 
 public class passengers_DAO extends _connection implements passengers_interface {
-    passengers_DAO(){
+    public passengers_DAO(){
         conn();
     }
     @Override
@@ -62,7 +62,7 @@ public class passengers_DAO extends _connection implements passengers_interface 
     @Override
     public void updatePassenger(passengers passenger) {
         try {
-            PreparedStatement statement = connection.prepareStatement("Update passengers ON passengers_surename=?,passengers_name=?,passengers_gender=?"
+            PreparedStatement statement = connection.prepareStatement("Update passengers Set passengers_surename=?,passengers_name=?,passengers_gender=?"
             +",passengers_age=?,routes_to=? WHERE passengers_id=?");
             statement.setString(1, passenger.getSurename());
             statement.setString(2, passenger.getName());

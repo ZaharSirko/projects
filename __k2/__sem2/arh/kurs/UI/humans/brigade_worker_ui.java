@@ -6,10 +6,12 @@ import java.util.ResourceBundle;
 
 import __k2.__sem2.arh.kurs.UI.scene_;
 import __k2.__sem2.arh.kurs.brigade_worker.brigade_worker;
+import __k2.__sem2.arh.kurs.brigade_worker.brigade_worker_DAO;
 import __k2.__sem2.arh.kurs.brigade_worker.brigade_worker_model;
 import __k2.__sem2.arh.kurs.brigade_worker.brigade_worker_request;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -44,7 +46,7 @@ public class brigade_worker_ui extends scene_ {
     private TableColumn<brigade_worker_model, Integer> department_column;
 
     @FXML
-    private TableColumn<brigade_worker_model, Integer> sallary_column;
+    private TableColumn<brigade_worker_model, Integer> salary_column;
 
     @FXML
     private TableColumn<brigade_worker_model, Integer> age_column;
@@ -83,14 +85,79 @@ public class brigade_worker_ui extends scene_ {
     private TextField delete_id_field;
 
     @FXML
-    private TextField sallaey_field;
+    private TextField salary_field;
 
     @FXML
-    private TextArea avg_sallary_field;
+    private TextArea avg_salary_field;
 
     private brigade_worker_request  brigade_worker;
 
     private ObservableList<brigade_worker_model>  brigade_worker_model;
+    @FXML
+    private void AddButton(ActionEvent event) throws SQLException {
+    if (name_field.getText().isEmpty() || id_ield.getText().isEmpty() || surename_field.getText().isEmpty() || department_field.getText().isEmpty()
+    || salary_field.getText().isEmpty()||age_field.getText().isEmpty()) {
+      Alerts();
+    }
+   else{
+    int id = Integer.parseInt(id_ield.getText());
+    String name = name_field.getText();
+    String surename = surename_field.getText();
+    int department = Integer.parseInt(department_field.getText());
+    int salary = Integer.parseInt(salary_field.getText());
+    int age = Integer.parseInt(age_field.getText());
+    brigade_worker brigade_worker  = new brigade_worker(id, name, surename, age, department, salary);
+    new brigade_worker_DAO().addBrigadeWorker(brigade_worker);
+    clean(id_ield,name_field,surename_field,department_field,salary_field,age_field);
+    updateTable();
+   }
+}
+@FXML
+private void DeleteButton(ActionEvent event) throws SQLException {
+    brigade_worker_model selected = table.getSelectionModel().getSelectedItem();
+	int id = selected.getHuman_id().get();
+    new brigade_worker_DAO().deleteBrigadeWorker(id);
+    clean(id_ield,name_field,surename_field,department_field,salary_field,age_field);
+    updateTable();
+}
+
+@FXML
+private void SelectButton(){
+    brigade_worker_model selected = table.getSelectionModel().getSelectedItem();
+    id_ield.setText(String.valueOf(selected.getHuman_id().get()));
+    name_field.setText(selected.getName().get());
+    surename_field.setText(selected.getSurename().get());
+    department_field.setText(String.valueOf(selected.getDepartment().get()));
+    salary_field.setText(String.valueOf(selected.getSalary().get()));
+    age_field.setText(String.valueOf(selected.getAge().get()));
+}
+
+
+@FXML
+private void UpdateButton(ActionEvent event) throws SQLException{
+    if (name_field.getText().isEmpty() || id_ield.getText().isEmpty() || surename_field.getText().isEmpty() || department_field.getText().isEmpty()
+    || salary_field.getText().isEmpty()||age_field.getText().isEmpty()) {
+      Alerts();
+    }
+   else{
+    int id = Integer.parseInt(id_ield.getText());
+    String name = name_field.getText();
+    String surename = surename_field.getText();
+    int department = Integer.parseInt(department_field.getText());
+    int salary = Integer.parseInt(salary_field.getText());
+    int age = Integer.parseInt(age_field.getText());
+    brigade_worker brigade_worker  = new brigade_worker(id, name, surename, age, department, salary);
+    new brigade_worker_DAO().updateBrigadeWorker(brigade_worker);
+    clean(id_ield,name_field,surename_field,department_field,salary_field,age_field);
+    updateTable();
+      }
+}
+private void updateTable() throws SQLException {
+    brigade_worker_model.clear();
+    brigade_worker_model.addAll(brigade_worker.getAllBrigadeWorker());
+    table.setItems(brigade_worker_model);
+}
+
     @FXML
     void initialize() throws SQLException {
         switchBack(back_button);
@@ -106,7 +173,7 @@ public class brigade_worker_ui extends scene_ {
     
         department_column.setCellValueFactory(cellData->cellData.getValue().getDepartment().asObject());
     
-       sallary_column.setCellValueFactory(cellData->cellData.getValue().getSalary().asObject());
+       salary_column.setCellValueFactory(cellData->cellData.getValue().getSalary().asObject());
     
         age_column.setCellValueFactory(cellData->cellData.getValue().getAge().asObject());
 

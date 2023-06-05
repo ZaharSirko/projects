@@ -20,6 +20,12 @@ public class canceled_routes_model extends route_model {
         this.canceledRoutesType = new SimpleStringProperty (canceledRoutesType);
     }
 
+    public canceled_routes_model(int routeId,int canceledRoutesId, String canceledRoutesType){
+        super(routeId);
+        this.canceledRoutesId = new SimpleIntegerProperty(canceledRoutesId);
+        this.canceledRoutesType = new SimpleStringProperty (canceledRoutesType);
+    }
+
 
 
     public IntegerProperty getCanceledRoutesId() {

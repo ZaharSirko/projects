@@ -54,11 +54,11 @@ public class route_DAO extends _connection implements route_interface {
     @Override
     public void updateRoutes(route routes) {
         try {
-            PreparedStatement statement = connection.prepareStatement("UPDATE routes Set routes_id=?,routes_from=?,routes_direction=?,routes_to=?");
-            statement.setInt(1, routes.getId());
-            statement.setString(2, routes.getFrom());
-            statement.setString(3, routes.getDirection());
-            statement.setString(4, routes.getTo());
+            PreparedStatement statement = connection.prepareStatement("UPDATE routes Set routes_from=?,routes_direction=?,routes_to=? Where routes_id=?");
+            statement.setInt(4, routes.getId());
+            statement.setString(1, routes.getFrom());
+            statement.setString(2, routes.getDirection());
+            statement.setString(3, routes.getTo());
             statement.executeUpdate();
             statement.close();
         } catch (SQLException e) {

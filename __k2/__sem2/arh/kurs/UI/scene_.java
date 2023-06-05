@@ -6,7 +6,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 public class scene_ extends _connection {
     private Stage stage;
@@ -39,4 +41,15 @@ public class scene_ extends _connection {
             stage.show();
         });
     }
+    public void Alerts(){
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setHeaderText(null);
+        alert.setContentText("Please Fill All DATA");
+        alert.showAndWait();
+    }
+  public void clean(TextField ...fields){
+    for (TextField field : fields) {
+        field.setText(null);
+    }
+  }
 }

@@ -8,7 +8,7 @@ import java.util.List;
 import __k2.__sem2.arh.kurs._connection;
 
 public class canceled_routes_DAO extends _connection implements canceled_routes_interface {
-    canceled_routes_DAO(){
+    public canceled_routes_DAO(){
         conn();
     }
 
@@ -57,10 +57,10 @@ public class canceled_routes_DAO extends _connection implements canceled_routes_
     @Override
     public void updateСanceled_routes(canceled_routes routes) {
         try {
-            PreparedStatement statement = connection.prepareStatement("UPDATE canceled_routes ON canceled_routes_id=?,canceled_routes_type=?,routes_id=?");
-            statement.setInt(1, routes.getCanceled_routes_id());
-            statement.setString(2, routes.getCanceled_routes_type());
-            statement.setInt(3, routes.getId());
+            PreparedStatement statement = connection.prepareStatement("UPDATE canceled_routes Set canceled_routes_type=?,routes_id=? WHERE canceled_routes_id=?");
+            statement.setString(1, routes.getCanceled_routes_type());
+            statement.setInt(2, routes.getId());
+            statement.setInt(3, routes.getCanceled_routes_id());
             statement.executeUpdate();
             statement.close();
         } catch (SQLException e) {
@@ -101,6 +101,8 @@ public class canceled_routes_DAO extends _connection implements canceled_routes_
     }
         return canceled_route;
     }
+
+ 
 }
     
 

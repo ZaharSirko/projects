@@ -6,7 +6,7 @@ import java.util.List;
 import __k2.__sem2.arh.kurs._connection;
 
 public class locomative_drivers_DAO extends _connection implements locomative_drivers_interface {
-    locomative_drivers_DAO(){
+    public locomative_drivers_DAO(){
         conn();
     }
     @Override
@@ -64,18 +64,18 @@ public class locomative_drivers_DAO extends _connection implements locomative_dr
     @Override
     public void updateLocomativeDrivers(locomative_drivers locomative_drivers) {
         try {
-            PreparedStatement statement = connection.prepareStatement(" UPDATE locomotive_driver SET locomotive_driver_id =?,locomotive_driver_surename=?,locomotive_driver_name=?"
+            PreparedStatement statement = connection.prepareStatement(" UPDATE locomotive_driver SET locomotive_driver_surename=?,locomotive_driver_name=?"
             + ",locomotive_driver_gender=?,locomotive_driver_work_age=?,locomotive_driver_work_experience=?,locomotive_driver_salary=?,"
-            +  "locomotive_driver_medical_examination_2022=?,locomotive_driver_medical_examination_2023=?");
-            statement.setInt(1, locomative_drivers.getId());
-            statement.setString(2, locomative_drivers.getSurename());
-            statement.setString(3, locomative_drivers.getName());
-            statement.setString(4, locomative_drivers.getGender());
-            statement.setInt(5, locomative_drivers.getAge());
-            statement.setInt(6, locomative_drivers.getWorkExperience());
-            statement.setInt(7, locomative_drivers.getSalary());
-            statement.setString(8, locomative_drivers.getMedical_examination_2022());
-            statement.setString(9, locomative_drivers.getMedical_examination_2023());
+            +  "locomotive_driver_medical_examination_2022=?,locomotive_driver_medical_examination_2023=? where locomotive_driver_id =? ");
+            statement.setInt(9, locomative_drivers.getId());
+            statement.setString(1, locomative_drivers.getSurename());
+            statement.setString(2, locomative_drivers.getName());
+            statement.setString(3, locomative_drivers.getGender());
+            statement.setInt(4, locomative_drivers.getAge());
+            statement.setInt(5, locomative_drivers.getWorkExperience());
+            statement.setInt(6, locomative_drivers.getSalary());
+            statement.setString(7, locomative_drivers.getMedical_examination_2022());
+            statement.setString(8, locomative_drivers.getMedical_examination_2023());
             statement.executeUpdate();
             statement.close();
         } catch (SQLException e) {

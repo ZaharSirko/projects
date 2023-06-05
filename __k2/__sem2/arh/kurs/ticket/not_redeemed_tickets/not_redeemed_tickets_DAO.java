@@ -60,11 +60,11 @@ public class not_redeemed_tickets_DAO extends _connection implements not_redeeme
     public void updateNotRedeemedTickets(not_redeemed_tickets redeemed_tickets) {
         
         try {
-            PreparedStatement statement = connection.prepareStatement("UPDATE not_redeemed_tickets ON tickets_id=?,not_redeemed_tickets_type=?,routes_id=?,not_redeemed_tickets_count=?");
-            statement.setInt(1, redeemed_tickets.getTicket_id());
-            statement.setString(2, redeemed_tickets.getType());
-            statement.setInt(3, redeemed_tickets.getId());
-            statement.setInt(4, redeemed_tickets.getNotRedeemed_tickets());
+            PreparedStatement statement = connection.prepareStatement("UPDATE not_redeemed_tickets Set not_redeemed_tickets_type=?,routes_id=?,not_redeemed_tickets_count=? where tickets_id=?");
+            statement.setInt(4, redeemed_tickets.getTicket_id());
+            statement.setString(1, redeemed_tickets.getType());
+            statement.setInt(2, redeemed_tickets.getId());
+            statement.setInt(3, redeemed_tickets.getNotRedeemed_tickets());
             statement.executeUpdate();
             statement.close();
         } catch (SQLException e) {
