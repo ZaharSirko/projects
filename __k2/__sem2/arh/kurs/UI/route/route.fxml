@@ -53,17 +53,17 @@
             </TableView>
          </children>
       </GridPane>
-      <Button fx:id="uptade_button" layoutX="20.0" layoutY="215.0" mnemonicParsing="false" style="-fx-background-color: #000;" text="Оновити" textFill="#979797">
+      <Button fx:id="uptade_button" layoutX="20.0" layoutY="215.0" mnemonicParsing="false" onAction="#UpdateButton" style="-fx-background-color: #000;" text="Оновити" textFill="#979797">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button fx:id="add_button" layoutX="26.0" layoutY="69.0" mnemonicParsing="false" style="-fx-background-color: #000;" text="Додати" textFill="#979797">
+      <Button fx:id="add_button" layoutX="26.0" layoutY="69.0" mnemonicParsing="false" onAction="#AddButton" style="-fx-background-color: #000;" text="Додати" textFill="#979797">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button fx:id="delete_button" layoutX="18.0" layoutY="116.0" mnemonicParsing="false" style="-fx-background-color: #000;" text="Видалити" textFill="#979797">
+      <Button fx:id="delete_button" layoutX="18.0" layoutY="116.0" mnemonicParsing="false" onAction="#DeleteButton" style="-fx-background-color: #000;" text="Видалити" textFill="#979797">
          <font>
             <Font size="16.0" />
          </font>
@@ -72,7 +72,7 @@
       <TextField fx:id="route_from_field" layoutX="359.0" layoutY="645.0" prefHeight="25.0" prefWidth="102.0" promptText="route from" />
       <TextField fx:id="direction_field" layoutX="476.0" layoutY="645.0" prefHeight="25.0" prefWidth="102.0" promptText="direction" />
       <TextField fx:id="route_to_field" layoutX="596.0" layoutY="645.0" prefHeight="25.0" prefWidth="102.0" promptText="route to" />
-      <Button fx:id="select_button" layoutX="22.0" layoutY="165.0" mnemonicParsing="false" style="-fx-background-color: #000;" text="Вибрати" textFill="#979797">
+      <Button fx:id="select_button" layoutX="22.0" layoutY="165.0" mnemonicParsing="false" onAction="#SelectButton" style="-fx-background-color: #000;" text="Вибрати" textFill="#979797">
          <font>
             <Font size="16.0" />
          </font>

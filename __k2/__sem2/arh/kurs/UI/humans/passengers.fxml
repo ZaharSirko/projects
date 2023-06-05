@@ -55,12 +55,12 @@
             </TableView>
          </children>
       </GridPane>
-      <Button fx:id="uptade_button" layoutX="20.0" layoutY="209.0" mnemonicParsing="false" style="-fx-background-color: #000;" text="Оновити" textFill="#979797">
+      <Button fx:id="uptade_button" layoutX="20.0" layoutY="209.0" mnemonicParsing="false" onAction="#UpdateButton" style="-fx-background-color: #000;" text="Оновити" textFill="#979797">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button fx:id="add_button" layoutX="26.0" layoutY="69.0" mnemonicParsing="false" style="-fx-background-color: #000;" text="Додати" textFill="#979797">
+      <Button fx:id="add_button" layoutX="26.0" layoutY="69.0" mnemonicParsing="false" onAction="#AddButton" style="-fx-background-color: #000;" text="Додати" textFill="#979797">
          <font>
             <Font size="16.0" />
          </font>
@@ -70,13 +70,13 @@
       <TextField fx:id="gender_field" layoutX="602.0" layoutY="553.0" prefHeight="25.0" prefWidth="102.0" promptText="gender" />
       <TextField fx:id="id_ield" layoutX="242.0" layoutY="553.0" prefHeight="25.0" prefWidth="102.0" promptText="id" />
       <TextField fx:id="routes_to_field" layoutX="848.0" layoutY="553.0" prefHeight="25.0" prefWidth="102.0" promptText="routes to" />
-      <Button fx:id="delete_button" layoutX="18.0" layoutY="116.0" mnemonicParsing="false" style="-fx-background-color: #000;" text="Видалити" textFill="#979797">
+      <Button fx:id="delete_button" layoutX="18.0" layoutY="116.0" mnemonicParsing="false" onAction="#DeleteButton" style="-fx-background-color: #000;" text="Видалити" textFill="#979797">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
       <TextField fx:id="age_field" layoutX="724.0" layoutY="553.0" prefHeight="25.0" prefWidth="102.0" promptText="age" />
-      <Button fx:id="select_button" layoutX="22.0" layoutY="165.0" mnemonicParsing="false" style="-fx-background-color: #000;" text="Вибрати" textFill="#979797">
+      <Button fx:id="select_button" layoutX="22.0" layoutY="165.0" mnemonicParsing="false" onAction="#SelectButton" style="-fx-background-color: #000;" text="Вибрати" textFill="#979797">
          <font>
             <Font size="16.0" />
          </font>
