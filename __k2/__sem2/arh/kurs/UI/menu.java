@@ -68,6 +68,7 @@ public class menu extends scene_{
         switchToScen(not_redeemed_tickets_button,"/__k2/__sem2/arh/kurs/UI/ticket/not_redeemed_tickets.fxml");
         switchToScen(redeemed_tickets_button,"/__k2/__sem2/arh/kurs/UI/ticket/redeemed_tickets.fxml");
         switchToScen(routes_button,"/__k2/__sem2/arh/kurs/UI/route/route.fxml");
+        ExitButton(exit_button);
     }
   
 }

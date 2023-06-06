@@ -41,6 +41,13 @@ public class scene_ extends _connection {
             stage.show();
         });
     }
+    public void ExitButton(Button button){
+        button.setOnAction(event ->{
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+       
+        stage.close();
+    });
+    }
     public void Alerts(){
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setHeaderText(null);

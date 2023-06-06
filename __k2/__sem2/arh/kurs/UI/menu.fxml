@@ -77,7 +77,6 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="hide_button" layoutX="1100.0" layoutY="74.0" mnemonicParsing="false" style="-fx-background-color: #000;" text="Згорнути" textFill="#c6c300" />
-      <Button fx:id="exit_button" layoutX="1100.0" layoutY="32.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="66.0" style="-fx-background-color: #000;" text="Вихід" textFill="#bc0000" />
+      <Button fx:id="exit_button" layoutX="1087.0" layoutY="29.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="66.0" style="-fx-background-color: #000;" text="Вихід" textFill="#bc0000" />
    </children>
 </AnchorPane>
