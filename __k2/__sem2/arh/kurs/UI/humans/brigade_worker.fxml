@@ -36,7 +36,7 @@
             <Font size="20.0" />
          </font>
       </Button>
-      <GridPane layoutX="242.0" layoutY="83.0" prefHeight="451.0" prefWidth="542.0">
+      <GridPane layoutX="204.0" layoutY="88.0" prefHeight="451.0" prefWidth="542.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
@@ -56,11 +56,6 @@
             </TableView>
          </children>
       </GridPane>
-      <Button fx:id="select_department_button" layoutX="17.0" layoutY="263.0" mnemonicParsing="false" style="-fx-background-color: #000;" text="Виберіть відділ" textFill="#979797">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Button>
       <Button fx:id="uptade_button" layoutX="20.0" layoutY="209.0" mnemonicParsing="false" onAction="#UpdateButton" style="-fx-background-color: #000;" text="Оновити" textFill="#979797">
          <font>
             <Font size="16.0" />
@@ -76,15 +71,14 @@
       <TextField fx:id="department_field" layoutX="520.0" layoutY="565.0" prefHeight="25.0" prefWidth="102.0" promptText="department" />
       <TextField fx:id="id_ield" layoutX="159.0" layoutY="565.0" prefHeight="25.0" prefWidth="102.0" promptText="id" />
       <TextField fx:id="age_field" layoutX="766.0" layoutY="565.0" prefHeight="25.0" prefWidth="102.0" promptText="age" />
-      <TextField fx:id="select_department_field" layoutX="17.0" layoutY="303.0" prefHeight="25.0" prefWidth="124.0" promptText="select department" />
       <Button fx:id="delete_button" layoutX="18.0" layoutY="116.0" mnemonicParsing="false" onAction="#DeleteButton" style="-fx-background-color: #000;" text="Видалити" textFill="#979797">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
       <TextField fx:id="salary_field" layoutX="642.0" layoutY="565.0" prefHeight="25.0" prefWidth="102.0" promptText="salary" />
-      <TextArea fx:id="avg_salary_field" editable="false" layoutX="822.0" layoutY="496.0" prefHeight="38.0" prefWidth="132.0" />
-      <Label layoutX="817.0" layoutY="473.0" prefHeight="17.0" prefWidth="141.0" text="Середня заробітна плата" textFill="#979797" />
+      <TextArea fx:id="avg_salary_field" editable="false" layoutX="761.0" layoutY="501.0" prefHeight="38.0" prefWidth="132.0" />
+      <Label layoutX="756.0" layoutY="478.0" prefHeight="17.0" prefWidth="141.0" text="Середня заробітна плата" textFill="#979797" />
       <Button fx:id="select_button" layoutX="22.0" layoutY="165.0" mnemonicParsing="false" onAction="#SelectButton" style="-fx-background-color: #000;" text="Вибрати" textFill="#979797">
          <font>
             <Font size="16.0" />

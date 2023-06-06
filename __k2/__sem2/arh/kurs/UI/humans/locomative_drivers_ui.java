@@ -90,9 +90,6 @@ public class locomative_drivers_ui extends scene_ {
     private Button delete_button;
 
     @FXML
-    private TextField delete_id_field;
-
-    @FXML
     private TextField salary_field;
 
     @FXML
@@ -143,6 +140,8 @@ private void SelectButton(){
     work_exp_field.setText(String.valueOf(selected.getWorkExperience().get()));
     salary_field.setText(String.valueOf(selected.getSalary().get()));
     age_field.setText(String.valueOf(selected.getAge().get()));
+    medical_examination_2022_field.setText(selected.getMedical_examination_2022().get());
+    medical_examination_2023_field.setText(selected.getMedical_examination_2023().get());
 }
 
 

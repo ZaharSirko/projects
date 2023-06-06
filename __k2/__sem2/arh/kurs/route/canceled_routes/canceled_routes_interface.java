@@ -8,5 +8,4 @@ public interface canceled_routes_interface {
     void addСanceled_routes(canceled_routes routes);
     void updateСanceled_routes(canceled_routes routes);
     void deleteСanceled_routes(int id);
-    canceled_routes getRoutesById(int id);
 }

@@ -8,5 +8,4 @@ public interface passengers_interface {
     void addPassenger(passengers passenger);
     void updatePassenger(passengers passenger);
     void deletePassenger(int id);
-    passengers getPassengerById(int id);
 }

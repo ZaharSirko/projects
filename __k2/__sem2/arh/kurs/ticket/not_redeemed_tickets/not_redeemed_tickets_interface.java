@@ -8,5 +8,4 @@ public interface not_redeemed_tickets_interface {
     void addNotRedeemedTickets(not_redeemed_tickets not_redeemed_tickets);
     void updateNotRedeemedTickets(not_redeemed_tickets not_redeemed_tickets);
     void deleteNotRedeemedTickets(int not_redeemed_tickets);
-    not_redeemed_tickets getNotRedeemedTicketsById(int not_redeemed_tickets_id);
 }

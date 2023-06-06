@@ -7,5 +7,4 @@ public interface locomative_drivers_interface {
     void addLocomativeDrivers(locomative_drivers locomative_drivers);
     void updateLocomativeDrivers(locomative_drivers locomative_drivers);
     void deleteLocomativeDrivers(int id);
-    locomative_drivers getLocomativeDriversById(int id);
 }

@@ -8,5 +8,4 @@ public interface delayed_routes_interface {
     void addDelayed_routes(delayed_routes routes);
     void updateDelayed_routes(delayed_routes routes);
     void deleteDelayed_routes(int id);
-    delayed_routes getDelayedRoutesById(int id);
 }

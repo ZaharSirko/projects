@@ -6,11 +6,9 @@ public class sold_ticket extends ticket {
  int sold_ticket_hour;
  int sold_ticket_week;
  int sold_ticket_mounth;
- public sold_ticket(){
-    super();
- }
- public sold_ticket(int ticket_id, String type, int route_id,int sold_ticket_hour,int sold_ticket_week, int sold_ticket_mounth){
-    super(ticket_id,type, route_id);
+
+ public sold_ticket(int ticket_id, int route_id,int sold_ticket_hour,int sold_ticket_week, int sold_ticket_mounth){
+    super(ticket_id, route_id);
     this.sold_ticket_hour = sold_ticket_hour;
     this.sold_ticket_week = sold_ticket_week;
     this.sold_ticket_mounth = sold_ticket_mounth;

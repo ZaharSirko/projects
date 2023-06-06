@@ -84,29 +84,5 @@ public class locomative_DAO extends _connection implements locomative_interface 
             e.printStackTrace();
         }
     }
-
-    @Override
-    public locomative getLocomativeById(int id) {
-        locomative locomative = null;
-        try {
-            PreparedStatement statement = connection.prepareStatement("SELECT * FROM brigade_worker WHERE brigade_worker_id = ?");
-            statement.setInt(1, id);
-            ResultSet resultSet = statement.executeQuery();
-            if (resultSet.next()) {
-                String name = resultSet.getString("locomotive_name");
-                int age = resultSet.getInt("locomotive_age");
-                int department= resultSet.getInt("locomotive_department");
-                int completed_routes = resultSet.getInt("locomotive_completed_routes");
-                int completed_routes_before_repair = resultSet.getInt("locomotive_completed_routes_before_repair");
-
-                 locomative = new locomative(id, name, age, department, completed_routes, completed_routes_before_repair);
-            }
-            resultSet.close();
-            statement.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return locomative;
-    }
-    
+   
 }

@@ -83,26 +83,5 @@ public class delayed_routes_DAO extends _connection implements delayed_routes_in
         }
     }
 
-    @Override
-    public delayed_routes getDelayedRoutesById(int id) {
-
-        delayed_routes delayed_route = null;
-        try {
-        PreparedStatement statement = connection.prepareStatement("SELECT * FROM delayed_routes WHERE delayed_routes = ?");
-        statement.setInt(1, id);
-        ResultSet resultSet = statement.executeQuery();
-        while (resultSet.next()) {
-            int routes_id = resultSet.getInt("routes_id");
-            String reason = resultSet.getString("delayed_routes_reason");
-            delayed_route = new delayed_routes(id, routes_id,reason);
-
-        }
-        resultSet.close();
-        statement.close();
-      } catch (SQLException e) {
-         e.printStackTrace();
-    }
-        return delayed_route;
-    }
     
 }

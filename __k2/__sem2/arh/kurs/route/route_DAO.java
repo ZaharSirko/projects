@@ -79,27 +79,6 @@ public class route_DAO extends _connection implements route_interface {
         }
     }
 
-    @Override
-    public route getRoutesById(int id) {
-        route routes = null;
-        try {
-        PreparedStatement statement = connection.prepareStatement("SELECT * FROM routes WHERE routes_id = ?");
-        statement.setInt(1, id);
-        ResultSet resultSet = statement.executeQuery();
-        while (resultSet.next()) {
-            String from = resultSet.getString("routes_from");
-            String direction = resultSet.getString("routes_direction");
-            String to = resultSet.getString("routes_to");
-            routes = new route(id, from, direction, to);
-
-        }
-        resultSet.close();
-        statement.close();
-      } catch (SQLException e) {
-         e.printStackTrace();
-    }
-        return routes;
-    }
 
 }
 

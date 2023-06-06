@@ -52,9 +52,6 @@ public class brigade_worker_ui extends scene_ {
     private TableColumn<brigade_worker_model, Integer> age_column;
 
     @FXML
-    private Button select_department_button;
-
-    @FXML
     private Button uptade_button;
 
     @FXML
@@ -76,13 +73,7 @@ public class brigade_worker_ui extends scene_ {
     private TextField age_field;
 
     @FXML
-    private TextField select_department_field;
-
-    @FXML
     private Button delete_button;
-
-    @FXML
-    private TextField delete_id_field;
 
     @FXML
     private TextField salary_field;
@@ -155,6 +146,7 @@ private void UpdateButton(ActionEvent event) throws SQLException{
 private void updateTable() throws SQLException {
     brigade_worker_model.clear();
     brigade_worker_model.addAll(brigade_worker.getAllBrigadeWorker());
+    avg_salary_field.setText(String.valueOf((int) new brigade_worker_DAO().getAverageSalary()));
     table.setItems(brigade_worker_model);
 }
 
@@ -177,6 +169,7 @@ private void updateTable() throws SQLException {
     
         age_column.setCellValueFactory(cellData->cellData.getValue().getAge().asObject());
 
+        avg_salary_field.setText(String.valueOf((int) new brigade_worker_DAO().getAverageSalary()));
         try {
             brigade_worker_model.addAll( brigade_worker.getAllBrigadeWorker());
            } catch (SQLException e) {

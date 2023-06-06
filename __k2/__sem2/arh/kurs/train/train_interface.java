@@ -10,5 +10,4 @@ public interface train_interface {
     void addTrains(train trains);
     void updateTrains(train trains);
     void deleteTrains(int id);
-    train getTrainsById(int id);
 }

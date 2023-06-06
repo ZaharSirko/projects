@@ -80,27 +80,6 @@ public class canceled_routes_DAO extends _connection implements canceled_routes_
         }
     }
 
-    @Override
-    public canceled_routes getRoutesById(int id) {
-      
-        canceled_routes canceled_route = null;
-        try {
-        PreparedStatement statement = connection.prepareStatement("SELECT * FROM canceled_routes WHERE canceled_routes_id = ?");
-        statement.setInt(1, id);
-        ResultSet resultSet = statement.executeQuery();
-        while (resultSet.next()) {
-            int routes_id = resultSet.getInt("routes_id");
-            String type = resultSet.getString("canceled_routes_type");
-            canceled_route = new canceled_routes(id, routes_id,type);
-
-        }
-        resultSet.close();
-        statement.close();
-      } catch (SQLException e) {
-         e.printStackTrace();
-    }
-        return canceled_route;
-    }
 
  
 }

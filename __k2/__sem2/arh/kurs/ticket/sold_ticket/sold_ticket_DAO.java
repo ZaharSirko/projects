@@ -49,7 +49,7 @@ public class sold_ticket_DAO extends _connection implements sold_ticket_interfac
             statement.setInt(2, sold_ticket.getId());
             statement.setInt(3, sold_ticket.getSold_ticket_hour());
             statement.setInt(4, sold_ticket.getSold_ticket_week());
-            statement.setInt(4, sold_ticket.getSold_ticket_mounth());
+            statement.setInt(5, sold_ticket.getSold_ticket_mounth());
             statement.executeUpdate();
             statement.close();
         } catch (SQLException e) {
@@ -61,7 +61,7 @@ public class sold_ticket_DAO extends _connection implements sold_ticket_interfac
     @Override
     public void updateSoldTicket(sold_ticket sold_ticket) {
         try {
-            PreparedStatement statement = connection.prepareStatement("UPDATE sold_ticket set routes_id=?,sold_ticket_hour=?,sold_ticket_week=?,sold_ticket_mounth=? where sold_ticket");
+            PreparedStatement statement = connection.prepareStatement("UPDATE sold_ticket set routes_id=?,sold_ticket_hour=?,sold_ticket_week=?,sold_ticket_mounth=? where sold_ticket=?");
             statement.setInt(5, sold_ticket.getTicket_id());
             statement.setInt(1, sold_ticket.getId());
             statement.setInt(2, sold_ticket.getSold_ticket_hour());
@@ -88,30 +88,6 @@ public class sold_ticket_DAO extends _connection implements sold_ticket_interfac
         
     }
 
-    @Override
-    public sold_ticket getSoldTicketById(int sold_ticket_id) {
-        sold_ticket sold_ticket = null;
-        try {
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT sold_ticket,routes.routes_id,routes_from,routes_direction,routes_to,sold_ticket_hour,sold_ticket_week,sold_ticket_mounth from sold_ticket"
-           +"INNER JOIN routes on routes.routes_id = sold_ticket.routes_id WHERE sold_ticket=?");
-            while(resultSet.next()){
-            int routes_id = resultSet.getInt("routes.routes_id");
-            String routes_from = resultSet.getString("routes_from");
-            String routes_direction = resultSet.getString("routes_direction");
-            String routes_to = resultSet.getString("routes_to");
-            int sold_ticket_hour = resultSet.getInt("sold_ticket_hour");
-            int sold_ticket_week = resultSet.getInt("sold_ticket_week");
-            int sold_ticket_mounth = resultSet.getInt("sold_ticket_mounth");
-            sold_ticket = new sold_ticket(sold_ticket_id, routes_id, routes_from, routes_direction, routes_to, sold_ticket_hour, sold_ticket_week, sold_ticket_mounth);
-            }
-            statement.close();
-            resultSet.close();
-         } catch (SQLException e) {
-            e.printStackTrace();
-        }
-            return sold_ticket;
-    }
     }
     
 

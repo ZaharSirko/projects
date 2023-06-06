@@ -36,9 +36,6 @@ public class sold_ticket_ui extends scene_ {
     private TableColumn<sold_ticket_model, Integer> id_column;
 
     @FXML
-    private TableColumn<sold_ticket_model,String> type_column;
-
-    @FXML
     private TableColumn<sold_ticket_model, Integer> route_id_column;
 
     @FXML
@@ -67,9 +64,6 @@ public class sold_ticket_ui extends scene_ {
 
 
     @FXML
-    private TextField name_field;
-
-    @FXML
     private TextField id_field;
 
     @FXML
@@ -91,7 +85,7 @@ public class sold_ticket_ui extends scene_ {
     private ObservableList<sold_ticket_model>  sold_ticket_models;
     @FXML
     private void AddButton(ActionEvent event) throws SQLException {
-    if (name_field.getText().isEmpty() || id_field.getText().isEmpty() || sold_ticket_hour_column_field.getText().isEmpty() || route_id_field.getText().isEmpty()
+    if ( id_field.getText().isEmpty() || sold_ticket_hour_column_field.getText().isEmpty() || route_id_field.getText().isEmpty()
     || sold_ticket_week_column_field.getText().isEmpty()|| sold_ticket_mounth_column_field.getText().isEmpty()) {
       Alerts();
     }
@@ -101,10 +95,9 @@ public class sold_ticket_ui extends scene_ {
     int sold_ticket_hour = Integer.parseInt(sold_ticket_hour_column_field.getText());
     int sold_ticket_week = Integer.parseInt(sold_ticket_week_column_field.getText());
     int sold_ticket_mounth = Integer.parseInt(sold_ticket_mounth_column_field.getText());
-    String type = name_field.getText();
-    sold_ticket sold_ticket = new sold_ticket(sold_Id,type, routesId, sold_ticket_hour, sold_ticket_week, sold_ticket_mounth);
+    sold_ticket sold_ticket = new sold_ticket(sold_Id, routesId, sold_ticket_hour, sold_ticket_week, sold_ticket_mounth);
     new  sold_ticket_DAO().addSoldTicket(sold_ticket);
-    clean(id_field,route_id_field, name_field,sold_ticket_hour_column_field,route_id_field,sold_ticket_week_column_field,sold_ticket_mounth_column_field);
+    clean(id_field,route_id_field,sold_ticket_hour_column_field,route_id_field,sold_ticket_week_column_field,sold_ticket_mounth_column_field);
     updateTable();
    }
 }
@@ -113,7 +106,7 @@ private void DeleteButton(ActionEvent event) throws SQLException {
      sold_ticket_model selected = table.getSelectionModel().getSelectedItem();
 	int id = selected.getTicket_id().get();
     new  sold_ticket_DAO().deleteSoldTicket(id);
-    clean(id_field,route_id_field, name_field,sold_ticket_hour_column_field,route_id_field,sold_ticket_week_column_field,sold_ticket_mounth_column_field);
+    clean(id_field,route_id_field,sold_ticket_hour_column_field,route_id_field,sold_ticket_week_column_field,sold_ticket_mounth_column_field);
     updateTable();
 }
 
@@ -122,7 +115,6 @@ private void SelectButton(){
     sold_ticket_model selected = table.getSelectionModel().getSelectedItem();
      id_field.setText(String.valueOf(selected.getTicket_id().get()));
     route_id_field.setText(String.valueOf(selected.getRouteId().get()));
-    name_field.setText(selected.getType().get());
     sold_ticket_hour_column_field.setText(String.valueOf(selected.getSold_ticket_hour().get()));
     sold_ticket_week_column_field.setText(String.valueOf(selected.getSold_ticket_week().get()));
     sold_ticket_mounth_column_field.setText(String.valueOf(selected.getSold_ticket_mounth().get()));
@@ -132,7 +124,7 @@ private void SelectButton(){
 
 @FXML
 private void UpdateButton(ActionEvent event) throws SQLException{
-    if (name_field.getText().isEmpty() || id_field.getText().isEmpty() || sold_ticket_hour_column_field.getText().isEmpty() || route_id_field.getText().isEmpty()
+    if (  id_field.getText().isEmpty() || sold_ticket_hour_column_field.getText().isEmpty() || route_id_field.getText().isEmpty()
     || sold_ticket_week_column_field.getText().isEmpty()|| sold_ticket_mounth_column_field.getText().isEmpty()) {
       Alerts();
     }
@@ -142,10 +134,9 @@ private void UpdateButton(ActionEvent event) throws SQLException{
     int sold_ticket_hour = Integer.parseInt(sold_ticket_hour_column_field.getText());
     int sold_ticket_week = Integer.parseInt(sold_ticket_week_column_field.getText());
     int sold_ticket_mounth = Integer.parseInt(sold_ticket_mounth_column_field.getText());
-    String type = name_field.getText();
-    sold_ticket sold_ticket = new sold_ticket(sold_Id,type, routesId, sold_ticket_hour, sold_ticket_week, sold_ticket_mounth);
+    sold_ticket sold_ticket = new sold_ticket(sold_Id,routesId, sold_ticket_hour, sold_ticket_week, sold_ticket_mounth);
     new  sold_ticket_DAO().updateSoldTicket(sold_ticket);
-    clean(id_field,route_id_field, name_field,sold_ticket_hour_column_field,route_id_field,sold_ticket_week_column_field,sold_ticket_mounth_column_field);
+    clean(id_field,route_id_field  ,sold_ticket_hour_column_field,route_id_field,sold_ticket_week_column_field,sold_ticket_mounth_column_field);
     updateTable();
      }
 }
@@ -161,7 +152,6 @@ private void updateTable() throws SQLException {
         sold_ticket_models = FXCollections.observableArrayList();
 
        id_column.setCellValueFactory(cellData->cellData.getValue().getTicket_id().asObject());
-       type_column.setCellValueFactory(cellData->cellData.getValue().getType());
        route_id_column.setCellValueFactory(cellData->cellData.getValue().getRouteId().asObject());
        from_column.setCellValueFactory(cellData->cellData.getValue().getRoutesFrom());
        direction_column.setCellValueFactory(cellData->cellData.getValue().getRoutesDirection());

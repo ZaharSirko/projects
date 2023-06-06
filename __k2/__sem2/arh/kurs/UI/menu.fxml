@@ -17,17 +17,17 @@
             </Label>
          </children>
       </Pane>
-      <Button fx:id="railway_station_worker_button" alignment="TOP_LEFT" layoutX="5.0" layoutY="86.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="1112.0" style="-fx-background-color: #000;" text="1. Отримати перелік і загальне число всіх працівників залізничної станції,начальників відділів, працівників вказаного відділу, за стажем роботи на станції,статевою ознакою, віком, ознакою наявності та кількості дітей, розміру заробітної плати." textFill="#8c8b8b" wrapText="true">
+      <Button fx:id="railway_station_worker_button" alignment="TOP_LEFT" layoutX="5.0" layoutY="86.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="1112.0" style="-fx-background-color: #000;" text="1. Отримати перелік і загальне число всіх працівників залізничної станції,начальників відділів, працівників відділу, за стажем роботи на станції,статевою ознакою, віком, ознакою наявності та кількості дітей, розміру заробітної плати." textFill="#8c8b8b" wrapText="true">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="brigade_worker_button" alignment="TOP_LEFT" layoutX="5.0" layoutY="158.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="1112.0" style="-fx-background-color: #000;" text="2. Отримати перелік і загальне число працівників у бригаді, по всіх відділах, у зазначеному відділі, за віком,сумарною (середньої) зарплаті в бригаді" textFill="#8c8b8b" wrapText="true">
+      <Button fx:id="brigade_worker_button" alignment="TOP_LEFT" layoutX="5.0" layoutY="158.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="1112.0" style="-fx-background-color: #000;" text="2. Отримати перелік працівників у бригаді, по всіх відділах, за віком,сумарною (середньої) зарплаті в бригаді" textFill="#8c8b8b" wrapText="true">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="locomative_drivers_button" alignment="TOP_LEFT" layoutX="5.0" layoutY="228.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="1112.0" style="-fx-background-color: #000;" text="3. Отримати перелік і загальне число водіїв локомотивів, які пройшли медогляд або не пройшли медогляд у вказаний рік, за статевою ознакою, віком,розміром заробітної плати." textFill="#8c8b8b" wrapText="true">
+      <Button fx:id="locomative_drivers_button" alignment="TOP_LEFT" layoutX="5.0" layoutY="228.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="1112.0" style="-fx-background-color: #000;" text="3. Отримати перелік локомотивів, які пройшли медогляд або не пройшли медогляд у вказаний рік, за статевою ознакою, віком,розміром заробітної плати." textFill="#8c8b8b" wrapText="true">
          <font>
             <Font size="18.0" />
          </font>

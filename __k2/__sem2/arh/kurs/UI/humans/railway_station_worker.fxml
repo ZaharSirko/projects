@@ -59,11 +59,6 @@
             </TableView>
          </children>
       </GridPane>
-      <Button fx:id="select_department_button" layoutX="17.0" layoutY="263.0" mnemonicParsing="false" style="-fx-background-color: #000;" text="Виберіть відділ" textFill="#979797">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Button>
       <Button fx:id="uptade_button" layoutX="20.0" layoutY="209.0" mnemonicParsing="false" onAction="#UpdateButton" style="-fx-background-color: #000;" text="Оновити" textFill="#979797">
          <font>
             <Font size="16.0" />
@@ -82,7 +77,6 @@
       <TextField fx:id="department_field" layoutX="783.0" layoutY="532.0" prefHeight="25.0" prefWidth="102.0" promptText="department" />
       <TextField fx:id="id_ield" layoutX="50.0" layoutY="532.0" prefHeight="25.0" prefWidth="102.0" promptText="id" />
       <TextField fx:id="work_exp_field" layoutX="900.0" layoutY="532.0" prefHeight="25.0" prefWidth="102.0" promptText="work exp" />
-      <TextField fx:id="select_department_field" layoutX="17.0" layoutY="303.0" prefHeight="25.0" prefWidth="124.0" promptText="select department" />
       <Button fx:id="delete_button" layoutX="18.0" layoutY="116.0" mnemonicParsing="false" onAction="#DeleteButton" style="-fx-background-color: #000;" text="Видалити" textFill="#979797">
          <font>
             <Font size="16.0" />
@@ -95,5 +89,11 @@
          </font>
       </Button>
       <TextField fx:id="age_field" layoutX="1138.0" layoutY="532.0" prefHeight="25.0" prefWidth="102.0" promptText="age" />
+      <TextField fx:id="worker_count" layoutX="1023.0" layoutY="464.0" prefHeight="25.0" prefWidth="102.0" promptText="worker count" />
+      <Label layoutX="1019.0" layoutY="437.0" prefHeight="21.0" prefWidth="110.0" text="worker count" textFill="#979797">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

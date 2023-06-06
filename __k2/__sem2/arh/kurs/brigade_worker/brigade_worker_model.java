@@ -1,6 +1,4 @@
 package __k2.__sem2.arh.kurs.brigade_worker;
-
-import __k2.__sem2.arh.kurs.worker.worker;
 import __k2.__sem2.arh.kurs.worker.worker_model;
 
 public class brigade_worker_model extends worker_model {

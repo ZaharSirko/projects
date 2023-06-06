@@ -113,34 +113,6 @@ public class railway_station_worker_DAO extends _connection implements railway_s
         }
         
     }
-    @Override
-    public railway_station_worker getRailwayStationWorkerById(int id) {
-        railway_station_worker railway_station_worker = null;
-        try {
-            PreparedStatement statement = connection.prepareStatement("SELECT * FROM brigade_worker WHERE brigade_worker_id = ?");
-            statement.setInt(1, id);
-            ResultSet resultSet = statement.executeQuery();
 
-            if (resultSet.next()) {
-                String surename = resultSet.getString("worker_surename");
-                String name = resultSet.getString("worker_name");
-                int age = resultSet.getInt("worker_age");
-                String gender = resultSet.getString("worker_gender");
-                int children = resultSet.getInt("worker_children");
-                String chief = resultSet.getString("worker_chief");
-                int department = resultSet.getInt("worker_department");
-                int workExp = resultSet.getInt("worker_exp");
-                int salary = resultSet.getInt("worker_salary");
-
-                railway_station_worker = new railway_station_worker(id, name, surename, age, gender, children, chief, department, workExp, salary);
-            }
-
-            resultSet.close();
-            statement.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return railway_station_worker;
-    }
     
 }

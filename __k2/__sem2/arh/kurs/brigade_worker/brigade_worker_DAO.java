@@ -27,40 +27,9 @@ public class brigade_worker_DAO extends _connection implements brigade_worker_in
                 int salary = resultSet.getInt("brigade_worker_salary");
                 int department = resultSet.getInt("brigade_worker_department");
 
-                brigade_worker brigadeWorker = new brigade_worker(id, name, surename, age, salary, department);
+                brigade_worker brigadeWorker = new brigade_worker(id, name, surename, age, department, salary);
                 brigadeWorkers.add(brigadeWorker);
 
-            }
-
-            resultSet.close();
-            statement.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return brigadeWorkers;
-    }
-
-    @Override
-    public List<brigade_worker> getBrigadeWorkersByDepartment(int department) {
-       
-        List<brigade_worker> brigadeWorkers = new ArrayList<>();
-
-        try {
-            PreparedStatement statement = connection.prepareStatement("SELECT * FROM brigade_worker WHERE brigade_worker_department = ?");
-            statement.setInt(1, department);
-            ResultSet resultSet = statement.executeQuery();
-
-            while (resultSet.next()) {
-                int id = resultSet.getInt("brigade_worker_id");
-                String name = resultSet.getString("brigade_worker_name");
-                String surename = resultSet.getString("brigade_worker_surename");
-                int age = resultSet.getInt("brigade_worker_age");
-                int salary = resultSet.getInt("brigade_worker_salary");
-                int dept = resultSet.getInt("brigade_worker_department");
-
-                brigade_worker brigadeWorker = new brigade_worker(id, name, surename, age, salary, dept);
-                brigadeWorkers.add(brigadeWorker);
             }
 
             resultSet.close();
@@ -137,33 +106,6 @@ public class brigade_worker_DAO extends _connection implements brigade_worker_in
             e.printStackTrace();
         }
         
-    }
-    @Override
-    public brigade_worker getBrigadeWorkerById(int id) {
-        brigade_worker brigadeWorker = null;
-
-        try {
-            PreparedStatement statement = connection.prepareStatement("SELECT * FROM brigade_worker WHERE brigade_worker_id = ?");
-            statement.setInt(1, id);
-            ResultSet resultSet = statement.executeQuery();
-
-            if (resultSet.next()) {
-                String name = resultSet.getString("brigade_worker_name");
-                String surename = resultSet.getString("brigade_worker_surename");
-                int age = resultSet.getInt("brigade_worker_age");
-                int salary = resultSet.getInt("brigade_worker_salary");
-                int department = resultSet.getInt("brigade_worker_department");
-
-                brigadeWorker = new brigade_worker(id, name, surename, age, salary, department);
-            }
-
-            resultSet.close();
-            statement.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return brigadeWorker;
     }
     
 }

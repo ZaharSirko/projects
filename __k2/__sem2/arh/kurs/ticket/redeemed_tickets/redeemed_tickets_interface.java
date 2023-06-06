@@ -8,5 +8,4 @@ public interface redeemed_tickets_interface {
     void addRedeemedTickets(redeemed_tickets redeemed_tickets);
     void updateRedeemedTickets(redeemed_tickets redeemed_tickets);
     void deleteRedeemedTickets(int redeemed_tickets_id);
-    redeemed_tickets getRedeemedTicketsById(int redeemed_tickets_id);
 }

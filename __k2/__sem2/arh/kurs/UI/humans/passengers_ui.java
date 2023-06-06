@@ -94,7 +94,8 @@ public class passengers_ui extends scene_ {
     String surename = surename_field.getText();
     String gender = gender_field.getText();
     String routes_to = routes_to_field.getText();
-    passengers passengers  = new passengers(id, name, surename, id, gender, routes_to);
+    int age = Integer.parseInt(age_field.getText());
+    passengers passengers  = new passengers(id, name, surename, age, gender, routes_to);
     new passengers_DAO().addPassenger(passengers);
     clean(id_ield,name_field,surename_field,gender_field,routes_to_field);
     updateTable();
@@ -117,6 +118,7 @@ private void SelectButton(){
     surename_field.setText(selected.getSurename().get());
     gender_field.setText(selected.getGender().get());
     routes_to_field.setText(selected.getRoutes_to().get());
+    age_field.setText(String.valueOf(selected.getAge().get()));
 }
 
 
@@ -131,7 +133,8 @@ private void UpdateButton(ActionEvent event) throws SQLException{
   String surename = surename_field.getText();
   String gender = gender_field.getText();
   String routes_to = routes_to_field.getText();
-  passengers passengers  = new passengers(id, name, surename, id, gender, routes_to);
+  int age = Integer.parseInt(age_field.getText());
+  passengers passengers  = new passengers(id, name, surename, age, gender, routes_to);
   new passengers_DAO().updatePassenger(passengers);
   clean(id_ield,name_field,surename_field,gender_field,routes_to_field);
   updateTable();

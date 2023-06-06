@@ -8,5 +8,4 @@ public interface sold_ticket_interface {
     void addSoldTicket(sold_ticket sold_ticket);
     void updateSoldTicket(sold_ticket sold_ticket);
     void deleteSoldTicket(int sold_ticket_id);
-    sold_ticket getSoldTicketById(int sold_ticket_id);
 }

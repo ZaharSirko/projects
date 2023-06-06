@@ -95,34 +95,5 @@ public class locomative_drivers_DAO extends _connection implements locomative_dr
         }
         
     }
-
-    @Override
-    public locomative_drivers getLocomativeDriversById(int id) {
-        locomative_drivers locomative_drivers = null;
-        try {
-        PreparedStatement statement = connection.prepareStatement("SELECT * FROM locomotive_driver WHERE locomotive_driver_id = ?");
-        statement.setInt(1, id);
-        ResultSet resultSet = statement.executeQuery();
-
-        while (resultSet.next()) {
-            String surename = resultSet.getString("locomotive_driver_surename");
-            String name = resultSet.getString("locomotive_driver_name");
-            String gender = resultSet.getString("locomotive_driver_gender");
-            int age  =resultSet.getInt("locomotive_driver_work_age");
-            int exp = resultSet.getInt("locomotive_driver_work_experience");
-            int salary = resultSet.getInt("locomotive_driver_salary");
-            String medical_2022 = resultSet.getString("locomotive_driver_medical_examination_2022");
-            String medical_2023 = resultSet.getString("locomotive_driver_medical_examination_2023");
-
-            locomative_drivers = new locomative_drivers(id, surename, name, gender,age, exp, salary,medical_2022,medical_2023);
-        }
-       } catch (SQLException e) {
-        e.printStackTrace();
-    }
-    return locomative_drivers;
-     
-
-    }
-
     
 }

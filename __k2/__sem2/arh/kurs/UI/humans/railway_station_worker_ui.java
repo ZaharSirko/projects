@@ -66,9 +66,6 @@ public class railway_station_worker_ui extends scene_ {
     private TableColumn<railway_station_worker_model, Integer> age_column;
 
     @FXML
-    private Button select_department_button;
-
-    @FXML
     private Button uptade_button;
 
     @FXML
@@ -99,15 +96,15 @@ public class railway_station_worker_ui extends scene_ {
     private TextField work_exp_field;
 
     @FXML
-    private TextField select_department_field;
-
-    @FXML
     private Button delete_button;
 
     @FXML
     private TextField salary_field;
     @FXML
     private TextField age_field;
+
+    @FXML
+    private TextField worker_count;
 
 
     private railway_station_worker_request  railway_station_worker;
@@ -187,6 +184,7 @@ private void UpdateButton(ActionEvent event) throws SQLException{
 private void updateTable() throws SQLException {
     railway_station_worker_model.clear();
     railway_station_worker_model.addAll(railway_station_worker.getAllRailwayStationWorker());
+    worker_count.setText(String.valueOf(new railway_station_worker_DAO().NumberOfRailwayStationWorker()));
     table.setItems(railway_station_worker_model);
 }
     @FXML
@@ -213,6 +211,10 @@ private void updateTable() throws SQLException {
       work_exp_column.setCellValueFactory(cellData->cellData.getValue().getWorkExperience().asObject());
   
     salary_column.setCellValueFactory(cellData->cellData.getValue().getSalary().asObject());
+
+    age_column.setCellValueFactory(cellData->cellData.getValue().getAge().asObject());
+
+    worker_count.setText(String.valueOf(new railway_station_worker_DAO().NumberOfRailwayStationWorker()));
 
        try {
         railway_station_worker_model.addAll(railway_station_worker.getAllRailwayStationWorker());

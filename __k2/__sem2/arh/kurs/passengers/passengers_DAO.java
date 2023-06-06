@@ -89,32 +89,5 @@ public class passengers_DAO extends _connection implements passengers_interface 
             e.printStackTrace();
         }
     }
-
-    @Override
-    public passengers getPassengerById(int id) {
-        passengers passengers = null;
-        try{
-          PreparedStatement statement = connection.prepareStatement("Slect * from passengers WHERE passengers_id =?");
-          statement.setInt(1, id);
-          ResultSet resultSet = statement.executeQuery();
-          while(resultSet.next()){
-              int passengers_id = resultSet.getInt("passengers_id");
-              String passengers_surename = resultSet.getString("passengers_surename");
-              String passengers_name = resultSet.getString("passengers_name");
-              String passengers_gender = resultSet.getString("passengers_gender");
-              int passengers_age = resultSet.getInt("passengers_age");
-              String routes_to = resultSet.getString("routes_to");
-   
-            passengers = new passengers(passengers_id, passengers_name, passengers_surename, passengers_age, passengers_gender, routes_to);
-              
-          }
-          statement.close();
-          resultSet.close();
-  
-        }catch (SQLException e) {
-          e.printStackTrace();
-     }
-          return passengers;
-    }
     
 }

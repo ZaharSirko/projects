@@ -8,6 +8,5 @@ public interface route_interface {
     void addRoutes(route routes);
     void updateRoutes(route routes);
     void deleteRoutes(int id);
-    route getRoutesById(int id);
     
 }

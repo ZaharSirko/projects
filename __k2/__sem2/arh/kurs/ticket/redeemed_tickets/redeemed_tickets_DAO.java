@@ -84,29 +84,5 @@ public class redeemed_tickets_DAO extends _connection implements redeemed_ticket
         }
         
     }
-
-    @Override
-    public redeemed_tickets getRedeemedTicketsById(int redeemed_tickets_id) {
-        redeemed_tickets redeemed_ticket = null;
-        try {
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT tickets_id,redeemed_tickets_type,redeemed_tickets.routes_id,routes_from,routes_direction,routes_to,redeemed_tickets_count from redeemed_tickets "
-           +"INNER JOIN routes on routes.routes_id = redeemed_tickets.routes_id");
-            while(resultSet.next()){
-            String type = resultSet.getString("redeemed_tickets_type");
-            int routes_id = resultSet.getInt("routes_id");
-            String routes_from = resultSet.getString("routes_from");
-            String routes_direction = resultSet.getString("routes_direction");
-            String routes_to = resultSet.getString("routes_to");
-            int redeemed_tickets_count = resultSet.getInt("redeemed_tickets_count");
-             redeemed_ticket = new redeemed_tickets(redeemed_tickets_id, type, routes_id, routes_from, routes_direction, routes_to, redeemed_tickets_count);
-            }
-            statement.close();
-            resultSet.close();
-         } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return redeemed_ticket;
-    }
     
 }

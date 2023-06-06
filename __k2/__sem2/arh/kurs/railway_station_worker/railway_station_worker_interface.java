@@ -8,5 +8,4 @@ public interface railway_station_worker_interface {
     void addRailwayStationWorker(railway_station_worker worker);
     void updateRailwayStationWorker(railway_station_worker worker);
     void deleteRailwayStationWorker(int id);
-    railway_station_worker getRailwayStationWorkerById(int id);
 }

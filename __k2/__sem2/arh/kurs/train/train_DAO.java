@@ -113,28 +113,5 @@ public class train_DAO extends _connection implements train_interface{
         }
         
     }
-
-    @Override
-    public train getTrainsById(int id) {
-        train trains = null;
-        try {
-        PreparedStatement statement = connection.prepareStatement("SELECT * FROM train WHERE train_id = ?");
-        statement.setInt(1, id);
-        ResultSet resultSet = statement.executeQuery();
-        while (resultSet.next()) {
-            int route_id = resultSet.getInt("routes_id");
-            int train_id = resultSet.getInt("train_id");
-            String name = resultSet.getString("train_name");
-            int routes_ticket_price = resultSet.getInt("routes_ticket_price");
-            int routes_duration = resultSet.getInt("routes_duration");
-             trains = new train(route_id, train_id, name, routes_ticket_price, routes_duration);
-        }
-        resultSet.close();
-        statement.close();
-      } catch (SQLException e) {
-         e.printStackTrace();
-    }
-        return trains;
-    }
     
 }

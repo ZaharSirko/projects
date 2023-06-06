@@ -7,5 +7,4 @@ public interface locomative_interface {
     void addLocomative(locomative Locomative);
     void updateLocomative(locomative Locomative);
     void deleteLocomative(int id);
-    locomative getLocomativeById(int id);
 }
