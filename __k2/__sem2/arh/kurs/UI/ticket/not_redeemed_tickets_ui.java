@@ -3,12 +3,14 @@ package __k2.__sem2.arh.kurs.UI.ticket;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
-
+import __k2.__sem2.arh.kurs.ticket.not_redeemed_tickets.not_redeemed_tickets;
+import __k2.__sem2.arh.kurs.ticket.not_redeemed_tickets.not_redeemed_tickets_DAO;
 import __k2.__sem2.arh.kurs.UI.scene_;
 import __k2.__sem2.arh.kurs.ticket.not_redeemed_tickets.not_redeemed_tickets_model;
 import __k2.__sem2.arh.kurs.ticket.not_redeemed_tickets.not_redeemed_tickets_request;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -57,41 +59,85 @@ public class not_redeemed_tickets_ui extends scene_ {
     private Button add_button;
 
     @FXML
-    private TextField from_field;
-
-    @FXML
     private TextField name_field;
-
-    @FXML
-    private TextField direction_field;
 
     @FXML
     private TextField id_field;
 
     @FXML
     private TextField not_redeemed_tickets_field;
-
+    @FXML
+    private TextField route_id_field;
+    
     @FXML
     private Button delete_button;
 
+
+    private not_redeemed_tickets_request not_redeemed_ticket;
+
+    private ObservableList<not_redeemed_tickets_model> not_redeemed_tickets_models;
     @FXML
-    private TextField delete_id_field;
+    private void AddButton(ActionEvent event) throws SQLException {
+    if (name_field.getText().isEmpty() || id_field.getText().isEmpty() || not_redeemed_tickets_field.getText().isEmpty() || route_id_field.getText().isEmpty()) {
+      Alerts();
+    }
+   else{
+    int not_redeemed_tickets_Id = Integer.parseInt(id_field.getText());
+    int routesId = Integer.parseInt(route_id_field.getText());
+    int not_redeemed_tickets = Integer.parseInt(not_redeemed_tickets_field.getText());
+    String type = name_field.getText();
+    not_redeemed_tickets not_redeemed_ticke = new not_redeemed_tickets(not_redeemed_tickets_Id, type, routesId, not_redeemed_tickets);
+    new not_redeemed_tickets_DAO().addNotRedeemedTickets(not_redeemed_ticke);
+    clean(id_field,route_id_field,not_redeemed_tickets_field,name_field);
+    updateTable();
+   }
+}
+@FXML
+private void DeleteButton(ActionEvent event) throws SQLException {
+    not_redeemed_tickets_model selected = table.getSelectionModel().getSelectedItem();
+	int id = selected.getTicket_id().get();
+    new not_redeemed_tickets_DAO().deleteNotRedeemedTickets(id);
+     clean(id_field,route_id_field,not_redeemed_tickets_field,name_field);
+    updateTable();
+}
 
-    @FXML
-    private TextField to_field;
+@FXML
+private void SelectButton(){
+    not_redeemed_tickets_model selected = table.getSelectionModel().getSelectedItem();
+    id_field.setText(String.valueOf(selected.getTicket_id().get()));
+    route_id_field.setText(String.valueOf(selected.getRouteId().get()));
+    not_redeemed_tickets_field.setText(String.valueOf(selected.getNot_redeemed_tickets().get()));
+    name_field.setText(selected.getType().get());
 
-    @FXML
-    private TextField route_id_field;
+}
 
-    private not_redeemed_tickets_request not_redeemed_tickets;
 
-    private ObservableList<not_redeemed_tickets_model> not_redeemed_tickets_model;
-
+@FXML
+private void UpdateButton(ActionEvent event) throws SQLException{
+    if (name_field.getText().isEmpty() || id_field.getText().isEmpty() || not_redeemed_tickets_field.getText().isEmpty() || route_id_field.getText().isEmpty()) {
+        Alerts();
+      }
+     else{
+      int not_redeemed_tickets_Id = Integer.parseInt(id_field.getText());
+      int routesId = Integer.parseInt(route_id_field.getText());
+      int not_redeemed_tickets = Integer.parseInt(not_redeemed_tickets_field.getText());
+      String type = name_field.getText();
+      not_redeemed_tickets not_redeemed_ticke = new not_redeemed_tickets(not_redeemed_tickets_Id, type, routesId, not_redeemed_tickets);
+      new not_redeemed_tickets_DAO().updateNotRedeemedTickets(not_redeemed_ticke);
+      clean(id_field,route_id_field,not_redeemed_tickets_field,name_field);
+      updateTable();
+     }
+}
+private void updateTable() throws SQLException {
+    not_redeemed_tickets_models.clear();
+    not_redeemed_tickets_models.addAll(not_redeemed_ticket.getAllNotRedeemedTicket());
+    table.setItems(not_redeemed_tickets_models);
+}
     @FXML
     void initialize() throws SQLException {
         switchBack(back_button);
-        not_redeemed_tickets = new not_redeemed_tickets_request();
-        not_redeemed_tickets_model = FXCollections.observableArrayList();
+        not_redeemed_ticket = new not_redeemed_tickets_request();
+        not_redeemed_tickets_models = FXCollections.observableArrayList();
 
         id_column.setCellValueFactory(cellData->cellData.getValue().getTicket_id().asObject());
         type_column.setCellValueFactory(cellData->cellData.getValue().getType());
@@ -103,13 +149,13 @@ public class not_redeemed_tickets_ui extends scene_ {
 
        
         try {
-            not_redeemed_tickets_model.addAll(not_redeemed_tickets.getAllNotRedeemedTicket());
+            not_redeemed_tickets_models.addAll(not_redeemed_ticket.getAllNotRedeemedTicket());
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
 
-        table.setItems(not_redeemed_tickets_model);
+        table.setItems(not_redeemed_tickets_models);
 
         connection.close();
     }

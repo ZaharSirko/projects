@@ -10,7 +10,7 @@ import java.util.List;
 import __k2.__sem2.arh.kurs._connection;
 
 public class sold_ticket_DAO extends _connection implements sold_ticket_interface {
-    sold_ticket_DAO(){
+    public sold_ticket_DAO(){
         conn();
     }
     @Override

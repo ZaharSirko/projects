@@ -10,7 +10,7 @@ import java.util.List;
 import __k2.__sem2.arh.kurs._connection;
 
 public class not_redeemed_tickets_DAO extends _connection implements not_redeemed_tickets_interface {
-    not_redeemed_tickets_DAO(){
+    public not_redeemed_tickets_DAO(){
         conn();
     }
     @Override

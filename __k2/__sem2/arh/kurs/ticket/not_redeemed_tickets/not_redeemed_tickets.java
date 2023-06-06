@@ -14,6 +14,12 @@ public class not_redeemed_tickets extends ticket {
         this.not_redeemed_tickets = not_redeemed_tickets;
     }
 
+    public not_redeemed_tickets(int not_redeemed_tickets_Id, String type, int routesId,
+            int not_redeemed_tickets) {
+                super(not_redeemed_tickets_Id, type, routesId);
+                this.not_redeemed_tickets = not_redeemed_tickets;
+    }
+
     public int getNotRedeemed_tickets() {
         return not_redeemed_tickets;
     }

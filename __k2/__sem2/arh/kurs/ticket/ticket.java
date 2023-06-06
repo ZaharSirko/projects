@@ -19,6 +19,15 @@ public class ticket  extends route{
         this.ticket_id = ticket_id;
     }
 
+    public ticket(int ticket_id, String type, int routesId) {
+        super(routesId);
+        this.ticket_id = ticket_id;
+        this.type = type;
+    }
+    public ticket(int ticket_id, int routesId) {
+        super(routesId);
+        this.ticket_id = ticket_id;
+    }
     public int getTicket_id() {
         return ticket_id;
     }

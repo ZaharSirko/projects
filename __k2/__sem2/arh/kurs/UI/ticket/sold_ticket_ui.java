@@ -5,11 +5,13 @@ import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 import __k2.__sem2.arh.kurs.UI.scene_;
-
+import __k2.__sem2.arh.kurs.ticket.sold_ticket.sold_ticket;
+import __k2.__sem2.arh.kurs.ticket.sold_ticket.sold_ticket_DAO;
 import __k2.__sem2.arh.kurs.ticket.sold_ticket.sold_ticket_model;
 import __k2.__sem2.arh.kurs.ticket.sold_ticket.sold_ticket_request;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -63,29 +65,15 @@ public class sold_ticket_ui extends scene_ {
     @FXML
     private Button add_button;
 
-    @FXML
-    private TextField from_field;
 
     @FXML
     private TextField name_field;
 
     @FXML
-    private TextField direction_field;
-
-    @FXML
-    private TextField id_ield;
+    private TextField id_field;
 
     @FXML
     private TextField sold_ticket_hour_column_field;
-
-    @FXML
-    private Button delete_button;
-
-    @FXML
-    private TextField delete_id_field;
-
-    @FXML
-    private TextField to_field;
 
     @FXML
     private TextField route_id_field;
@@ -95,15 +83,82 @@ public class sold_ticket_ui extends scene_ {
 
     @FXML
     private TextField sold_ticket_mounth_column_field;
+    @FXML
+    private Button delete_button;
 
-    private sold_ticket_request  sold_ticket;
+    private sold_ticket_request  sold_tickets;
 
-    private ObservableList<sold_ticket_model>  sold_ticket_model;
+    private ObservableList<sold_ticket_model>  sold_ticket_models;
+    @FXML
+    private void AddButton(ActionEvent event) throws SQLException {
+    if (name_field.getText().isEmpty() || id_field.getText().isEmpty() || sold_ticket_hour_column_field.getText().isEmpty() || route_id_field.getText().isEmpty()
+    || sold_ticket_week_column_field.getText().isEmpty()|| sold_ticket_mounth_column_field.getText().isEmpty()) {
+      Alerts();
+    }
+   else{
+    int  sold_Id = Integer.parseInt(id_field.getText());
+    int routesId = Integer.parseInt(route_id_field.getText());
+    int sold_ticket_hour = Integer.parseInt(sold_ticket_hour_column_field.getText());
+    int sold_ticket_week = Integer.parseInt(sold_ticket_week_column_field.getText());
+    int sold_ticket_mounth = Integer.parseInt(sold_ticket_mounth_column_field.getText());
+    String type = name_field.getText();
+    sold_ticket sold_ticket = new sold_ticket(sold_Id,type, routesId, sold_ticket_hour, sold_ticket_week, sold_ticket_mounth);
+    new  sold_ticket_DAO().addSoldTicket(sold_ticket);
+    clean(id_field,route_id_field, name_field,sold_ticket_hour_column_field,route_id_field,sold_ticket_week_column_field,sold_ticket_mounth_column_field);
+    updateTable();
+   }
+}
+@FXML
+private void DeleteButton(ActionEvent event) throws SQLException {
+     sold_ticket_model selected = table.getSelectionModel().getSelectedItem();
+	int id = selected.getTicket_id().get();
+    new  sold_ticket_DAO().deleteSoldTicket(id);
+    clean(id_field,route_id_field, name_field,sold_ticket_hour_column_field,route_id_field,sold_ticket_week_column_field,sold_ticket_mounth_column_field);
+    updateTable();
+}
+
+@FXML
+private void SelectButton(){
+    sold_ticket_model selected = table.getSelectionModel().getSelectedItem();
+     id_field.setText(String.valueOf(selected.getTicket_id().get()));
+    route_id_field.setText(String.valueOf(selected.getRouteId().get()));
+    name_field.setText(selected.getType().get());
+    sold_ticket_hour_column_field.setText(String.valueOf(selected.getSold_ticket_hour().get()));
+    sold_ticket_week_column_field.setText(String.valueOf(selected.getSold_ticket_week().get()));
+    sold_ticket_mounth_column_field.setText(String.valueOf(selected.getSold_ticket_mounth().get()));
+
+}
+
+
+@FXML
+private void UpdateButton(ActionEvent event) throws SQLException{
+    if (name_field.getText().isEmpty() || id_field.getText().isEmpty() || sold_ticket_hour_column_field.getText().isEmpty() || route_id_field.getText().isEmpty()
+    || sold_ticket_week_column_field.getText().isEmpty()|| sold_ticket_mounth_column_field.getText().isEmpty()) {
+      Alerts();
+    }
+   else{
+    int  sold_Id = Integer.parseInt(id_field.getText());
+    int routesId = Integer.parseInt(route_id_field.getText());
+    int sold_ticket_hour = Integer.parseInt(sold_ticket_hour_column_field.getText());
+    int sold_ticket_week = Integer.parseInt(sold_ticket_week_column_field.getText());
+    int sold_ticket_mounth = Integer.parseInt(sold_ticket_mounth_column_field.getText());
+    String type = name_field.getText();
+    sold_ticket sold_ticket = new sold_ticket(sold_Id,type, routesId, sold_ticket_hour, sold_ticket_week, sold_ticket_mounth);
+    new  sold_ticket_DAO().updateSoldTicket(sold_ticket);
+    clean(id_field,route_id_field, name_field,sold_ticket_hour_column_field,route_id_field,sold_ticket_week_column_field,sold_ticket_mounth_column_field);
+    updateTable();
+     }
+}
+private void updateTable() throws SQLException {
+    sold_ticket_models.clear();
+    sold_ticket_models.addAll( sold_tickets.getAllSoldTickets());
+    table.setItems( sold_ticket_models);
+}
     @FXML
     void initialize() throws SQLException {
         switchBack(back_button);
-        sold_ticket = new  sold_ticket_request();
-        sold_ticket_model = FXCollections.observableArrayList();
+        sold_tickets = new  sold_ticket_request();
+        sold_ticket_models = FXCollections.observableArrayList();
 
        id_column.setCellValueFactory(cellData->cellData.getValue().getTicket_id().asObject());
        type_column.setCellValueFactory(cellData->cellData.getValue().getType());
@@ -118,13 +173,13 @@ public class sold_ticket_ui extends scene_ {
 
       
        try {
-        sold_ticket_model.addAll( sold_ticket.getAllSoldTickets());
+        sold_ticket_models.addAll( sold_tickets.getAllSoldTickets());
        } catch (SQLException e) {
            e.printStackTrace();
        }
 
 
-       table.setItems( sold_ticket_model);
+       table.setItems( sold_ticket_models);
 
        connection.close();
     }
