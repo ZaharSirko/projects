@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TruthTable",
+            "request": "launch",
+            "mainClass": "ch.holo.TruthTable",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "MinimizedTable",
+            "request": "launch",
+            "mainClass": "MinimizedTable",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "TruthTable",
+            "request": "launch",
+            "mainClass": "TruthTable",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "asd",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.diskr.lab8.asd",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_lab8",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.diskr.lab8._lab8",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
             "name": "_main",
             "request": "launch",
             "mainClass": "__k2.__sem2.arh.kurs._main",

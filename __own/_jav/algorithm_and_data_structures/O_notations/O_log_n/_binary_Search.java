@@ -21,7 +21,7 @@ public class _binary_Search {
         }
     }
 
-    private static int binarySearch(int[] arr, int target) {
+    public static int binarySearch(int[] arr, int target) {
 
         int low = 0;
         int high = arr.length-1;
@@ -31,7 +31,7 @@ public class _binary_Search {
             int middle = low + (high - low) /2;
             int value = arr[middle];
 
-            System.out.println("Middle " + value);
+            // System.out.println("Middle " + value);
 
             if(value < target) low = middle + 1;
             else if(value > target) high = middle - 1;
