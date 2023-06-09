@@ -8,6 +8,13 @@
             "type": "java",
             "name": "TruthTable",
             "request": "launch",
+            "mainClass": "__k2.__sem2.diskr.lab5.TruthTable",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "TruthTable",
+            "request": "launch",
             "mainClass": "ch.holo.TruthTable",
             "projectName": "projects_46f35c64"
         },

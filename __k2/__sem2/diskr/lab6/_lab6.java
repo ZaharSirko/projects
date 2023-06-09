@@ -5,29 +5,29 @@ import java.util.List;
 public class _lab6 {
     public static void main(String[] args) {
 
-        boolean[] x = {false, false, false, false, true, true, true, true};
-        boolean[] y = {false, false, true, true, false, false, true, true};
-        boolean[] z = {false, true, false, true, false, true, false, true};
+        // boolean[] x = {false, false, false, false, true, true, true, true};
+        // boolean[] y = {false, false, true, true, false, false, true, true};
+        // boolean[] z = {false, true, true, true, true, true, false, false};
 
-        // boolean[] x = {false, false, false, true, true, true, true, false};
-        // boolean[] y = {false, false, true, false, false, false, false, false};
-        // boolean[] z = {true, true, false, false, false, false, false, true};
+        boolean[] x = {false, false, false, true, false, true, true, false};
+        boolean[] y = {false, false, true, false,  true, false, false, false};
+        boolean[] z = {true, true, false, false, false, false, false, true};
 
-        boolean[] f = {false, true, false, false, false, false, false, true};
+        boolean[] f = {false, true, true, true, true, true, false, false};
 
         String functionType = getFunctionType(f);
-        System.out.println("Тип булевої функції: " + functionType);
+        System.out.println("Type of boolean function: " + functionType);
          
-        System.out.println(isLinier(x, y, z));
-         System.out.println("saveZero " +saveZero(f));
-         System.out.println("saveOne "  + saveOne(f));
+        System.out.println ("is linier: " + isLinier(x, y, z));
+         System.out.println("saveZero:  " +saveZero(f));
+         System.out.println("saveOne:   "  + saveOne(f));
         
 
         String ddnf = getDDNF(x, y, z, f);
-        System.out.println("ДДНФ: " + ddnf);
+        System.out.println("DDNF: " + ddnf);
 
         String dknf = getDKNF(x, y, z, f);
-        System.out.println("ДКНФ: " + dknf);
+        System.out.println("DKNF: " + dknf);
     }
 
  private static boolean isLinier(boolean[] x,boolean[]y,boolean[]z){
@@ -65,11 +65,11 @@ public class _lab6 {
         }
 
         if (hasTrue && hasFalse) {
-            return "Загальна булева функція";
+            return "General boolean function";
         } else if (hasTrue) {
-            return "Тотожність";
+            return "Identity";
         } else {
-            return "Нуль";
+            return "Zero";
         }
     }
 
