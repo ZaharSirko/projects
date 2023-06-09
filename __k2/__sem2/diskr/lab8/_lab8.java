@@ -6,9 +6,14 @@ import __own._jav.algorithm_and_data_structures.O_notations.O_log_n._binary_Sear
 
 public class _lab8 {
     public static void main(String[] args) {
-    double[][] A = d2Array(3);
-    double[][] B = d2Array(4);
+    double[][] A = d2Array(5);
+    double[][] B = d2Array(17);
     double[][] C = intersectionUnion(A,B);
+    System.out.println("---A---");
+    print2DArray(A);
+    System.out.println("---B---");
+    print2DArray(B);
+    System.out.println("---C---");
     print2DArray(C);
 
     }
@@ -53,19 +58,17 @@ public class _lab8 {
             i--;
         }
         return A;
-    
     }
     public static double[][] intersectionUnion(double[][] A, double[][] B) {
         int maxLength = Math.max(A.length, B.length);
         double[][] C = new double[maxLength][2];
     
-        // Intersection
+       
         for (int i = 0; i < A.length; i++) {
             C[i][0] = A[i][0];
             C[i][1] = Math.min(A[i][1], B[i][1]);
         }
     
-        // Union
         for (int i = A.length; i < B.length; i++) {
             C[i][0] = B[i][0];
             C[i][1] = B[i][1];
