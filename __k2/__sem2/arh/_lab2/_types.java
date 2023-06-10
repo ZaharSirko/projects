@@ -3,25 +3,25 @@ package __k2.__sem2.arh._lab2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class _types implements booking {
-   private List <booking> bookings = new ArrayList<booking>();
+public class _types implements railway {
+   private List <railway> vehicle = new ArrayList<railway>();
 @Override
-public void type(String booking_type) {
-     for (booking _booking : bookings) {
-        _booking.type(booking_type);
+public void type(String vehicle_type) {
+     for (railway _booking : vehicle) {
+        _booking.type(vehicle_type);
      }
 }
 @Override
-public void name(String name_of_booking) {
-  for (booking _booking : bookings) {
-    _booking.name(name_of_booking);
+public void name(String name) {
+  for (railway _booking : vehicle) {
+    _booking.name(name);
   }
 }
-public void add(booking value){
-   this.bookings.add(value);
+public void add(railway value){
+   this.vehicle.add(value);
 }
 public void clear(){
    System.out.println();
-   this.bookings.clear();
+   this.vehicle.clear();
 }
 }

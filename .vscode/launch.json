@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "_lab4",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.arh._lab2._lab4",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_lab5",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.arh._lab3._lab5",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "_lab3",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.arh.lab1._lab3",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
             "name": "TruthTable",
             "request": "launch",
             "mainClass": "__k2.__sem2.diskr.lab5.TruthTable",

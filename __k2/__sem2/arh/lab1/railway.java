@@ -1,9 +1,9 @@
-package __k2.__sem2.arh._lab1;
+package __k2.__sem2.arh.lab1;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class booking {
+public class railway {
     String name;
     List<String> booking = new ArrayList();
     
