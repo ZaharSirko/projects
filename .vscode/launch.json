@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "lab6",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.arh.lab6.lab6",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab1",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.arh.lab1.lab1",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
             "name": "_lab4",
             "request": "launch",
             "mainClass": "__k2.__sem2.arh._lab2._lab4",
