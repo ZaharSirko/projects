@@ -8,6 +8,9 @@
   <main>
   <div class="container mt-5">
         <h1>Groups</h1>
+        <div th:each="el:${groups}" class="alert alert-info mt-2">
+           <h3 th:text="${el.group_name}"/>
+        </div>
   </div>
   </main>
   <footer th:insert="blocks/footer::footer"></footer>
