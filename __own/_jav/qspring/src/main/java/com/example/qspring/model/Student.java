@@ -8,6 +8,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "students")
@@ -23,9 +24,13 @@ public class Student {
         generator = "student_sequence"
     )
     private Long student_id;
+    @NotNull
     private String std_name;
+    @NotNull
     private String surename;
+    @NotNull
     private String address;
+    @NotNull
     @ManyToOne
     @JoinColumn(name = "group_id") 
     private Group group;

@@ -1,11 +1,14 @@
 package com.example.qspring.model;
 
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "groups")
@@ -21,6 +24,8 @@ public class Group {
         generator = "group_sequence"
     )
     private Long group_id;
+    @NotNull
+    @Column(unique = true)
     private String group_name;
     public Group() {
     }
@@ -46,8 +51,6 @@ public class Group {
     public void setGroup_name(String group_name) {
         this.group_name = group_name;
     }
-    @Override
-    public String toString() {
-        return "GroupApplication [group_id=" + group_id + ", group_name=" + group_name + "]";
-    }
+
+
 }

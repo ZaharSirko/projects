@@ -10,6 +10,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "missedlesson")
@@ -25,11 +26,13 @@ public class MissedLesson  {
         generator = "skip_sequence"
     )
     private Long skip_id;
+    @NotNull
     @ManyToOne
     @JoinColumn(name = "student_id") 
     private Student student;
     private Float skips_houre;
     private String skip_reason;
+    @NotNull
     private LocalDate date;
     public MissedLesson(Long skip_id, Student student, Float skips_houre, String skip_reason, LocalDate date) {
         this.skip_id = skip_id;
