@@ -1,6 +1,6 @@
 
 -- INSERT INTO students(
---     group_id,  student_id, surename, std_name, adres) VALUES
+--     group_id,  student_id, surename, std_name, address) VALUES
 --     (  1,  1,  'Петренко',  'Петро',  'гуртожиток № 3'),
 --     (  1,  2, 'Семенченко',  'Семен',  'гуртожиток № 3'),
 --     (  1,  3,  'Федоренко', 'Федір', 'гуртожиток № 3'),
@@ -15,8 +15,5 @@
 --     (4,12,'Семенченко','Степан','гуртожиток № 4');
 
 
-SELECT * FROM students
-
-
-
+-- SELECT * FROM students
 

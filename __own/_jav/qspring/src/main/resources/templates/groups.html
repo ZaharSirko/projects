@@ -21,12 +21,11 @@
             <tr th:each="el : ${groups}">
                 <td><span th:text="${el.group_id}"> # </span></td>
                 <td><span th:text="${el.group_name}"> Name </span></td>
-                <td><a th:href="'/group/'+${el.group_name}">Details</a></td>
+                <td><a th:href="'/groups/'+ ${el.group_name}">Details</a></td>
             </tr>
         </tbody>
     </table>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
-
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Add Group</button>
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
