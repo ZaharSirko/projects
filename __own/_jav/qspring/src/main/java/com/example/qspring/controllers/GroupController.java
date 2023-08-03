@@ -72,7 +72,7 @@ public class GroupController {
 }
 
 
-@PostMapping("/groups/delete")
+@PostMapping("/groups/{group_name}/delete")
 public String groupDelete(@RequestParam(value = "group_name") String groupName, Model model) {
     Optional<Group> groupOptional = groupRepository.findByGroupName(groupName);
 

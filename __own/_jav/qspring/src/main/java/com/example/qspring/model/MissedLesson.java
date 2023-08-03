@@ -34,6 +34,7 @@ public class MissedLesson  {
     private String skip_reason;
     @NotNull
     private LocalDate date;
+    public MissedLesson(){};
     public MissedLesson(Long skip_id, Student student, Float skips_houre, String skip_reason, LocalDate date) {
         this.skip_id = skip_id;
         this.student = student;

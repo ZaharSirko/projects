@@ -8,7 +8,7 @@
 -- (5,'КІ-20-1');
 
 -- INSERT INTO students(
---     group_id,  student_id, surename, std_name, address) VALUES
+--     group_id,  student_id, surename, std_name, address) VALUES  
 --     (  1,  1,  'Петренко',  'Петро',  'гуртожиток № 3'),
 --     (  1,  2, 'Семенченко',  'Семен',  'гуртожиток № 3'),
 --     (  1,  3,  'Федоренко', 'Федір', 'гуртожиток № 3'),
@@ -22,4 +22,11 @@
 --     (3,11,'Сливка','Ольга','пер. Крутий, 7'),
 --     (4,12,'Семенченко','Степан','гуртожиток № 4');
 
-SELECT * FROM groups
+-- student_id,skips_houre,skip_reason,date   
+
+INSERT INTO missedlesson( date, skips_houre, skip_id, student_id, skip_reason) VALUES
+( '2021-10-12',  3, 1,  2, 'Поважна'),
+ ('2021-10-12',  5, 2,  5, 'Не поважна'),
+ ('2021-10-12',  6, 3,  1, null);
+
+-- SELECT * FROM groups
