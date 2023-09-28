@@ -6,6 +6,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "asd",
+            "request": "launch",
+            "mainClass": "asd"
+        },
+        {
+            "type": "java",
+            "name": "lab2",
+            "request": "launch",
+            "mainClass": "lab2"
+        },
+        {
+            "type": "java",
             "name": "lab6",
             "request": "launch",
             "mainClass": "__k2.__sem2.arh.lab6.lab6",
