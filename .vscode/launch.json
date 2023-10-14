@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "QspringApplication",
+            "request": "launch",
+            "mainClass": "com.example.qspring.QspringApplication",
+            "projectName": "qspring"
+        },
+        {
+            "type": "java",
             "name": "asd",
             "request": "launch",
             "mainClass": "asd"

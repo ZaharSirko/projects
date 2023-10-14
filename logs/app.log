@@ -1,0 +1,444 @@
+2023-10-14 18:44:20,062 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2023-10-14 18:44:20,110 INFO c.e.q.QspringApplication [restartedMain] Starting QspringApplication using Java 20.0.1 with PID 11404 (D:\Microsoft VS Code\projects\__own\_jav\qspring\target\classes started by Lenovo in D:\Microsoft VS Code\projects)
+2023-10-14 18:44:20,116 INFO c.e.q.QspringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-10-14 18:44:20,177 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-14 18:44:20,177 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-14 18:44:20,999 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-14 18:44:21,058 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 50 ms. Found 3 JPA repository interfaces.
+2023-10-14 18:44:21,814 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-10-14 18:44:21,824 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:44:21,827 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2023-10-14 18:44:21,827 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-14 18:44:21,921 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-10-14 18:44:21,923 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1743 ms
+2023-10-14 18:44:22,088 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-14 18:44:22,153 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-14 18:44:22,154 INFO o.h.c.Environment [restartedMain] HHH000406: Using bytecode reflection optimizer
+2023-10-14 18:44:22,294 INFO o.h.b.i.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-10-14 18:44:22,490 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-14 18:44:22,519 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-10-14 18:44:22,745 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@b87652a
+2023-10-14 18:44:22,746 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-10-14 18:44:23,033 INFO o.h.b.i.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-10-14 18:44:23,743 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-14 18:44:23,849 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-14 18:44:24,108 INFO o.s.d.j.r.q.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-10-14 18:44:24,544 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-14 18:44:25,899 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-10-14 18:44:25,914 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:44:25,939 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-14 18:44:25,948 INFO c.e.q.QspringApplication [restartedMain] Started QspringApplication in 6.152 seconds (process running for 6.94)
+2023-10-14 18:44:27,109 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-14 18:44:27,109 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-10-14 18:44:27,110 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-10-14 18:44:27,379 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][home] Deprecated unwrapped fragment expression "blocks/header::header" found in template home, line 7, col 11. Please use the complete syntax of fragment expressions instead ("~{blocks/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:44:27,402 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][home] Deprecated unwrapped fragment expression "blocks/footer::footer" found in template home, line 74, col 11. Please use the complete syntax of fragment expressions instead ("~{blocks/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:44:29,887 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-6] [THYMELEAF][http-nio-8080-exec-6][groups] Deprecated unwrapped fragment expression "blocks/header::header" found in template groups, line 7, col 13. Please use the complete syntax of fragment expressions instead ("~{blocks/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:44:29,895 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-6] [THYMELEAF][http-nio-8080-exec-6][groups] Deprecated unwrapped fragment expression "blocks/footer::footer" found in template groups, line 54, col 11. Please use the complete syntax of fragment expressions instead ("~{blocks/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:44:32,624 INFO c.e.q.DatabaseLogger [http-nio-8080-exec-7] Table changes 'groups': ІП-21-4
+2023-10-14 18:44:32,638 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-8] [THYMELEAF][http-nio-8080-exec-8][groups] Deprecated unwrapped fragment expression "blocks/header::header" found in template groups, line 7, col 13. Please use the complete syntax of fragment expressions instead ("~{blocks/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:44:32,653 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-8] [THYMELEAF][http-nio-8080-exec-8][groups] Deprecated unwrapped fragment expression "blocks/footer::footer" found in template groups, line 54, col 11. Please use the complete syntax of fragment expressions instead ("~{blocks/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:44:59,810 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2023-10-14 18:44:59,845 INFO c.e.q.QspringApplication [restartedMain] Starting QspringApplication using Java 20.0.1 with PID 9720 (D:\Microsoft VS Code\projects\__own\_jav\qspring\target\classes started by Lenovo in D:\Microsoft VS Code\projects)
+2023-10-14 18:44:59,848 INFO c.e.q.QspringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-10-14 18:44:59,890 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-14 18:44:59,891 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-14 18:45:00,552 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-14 18:45:00,602 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
+2023-10-14 18:45:01,240 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-10-14 18:45:01,255 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:45:01,258 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2023-10-14 18:45:01,258 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-14 18:45:01,337 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-10-14 18:45:01,339 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1446 ms
+2023-10-14 18:45:01,507 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-14 18:45:01,565 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-14 18:45:01,567 INFO o.h.c.Environment [restartedMain] HHH000406: Using bytecode reflection optimizer
+2023-10-14 18:45:01,714 INFO o.h.b.i.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-10-14 18:45:01,821 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-14 18:45:01,840 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-10-14 18:45:02,000 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@955c3b5
+2023-10-14 18:45:02,001 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-10-14 18:45:02,235 INFO o.h.b.i.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-10-14 18:45:02,824 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-14 18:45:02,903 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-14 18:45:03,185 INFO o.s.d.j.r.q.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-10-14 18:45:03,569 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-14 18:45:04,685 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-10-14 18:45:04,697 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:45:04,735 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-14 18:45:04,746 INFO c.e.q.QspringApplication [restartedMain] Started QspringApplication in 5.153 seconds (process running for 5.886)
+2023-10-14 18:45:05,582 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-14 18:45:05,582 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-10-14 18:45:05,584 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2023-10-14 18:45:05,851 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][groups] Deprecated unwrapped fragment expression "blocks/header::header" found in template groups, line 7, col 13. Please use the complete syntax of fragment expressions instead ("~{blocks/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:45:05,879 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][groups] Deprecated unwrapped fragment expression "blocks/footer::footer" found in template groups, line 54, col 11. Please use the complete syntax of fragment expressions instead ("~{blocks/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:45:08,426 INFO c.e.q.DatabaseLogger [http-nio-8080-exec-2] Table changes 'groups': ІП-21-4
+2023-10-14 18:45:08,440 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-3] [THYMELEAF][http-nio-8080-exec-3][groups] Deprecated unwrapped fragment expression "blocks/header::header" found in template groups, line 7, col 13. Please use the complete syntax of fragment expressions instead ("~{blocks/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:45:08,513 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-3] [THYMELEAF][http-nio-8080-exec-3][groups] Deprecated unwrapped fragment expression "blocks/footer::footer" found in template groups, line 54, col 11. Please use the complete syntax of fragment expressions instead ("~{blocks/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:45:40,018 INFO c.e.q.DatabaseLogger [http-nio-8080-exec-4] Table changes 'groups': ІП-21-5
+2023-10-14 18:45:40,028 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-6] [THYMELEAF][http-nio-8080-exec-6][groups] Deprecated unwrapped fragment expression "blocks/header::header" found in template groups, line 7, col 13. Please use the complete syntax of fragment expressions instead ("~{blocks/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:45:40,034 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-6] [THYMELEAF][http-nio-8080-exec-6][groups] Deprecated unwrapped fragment expression "blocks/footer::footer" found in template groups, line 54, col 11. Please use the complete syntax of fragment expressions instead ("~{blocks/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:45:56,720 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 17 class path changes (0 additions, 0 deletions, 17 modifications)
+2023-10-14 18:45:56,742 INFO o.a.c.h.Http11NioProtocol [Thread-5] Pausing ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:45:56,742 INFO o.a.c.c.StandardService [Thread-5] Stopping service [Tomcat]
+2023-10-14 18:45:56,744 INFO o.a.c.c.C.[.[.[/] [Thread-5] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-14 18:45:56,747 INFO o.a.c.h.Http11NioProtocol [Thread-5] Stopping ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:45:56,750 INFO o.a.c.h.Http11NioProtocol [Thread-5] Destroying ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:45:56,751 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-14 18:45:56,771 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2023-10-14 18:45:56,774 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2023-10-14 18:45:56,856 INFO c.e.q.QspringApplication [restartedMain] Starting QspringApplication using Java 20.0.1 with PID 9720 (D:\Microsoft VS Code\projects\__own\_jav\qspring\target\classes started by Lenovo in D:\Microsoft VS Code\projects)
+2023-10-14 18:45:56,856 INFO c.e.q.QspringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-10-14 18:45:56,998 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-14 18:45:57,010 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+2023-10-14 18:45:57,096 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-10-14 18:45:57,097 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:45:57,097 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2023-10-14 18:45:57,097 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-14 18:45:57,127 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-10-14 18:45:57,127 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 269 ms
+2023-10-14 18:45:57,158 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-14 18:45:57,163 INFO o.h.b.i.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-10-14 18:45:57,163 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-14 18:45:57,163 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2023-10-14 18:45:57,207 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@35470986
+2023-10-14 18:45:57,208 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2023-10-14 18:45:57,225 INFO o.h.b.i.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-10-14 18:45:57,270 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-14 18:45:57,272 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:45:57,272 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] відношення "missedlesson" не існує, пропускаємо
+2023-10-14 18:45:57,274 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:45:57,274 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] відношення "students" не існує, пропускаємо
+2023-10-14 18:45:57,275 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:45:57,275 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] таблиця "groups" не існує, пропускається
+2023-10-14 18:45:57,276 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:45:57,276 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] таблиця "missedlesson" не існує, пропускається
+2023-10-14 18:45:57,277 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:45:57,277 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] таблиця "students" не існує, пропускається
+2023-10-14 18:45:57,278 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:45:57,278 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] послідовність "group_sequence" не існує, пропускається
+2023-10-14 18:45:57,279 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:45:57,279 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] послідовність "skip_sequence" не існує, пропускається
+2023-10-14 18:45:57,280 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:45:57,280 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] послідовність "student_sequence" не існує, пропускається
+2023-10-14 18:45:57,316 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-14 18:45:57,420 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-14 18:45:57,783 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-10-14 18:45:57,788 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:45:57,791 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-14 18:45:57,794 INFO c.e.q.QspringApplication [restartedMain] Started QspringApplication in 0.974 seconds (process running for 58.934)
+2023-10-14 18:45:57,795 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-10-14 18:45:59,625 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-14 18:45:59,626 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-10-14 18:45:59,626 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2023-10-14 18:45:59,646 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][groups] Deprecated unwrapped fragment expression "blocks/header::header" found in template groups, line 7, col 13. Please use the complete syntax of fragment expressions instead ("~{blocks/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:45:59,652 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][groups] Deprecated unwrapped fragment expression "blocks/footer::footer" found in template groups, line 54, col 11. Please use the complete syntax of fragment expressions instead ("~{blocks/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:46:02,336 INFO c.e.q.DatabaseLogger [http-nio-8080-exec-2] Table changes 'groups': ІП-21-4
+2023-10-14 18:46:02,348 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-5] [THYMELEAF][http-nio-8080-exec-5][groups] Deprecated unwrapped fragment expression "blocks/header::header" found in template groups, line 7, col 13. Please use the complete syntax of fragment expressions instead ("~{blocks/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:46:02,353 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-5] [THYMELEAF][http-nio-8080-exec-5][groups] Deprecated unwrapped fragment expression "blocks/footer::footer" found in template groups, line 54, col 11. Please use the complete syntax of fragment expressions instead ("~{blocks/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:46:23,568 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-14 18:46:23,578 INFO o.a.c.h.Http11NioProtocol [Thread-7] Pausing ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:46:23,578 INFO o.a.c.c.StandardService [Thread-7] Stopping service [Tomcat]
+2023-10-14 18:46:23,579 INFO o.a.c.c.C.[.[.[/] [Thread-7] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-14 18:46:23,580 INFO o.a.c.h.Http11NioProtocol [Thread-7] Stopping ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:46:23,582 INFO o.a.c.h.Http11NioProtocol [Thread-7] Destroying ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:46:23,583 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-14 18:46:23,605 INFO c.z.h.HikariDataSource [Thread-7] HikariPool-2 - Shutdown initiated...
+2023-10-14 18:46:23,608 INFO c.z.h.HikariDataSource [Thread-7] HikariPool-2 - Shutdown completed.
+2023-10-14 18:46:23,700 INFO c.e.q.QspringApplication [restartedMain] Starting QspringApplication using Java 20.0.1 with PID 9720 (D:\Microsoft VS Code\projects\__own\_jav\qspring\target\classes started by Lenovo in D:\Microsoft VS Code\projects)
+2023-10-14 18:46:23,700 INFO c.e.q.QspringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-10-14 18:46:23,844 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-14 18:46:23,856 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+2023-10-14 18:46:23,929 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-10-14 18:46:23,930 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:46:23,930 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2023-10-14 18:46:23,930 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-14 18:46:23,956 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-10-14 18:46:23,956 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 254 ms
+2023-10-14 18:46:23,979 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-14 18:46:23,982 INFO o.h.b.i.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-10-14 18:46:23,982 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-14 18:46:23,982 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2023-10-14 18:46:24,026 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@3b34a9f6
+2023-10-14 18:46:24,026 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2023-10-14 18:46:24,042 INFO o.h.b.i.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-10-14 18:46:24,078 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-14 18:46:24,079 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:24,079 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] відношення "missedlesson" не існує, пропускаємо
+2023-10-14 18:46:24,080 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:24,080 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] відношення "students" не існує, пропускаємо
+2023-10-14 18:46:24,081 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:24,081 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] таблиця "groups" не існує, пропускається
+2023-10-14 18:46:24,082 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:24,082 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] таблиця "missedlesson" не існує, пропускається
+2023-10-14 18:46:24,082 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:24,082 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] таблиця "students" не існує, пропускається
+2023-10-14 18:46:24,084 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:24,085 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] послідовність "group_sequence" не існує, пропускається
+2023-10-14 18:46:24,085 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:24,086 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] послідовність "skip_sequence" не існує, пропускається
+2023-10-14 18:46:24,087 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:24,087 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] послідовність "student_sequence" не існує, пропускається
+2023-10-14 18:46:24,123 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-14 18:46:24,205 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-14 18:46:24,507 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-10-14 18:46:24,511 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:46:24,520 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-14 18:46:24,522 INFO c.e.q.QspringApplication [restartedMain] Started QspringApplication in 0.859 seconds (process running for 85.663)
+2023-10-14 18:46:24,524 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-10-14 18:46:25,957 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-14 18:46:25,966 INFO o.a.c.h.Http11NioProtocol [Thread-11] Pausing ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:46:25,966 INFO o.a.c.c.StandardService [Thread-11] Stopping service [Tomcat]
+2023-10-14 18:46:25,968 INFO o.a.c.h.Http11NioProtocol [Thread-11] Stopping ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:46:25,970 INFO o.a.c.h.Http11NioProtocol [Thread-11] Destroying ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:46:25,970 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [Thread-11] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-14 18:46:25,992 INFO c.z.h.HikariDataSource [Thread-11] HikariPool-3 - Shutdown initiated...
+2023-10-14 18:46:25,994 INFO c.z.h.HikariDataSource [Thread-11] HikariPool-3 - Shutdown completed.
+2023-10-14 18:46:26,063 INFO c.e.q.QspringApplication [restartedMain] Starting QspringApplication using Java 20.0.1 with PID 9720 (D:\Microsoft VS Code\projects\__own\_jav\qspring\target\classes started by Lenovo in D:\Microsoft VS Code\projects)
+2023-10-14 18:46:26,063 INFO c.e.q.QspringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-10-14 18:46:26,179 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-14 18:46:26,190 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+2023-10-14 18:46:26,260 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-10-14 18:46:26,261 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:46:26,261 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2023-10-14 18:46:26,261 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-14 18:46:26,282 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-10-14 18:46:26,282 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 218 ms
+2023-10-14 18:46:26,304 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-14 18:46:26,309 INFO o.h.b.i.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-10-14 18:46:26,309 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-14 18:46:26,309 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2023-10-14 18:46:26,352 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@2448d162
+2023-10-14 18:46:26,352 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2023-10-14 18:46:26,369 INFO o.h.b.i.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-10-14 18:46:26,402 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-14 18:46:26,403 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:26,403 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] відношення "missedlesson" не існує, пропускаємо
+2023-10-14 18:46:26,404 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:26,404 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] відношення "students" не існує, пропускаємо
+2023-10-14 18:46:26,406 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:26,406 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] таблиця "groups" не існує, пропускається
+2023-10-14 18:46:26,407 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:26,407 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] таблиця "missedlesson" не існує, пропускається
+2023-10-14 18:46:26,408 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:26,408 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] таблиця "students" не існує, пропускається
+2023-10-14 18:46:26,409 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:26,409 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] послідовність "group_sequence" не існує, пропускається
+2023-10-14 18:46:26,410 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:26,410 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] послідовність "skip_sequence" не існує, пропускається
+2023-10-14 18:46:26,411 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:26,411 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] послідовність "student_sequence" не існує, пропускається
+2023-10-14 18:46:26,443 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-14 18:46:26,508 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-14 18:46:26,872 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-10-14 18:46:26,876 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:46:26,878 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-14 18:46:26,881 INFO c.e.q.QspringApplication [restartedMain] Started QspringApplication in 0.844 seconds (process running for 88.021)
+2023-10-14 18:46:26,882 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-10-14 18:46:28,026 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-14 18:46:28,026 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-10-14 18:46:28,027 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-10-14 18:46:28,042 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][groups] Deprecated unwrapped fragment expression "blocks/header::header" found in template groups, line 7, col 13. Please use the complete syntax of fragment expressions instead ("~{blocks/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:46:28,047 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][groups] Deprecated unwrapped fragment expression "blocks/footer::footer" found in template groups, line 54, col 11. Please use the complete syntax of fragment expressions instead ("~{blocks/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:46:28,291 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-14 18:46:28,298 INFO o.a.c.h.Http11NioProtocol [Thread-15] Pausing ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:46:28,298 INFO o.a.c.c.StandardService [Thread-15] Stopping service [Tomcat]
+2023-10-14 18:46:28,299 INFO o.a.c.c.C.[.[.[/] [Thread-15] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-14 18:46:28,300 INFO o.a.c.h.Http11NioProtocol [Thread-15] Stopping ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:46:28,301 INFO o.a.c.h.Http11NioProtocol [Thread-15] Destroying ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:46:28,301 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [Thread-15] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-14 18:46:28,317 INFO c.z.h.HikariDataSource [Thread-15] HikariPool-4 - Shutdown initiated...
+2023-10-14 18:46:28,319 INFO c.z.h.HikariDataSource [Thread-15] HikariPool-4 - Shutdown completed.
+2023-10-14 18:46:28,387 INFO c.e.q.QspringApplication [restartedMain] Starting QspringApplication using Java 20.0.1 with PID 9720 (D:\Microsoft VS Code\projects\__own\_jav\qspring\target\classes started by Lenovo in D:\Microsoft VS Code\projects)
+2023-10-14 18:46:28,387 INFO c.e.q.QspringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-10-14 18:46:28,495 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-14 18:46:28,507 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+2023-10-14 18:46:28,570 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-10-14 18:46:28,571 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:46:28,571 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2023-10-14 18:46:28,572 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-14 18:46:28,589 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-10-14 18:46:28,589 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 200 ms
+2023-10-14 18:46:28,611 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-14 18:46:28,614 INFO o.h.b.i.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-10-14 18:46:28,614 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-14 18:46:28,614 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-5 - Starting...
+2023-10-14 18:46:28,655 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@59a72466
+2023-10-14 18:46:28,655 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-5 - Start completed.
+2023-10-14 18:46:28,672 INFO o.h.b.i.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-10-14 18:46:28,710 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-14 18:46:28,711 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:28,711 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] відношення "missedlesson" не існує, пропускаємо
+2023-10-14 18:46:28,712 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:28,712 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] відношення "students" не існує, пропускаємо
+2023-10-14 18:46:28,713 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:28,713 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] таблиця "groups" не існує, пропускається
+2023-10-14 18:46:28,714 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:28,714 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] таблиця "missedlesson" не існує, пропускається
+2023-10-14 18:46:28,714 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:28,714 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] таблиця "students" не існує, пропускається
+2023-10-14 18:46:28,716 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:28,716 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] послідовність "group_sequence" не існує, пропускається
+2023-10-14 18:46:28,716 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:28,716 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] послідовність "skip_sequence" не існує, пропускається
+2023-10-14 18:46:28,717 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:46:28,717 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] послідовність "student_sequence" не існує, пропускається
+2023-10-14 18:46:28,752 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-14 18:46:28,836 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-14 18:46:29,110 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-10-14 18:46:29,115 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:46:29,118 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-14 18:46:29,120 INFO c.e.q.QspringApplication [restartedMain] Started QspringApplication in 0.758 seconds (process running for 90.26)
+2023-10-14 18:46:29,120 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-10-14 18:46:30,595 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-14 18:46:30,595 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-10-14 18:46:30,596 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-10-14 18:46:30,605 INFO c.e.q.DatabaseLogger [http-nio-8080-exec-1] Table changes 'groups': ІП-21-4
+2023-10-14 18:46:30,623 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-2] [THYMELEAF][http-nio-8080-exec-2][groups] Deprecated unwrapped fragment expression "blocks/header::header" found in template groups, line 7, col 13. Please use the complete syntax of fragment expressions instead ("~{blocks/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:46:30,628 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-2] [THYMELEAF][http-nio-8080-exec-2][groups] Deprecated unwrapped fragment expression "blocks/footer::footer" found in template groups, line 54, col 11. Please use the complete syntax of fragment expressions instead ("~{blocks/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:47:07,188 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2023-10-14 18:47:07,225 INFO c.e.q.QspringApplication [restartedMain] Starting QspringApplication using Java 20.0.1 with PID 14780 (D:\Microsoft VS Code\projects\__own\_jav\qspring\target\classes started by Lenovo in D:\Microsoft VS Code\projects)
+2023-10-14 18:47:07,228 INFO c.e.q.QspringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-10-14 18:47:07,264 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-14 18:47:07,264 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-14 18:47:07,855 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-14 18:47:07,909 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 47 ms. Found 3 JPA repository interfaces.
+2023-10-14 18:47:08,607 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-10-14 18:47:08,618 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:47:08,622 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2023-10-14 18:47:08,622 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-14 18:47:08,719 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-10-14 18:47:08,721 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1455 ms
+2023-10-14 18:47:08,883 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-14 18:47:08,933 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-10-14 18:47:08,935 INFO o.h.c.Environment [restartedMain] HHH000406: Using bytecode reflection optimizer
+2023-10-14 18:47:09,053 INFO o.h.b.i.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-10-14 18:47:09,178 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-14 18:47:09,220 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-10-14 18:47:09,443 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5718e162
+2023-10-14 18:47:09,444 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-10-14 18:47:09,742 INFO o.h.b.i.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-10-14 18:47:10,447 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-14 18:47:10,535 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-14 18:47:10,759 INFO o.s.d.j.r.q.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-10-14 18:47:11,148 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-14 18:47:12,195 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-10-14 18:47:12,211 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:47:12,259 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-14 18:47:12,294 INFO c.e.q.QspringApplication [restartedMain] Started QspringApplication in 5.321 seconds (process running for 6.091)
+2023-10-14 18:47:15,248 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-14 18:47:15,248 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-10-14 18:47:15,250 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-10-14 18:47:15,527 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][groups] Deprecated unwrapped fragment expression "blocks/header::header" found in template groups, line 7, col 13. Please use the complete syntax of fragment expressions instead ("~{blocks/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:47:15,557 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][groups] Deprecated unwrapped fragment expression "blocks/footer::footer" found in template groups, line 54, col 11. Please use the complete syntax of fragment expressions instead ("~{blocks/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:47:20,716 INFO c.e.q.DatabaseLogger [http-nio-8080-exec-2] Table changes 'groups': ІП-21-5
+2023-10-14 18:47:20,735 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-3] [THYMELEAF][http-nio-8080-exec-3][groups] Deprecated unwrapped fragment expression "blocks/header::header" found in template groups, line 7, col 13. Please use the complete syntax of fragment expressions instead ("~{blocks/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:47:20,820 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-3] [THYMELEAF][http-nio-8080-exec-3][groups] Deprecated unwrapped fragment expression "blocks/footer::footer" found in template groups, line 54, col 11. Please use the complete syntax of fragment expressions instead ("~{blocks/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:47:27,834 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-14 18:47:27,842 INFO o.a.c.h.Http11NioProtocol [Thread-5] Pausing ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:47:27,842 INFO o.a.c.c.StandardService [Thread-5] Stopping service [Tomcat]
+2023-10-14 18:47:27,844 INFO o.a.c.c.C.[.[.[/] [Thread-5] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-14 18:47:27,846 INFO o.a.c.h.Http11NioProtocol [Thread-5] Stopping ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:47:27,848 INFO o.a.c.h.Http11NioProtocol [Thread-5] Destroying ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:47:27,849 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-14 18:47:27,869 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2023-10-14 18:47:27,872 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2023-10-14 18:47:27,951 INFO c.e.q.QspringApplication [restartedMain] Starting QspringApplication using Java 20.0.1 with PID 14780 (D:\Microsoft VS Code\projects\__own\_jav\qspring\target\classes started by Lenovo in D:\Microsoft VS Code\projects)
+2023-10-14 18:47:27,952 INFO c.e.q.QspringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-10-14 18:47:28,091 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-14 18:47:28,107 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 15 ms. Found 3 JPA repository interfaces.
+2023-10-14 18:47:28,198 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-10-14 18:47:28,198 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:47:28,199 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2023-10-14 18:47:28,199 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-14 18:47:28,222 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-10-14 18:47:28,222 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 269 ms
+2023-10-14 18:47:28,254 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-14 18:47:28,258 INFO o.h.b.i.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-10-14 18:47:28,258 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-14 18:47:28,258 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2023-10-14 18:47:28,305 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@600bd38d
+2023-10-14 18:47:28,306 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2023-10-14 18:47:28,324 INFO o.h.b.i.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-10-14 18:47:28,366 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-14 18:47:28,368 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:47:28,368 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] відношення "missedlesson" не існує, пропускаємо
+2023-10-14 18:47:28,369 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:47:28,369 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] відношення "students" не існує, пропускаємо
+2023-10-14 18:47:28,370 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:47:28,370 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] таблиця "groups" не існує, пропускається
+2023-10-14 18:47:28,371 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:47:28,371 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] таблиця "missedlesson" не існує, пропускається
+2023-10-14 18:47:28,372 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:47:28,372 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] таблиця "students" не існує, пропускається
+2023-10-14 18:47:28,372 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:47:28,372 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] послідовність "group_sequence" не існує, пропускається
+2023-10-14 18:47:28,374 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:47:28,374 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] послідовність "skip_sequence" не існує, пропускається
+2023-10-14 18:47:28,375 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:47:28,375 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] послідовність "student_sequence" не існує, пропускається
+2023-10-14 18:47:28,403 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-14 18:47:28,513 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-14 18:47:28,981 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-10-14 18:47:28,984 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:47:28,987 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-14 18:47:28,991 INFO c.e.q.QspringApplication [restartedMain] Started QspringApplication in 1.071 seconds (process running for 22.788)
+2023-10-14 18:47:28,993 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-10-14 18:47:30,418 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-14 18:47:30,427 INFO o.a.c.h.Http11NioProtocol [Thread-7] Pausing ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:47:30,427 INFO o.a.c.c.StandardService [Thread-7] Stopping service [Tomcat]
+2023-10-14 18:47:30,429 INFO o.a.c.h.Http11NioProtocol [Thread-7] Stopping ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:47:30,430 INFO o.a.c.h.Http11NioProtocol [Thread-7] Destroying ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:47:30,431 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-14 18:47:30,457 INFO c.z.h.HikariDataSource [Thread-7] HikariPool-2 - Shutdown initiated...
+2023-10-14 18:47:30,460 INFO c.z.h.HikariDataSource [Thread-7] HikariPool-2 - Shutdown completed.
+2023-10-14 18:47:30,551 INFO c.e.q.QspringApplication [restartedMain] Starting QspringApplication using Java 20.0.1 with PID 14780 (D:\Microsoft VS Code\projects\__own\_jav\qspring\target\classes started by Lenovo in D:\Microsoft VS Code\projects)
+2023-10-14 18:47:30,552 INFO c.e.q.QspringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-10-14 18:47:30,703 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-14 18:47:30,717 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+2023-10-14 18:47:30,798 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-10-14 18:47:30,799 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:47:30,799 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2023-10-14 18:47:30,799 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-14 18:47:30,819 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-10-14 18:47:30,819 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 263 ms
+2023-10-14 18:47:30,844 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-14 18:47:30,847 INFO o.h.b.i.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-10-14 18:47:30,847 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-14 18:47:30,848 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2023-10-14 18:47:30,890 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@12e39583
+2023-10-14 18:47:30,890 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2023-10-14 18:47:30,906 INFO o.h.b.i.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-10-14 18:47:30,944 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-14 18:47:30,946 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:47:30,946 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] відношення "missedlesson" не існує, пропускаємо
+2023-10-14 18:47:30,947 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:47:30,947 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] відношення "students" не існує, пропускаємо
+2023-10-14 18:47:30,948 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:47:30,948 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] таблиця "groups" не існує, пропускається
+2023-10-14 18:47:30,949 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:47:30,949 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] таблиця "missedlesson" не існує, пропускається
+2023-10-14 18:47:30,950 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:47:30,950 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] таблиця "students" не існує, пропускається
+2023-10-14 18:47:30,951 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:47:30,951 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] послідовність "group_sequence" не існує, пропускається
+2023-10-14 18:47:30,952 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:47:30,952 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] послідовність "skip_sequence" не існує, пропускається
+2023-10-14 18:47:30,953 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-10-14 18:47:30,953 WARN o.h.e.j.s.SqlExceptionHelper [restartedMain] послідовність "student_sequence" не існує, пропускається
+2023-10-14 18:47:30,987 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-14 18:47:31,118 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-14 18:47:31,448 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-10-14 18:47:31,453 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-10-14 18:47:31,464 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-14 18:47:31,468 INFO c.e.q.QspringApplication [restartedMain] Started QspringApplication in 0.959 seconds (process running for 25.265)
+2023-10-14 18:47:31,470 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-10-14 18:47:31,479 INFO o.a.c.c.C.[.[.[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-14 18:47:31,479 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-10-14 18:47:31,480 INFO o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-10-14 18:47:31,501 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][groups] Deprecated unwrapped fragment expression "blocks/header::header" found in template groups, line 7, col 13. Please use the complete syntax of fragment expressions instead ("~{blocks/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:47:31,507 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][groups] Deprecated unwrapped fragment expression "blocks/footer::footer" found in template groups, line 54, col 11. Please use the complete syntax of fragment expressions instead ("~{blocks/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:47:33,785 INFO c.e.q.DatabaseLogger [http-nio-8080-exec-2] Table changes 'groups': ІП-21-4
+2023-10-14 18:47:33,794 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-4] [THYMELEAF][http-nio-8080-exec-4][groups] Deprecated unwrapped fragment expression "blocks/header::header" found in template groups, line 7, col 13. Please use the complete syntax of fragment expressions instead ("~{blocks/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-10-14 18:47:33,800 WARN o.t.s.p.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-4] [THYMELEAF][http-nio-8080-exec-4][groups] Deprecated unwrapped fragment expression "blocks/footer::footer" found in template groups, line 54, col 11. Please use the complete syntax of fragment expressions instead ("~{blocks/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.

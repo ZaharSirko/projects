@@ -4,7 +4,7 @@
     <title>Groups</title> 
 </head>
 <body>
-    <header th:insert="blocks/header::header"></header>
+  <header th:insert="~{blocks/header::header}"></header>
   <main>
   <div class="container mt-5 mb-5">
     <h1>Add group</h1>
@@ -14,7 +14,8 @@
     </form>
   </div>
   </main>
-  <footer th:insert="blocks/footer::footer"></footer>
+  <footer th:insert="~{blocks/footer::footer}"></footer>
+
 </body>
 </html>
 

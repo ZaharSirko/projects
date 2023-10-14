@@ -4,7 +4,7 @@
     <title>Missed lessons</title> 
 </head>
 <body>
-    <header th:insert="blocks/header::header"></header>
+    <header th:insert="~{blocks/header::header}"></header>
   <main>
   <div class="container mt-5">
         <h1>Missed lessons</h1>
@@ -30,6 +30,7 @@
       </table>
   </div>
   </main>
-  <footer th:insert="blocks/footer::footer"></footer>
+  <footer th:insert="~{blocks/footer::footer}"></footer>
+
 </body>
 </html>

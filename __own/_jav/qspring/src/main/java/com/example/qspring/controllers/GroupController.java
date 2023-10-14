@@ -1,5 +1,6 @@
 package com.example.qspring.controllers;
 
+
 import java.util.List;
 import java.util.Optional;
 
@@ -13,12 +14,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.example.qspring.DatabaseLogger;
 import com.example.qspring.model.Group;
 import com.example.qspring.model.Student;
 import com.example.qspring.repo.GroupRepository;
 import com.example.qspring.repo.StudentRepository;
 
+
 import jakarta.validation.Valid;
+
 
 @Controller
 public class GroupController {
@@ -36,9 +40,10 @@ public class GroupController {
     }
 
     @PostMapping("/groups")
-    public String groupPostsAdd(@RequestParam String name) {
+    public String groupPostsAdd(@RequestParam String name){
         Group group = new Group(name.toUpperCase());
         groupRepository.save(group);
+        DatabaseLogger.logChange("groups", name.toUpperCase());
         return "redirect:/groups";
     }
 
@@ -53,8 +58,7 @@ public class GroupController {
         groupRepository.save(group);
         if (bindingResult.hasErrors()) {
             return "groups-add";
-        }
-        groupRepository.save(group);    
+        }    
         return "redirect:/groups";
     }
 

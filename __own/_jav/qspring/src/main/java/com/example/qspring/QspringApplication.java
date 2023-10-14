@@ -7,6 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class QspringApplication {
 
 	public static void main(String[] args) {
+
+
 		SpringApplication.run(QspringApplication.class, args);
 	}
 
