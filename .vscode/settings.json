@@ -1,37 +1,10 @@
+
 {
-    "cSpell.words": [
-        "буквенних",
-        "всіх",
-        "Елементи",
-        "значень",
-        "літери",
-        "малих",
-        "маса",
-        "Молярна",
-        "немає",
-        "підносимо",
-        "якщо",
-        "Canzonetta",
-        "irae",
-        "nums",
-        "oper",
-        "probal",
-        "Sequenz",
-        "stirng",
-        "Sull"
-        
+    "java.project.sourcePaths": [
+        "src"
     ],
-    "java.jdt.ls.java.home": "",
-    "java.jdt.ls.vmargs": "",
-    "java.configuration.runtimes": [
-        {
-          "name": "JavaSE-20",
-          "path": "C:/Program Files/Java/jdk-20",
-        }],
-    "java.completion.filteredTypes":[
-
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
     ]
-
-    
-    
 }

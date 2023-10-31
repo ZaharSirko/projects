@@ -6,6 +6,58 @@
     "configurations": [
         {
             "type": "java",
+            "name": "lab1",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.arh.lab1.lab1"
+        },
+        {
+            "type": "java",
+            "name": "_main",
+            "request": "launch",
+            "mainClass": "__k2.__sem2.arh.kurs._main"
+        },
+        {
+            "type": "java",
+            "name": "lab6",
+            "request": "launch",
+            "mainClass": "__k3.sec.lab6.lab6",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "lab6",
+            "request": "launch",
+            "mainClass": "lab6",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "QspringApplicationTests",
+            "request": "launch",
+            "mainClass": "com.example.qspring.QspringApplicationTests",
+            "projectName": "qspring"
+        },
+        {
+            "type": "java",
+            "name": "JPEGSteganography",
+            "request": "launch",
+            "mainClass": "JPEGSteganography",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "lab5",
+            "request": "launch",
+            "mainClass": "lab5"
+        },
+        {
+            "type": "java",
+            "name": "lab4",
+            "request": "launch",
+            "mainClass": "lab4"
+        },
+        {
+            "type": "java",
             "name": "QspringApplication",
             "request": "launch",
             "mainClass": "com.example.qspring.QspringApplication",
