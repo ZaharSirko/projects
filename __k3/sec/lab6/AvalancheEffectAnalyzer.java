@@ -1,4 +1,4 @@
-
+package __k3.sec.lab6;
 import java.security.MessageDigest;
 import java.io.BufferedWriter;
 import java.io.FileWriter;

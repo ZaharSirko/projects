@@ -1,3 +1,4 @@
+package __k3.sec;
 import java.util.Random;
 import java.util.Scanner;
 import java.io.*;

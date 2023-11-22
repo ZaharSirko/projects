@@ -1,4 +1,4 @@
-
+package __k3.sec.lab6;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -34,12 +34,12 @@ public class lab6 {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                createAndShowGUI();
+                GUI();
             }
         });
     }
 
-    private static void createAndShowGUI() {
+    private static void GUI() {
         JFrame frame = new JFrame("Crypto Hash App");
         frame.setLayout(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -122,7 +122,7 @@ public class lab6 {
                             text.append(line);
                         }
                         messageTextArea.setText(text.toString());
-                        reader.close();
+                        reader.close(); 
                     } catch (Exception ex) {
                         ex.printStackTrace();
                     }
@@ -138,7 +138,7 @@ public class lab6 {
                     MessageDigest digest = MessageDigest.getInstance("SHA-256");
                     byte[] hashBytes = digest.digest(textBytes);
                     String hashHex = bytesToHex(hashBytes);
-                    hashResultTextArea.setText(hashHex);
+                    hashResultTextArea.setText(hashHex);    
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }
@@ -147,7 +147,7 @@ public class lab6 {
 
         analyzeAvalancheButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                String text = messageTextArea.getText();
+                String text = messageTextArea.getText();    
                 int bitPosition = Integer.parseInt(bitPositionField.getText());
                 int rounds = Integer.parseInt(roundsField.getText());
                 

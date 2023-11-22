@@ -1,4 +1,4 @@
-
+package __k3.sec.lab6;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PlotOrientation;

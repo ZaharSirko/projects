@@ -1,3 +1,4 @@
+package __k3.sec;
 import java.util.prefs.Preferences;
 
 public class lab4 {

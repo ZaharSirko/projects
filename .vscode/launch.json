@@ -6,6 +6,90 @@
     "configurations": [
         {
             "type": "java",
+            "name": "lab2",
+            "request": "launch",
+            "mainClass": "__k3.sec.lab2",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab4",
+            "request": "launch",
+            "mainClass": "__k3.sec.lab4",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab8",
+            "request": "launch",
+            "mainClass": "__k3.sec.lab8.lab8",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab9",
+            "request": "launch",
+            "mainClass": "__k3.sec.lab9.lab9",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab9",
+            "request": "launch",
+            "mainClass": "lab9",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab8",
+            "request": "launch",
+            "mainClass": "lab8",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab7",
+            "request": "launch",
+            "mainClass": "lab7",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab9",
+            "request": "launch",
+            "mainClass": "lab9.lab9",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab8",
+            "request": "launch",
+            "mainClass": "lab8.lab8",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "asd2",
+            "request": "launch",
+            "mainClass": "lab7.asd2",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "asd",
+            "request": "launch",
+            "mainClass": "lab7.asd",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
+            "name": "lab7",
+            "request": "launch",
+            "mainClass": "lab7.lab7",
+            "projectName": "projects_46f35c64"
+        },
+        {
+            "type": "java",
             "name": "lab1",
             "request": "launch",
             "mainClass": "__k2.__sem2.arh.lab1.lab1"
